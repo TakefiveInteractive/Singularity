@@ -1,0 +1,3 @@
+[submodule "Beethoven"]
+	path = Beethoven
+	url = git@github.com:TakefiveInteractive/Beethoven.git
