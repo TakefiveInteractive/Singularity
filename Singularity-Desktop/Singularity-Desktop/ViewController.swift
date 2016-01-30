@@ -12,7 +12,7 @@ import Beethoven
 class ViewController: NSViewController {
     
     lazy var pitchEngine: PitchEngine = { [unowned self] in
-        let pitchEngine = PitchEngine(delegate: self)
+        let pitchEngine = PitchEngine(config: Config(bufferSize: 10000, estimationStrategy: .QuinnsSecond), delegate: self)
             return pitchEngine
         }()
     
