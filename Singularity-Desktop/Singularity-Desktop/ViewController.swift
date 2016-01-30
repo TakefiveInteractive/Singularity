@@ -7,13 +7,20 @@
 //
 
 import Cocoa
+import Beethoven
 
 class ViewController: NSViewController {
-
+    
+    lazy var pitchEngine: PitchEngine = { [unowned self] in
+        let pitchEngine = PitchEngine(delegate: self)
+            return pitchEngine
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        pitchEngine.start()
     }
 
     override var representedObject: AnyObject? {
@@ -25,3 +32,16 @@ class ViewController: NSViewController {
 
 }
 
+
+// MARK: - PitchEngineDelegate
+
+extension ViewController: PitchEngineDelegate {
+    
+    func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch) {
+        print(pitch.frequency)
+    }
+    
+    func pitchEngineDidRecieveError(pitchEngine: PitchEngine, error: ErrorType) {
+        print(error)
+    }
+}

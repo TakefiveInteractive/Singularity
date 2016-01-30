@@ -13,6 +13,9 @@
 		88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C91C5D4FF20037578B /* Main.storyboard */; };
 		88BBC3D61C5D4FF20037578B /* Singularity_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */; };
 		88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */; };
+		88E956411C5D7820007D0296 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E956401C5D7820007D0296 /* Pitcher.framework */; };
+		88E956421C5D7820007D0296 /* Pitcher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88E956401C5D7820007D0296 /* Pitcher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88E956451C5D7845007D0296 /* Beethoven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E956441C5D7845007D0296 /* Beethoven.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		88E956431C5D7821007D0296 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				88E956421C5D7820007D0296 /* Pitcher.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singularity-Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3C31C5D4FF20037578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +62,8 @@
 		88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singularity-DesktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopUITests.swift; sourceTree = "<group>"; };
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E956401C5D7820007D0296 /* Pitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Pitcher.framework; path = "/Users/wangyu/Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Pitcher.framework"; sourceTree = "<absolute>"; };
+		88E956441C5D7845007D0296 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Beethoven.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E956451C5D7845007D0296 /* Beethoven.framework in Frameworks */,
+				88E956411C5D7820007D0296 /* Pitcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +96,8 @@
 		88BBC3B71C5D4FF20037578B = {
 			isa = PBXGroup;
 			children = (
+				88E956441C5D7845007D0296 /* Beethoven.framework */,
+				88E956401C5D7820007D0296 /* Pitcher.framework */,
 				88BBC3C21C5D4FF20037578B /* Singularity-Desktop */,
 				88BBC3D41C5D4FF20037578B /* Singularity-DesktopTests */,
 				88BBC3DF1C5D4FF20037578B /* Singularity-DesktopUITests */,
@@ -132,6 +155,7 @@
 				88BBC3BC1C5D4FF20037578B /* Sources */,
 				88BBC3BD1C5D4FF20037578B /* Frameworks */,
 				88BBC3BE1C5D4FF20037578B /* Resources */,
+				88E956431C5D7821007D0296 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Singularity-Desktop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-Desktop";
@@ -397,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Singularity-Desktop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-Desktop";
@@ -475,6 +501,7 @@
 				88BBC3E71C5D4FF20037578B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88BBC3E81C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-DesktopTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +510,7 @@
 				88BBC3EA1C5D4FF20037578B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88BBC3EB1C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-DesktopUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +519,7 @@
 				88BBC3ED1C5D4FF20037578B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
