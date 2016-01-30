@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:GoogleVoiceRecognition/GoogleVoiceRecognition.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Singularity-Desktop/Singularity-Desktop.xcodeproj">
    </FileRef>
 </Workspace>
