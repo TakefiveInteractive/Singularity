@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Pitcher/Pitcher.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Scoresmith/Scoresmith.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Hyphenator/Hyphenator.xcodeproj">
    </FileRef>
    <FileRef
