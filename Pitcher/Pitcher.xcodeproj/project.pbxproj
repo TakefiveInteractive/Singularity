@@ -10,6 +10,7 @@
 		8F0F3CD01C5D583000747FE4 /* Pitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CCF1C5D583000747FE4 /* Pitcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CD71C5D583000747FE4 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CCC1C5D583000747FE4 /* Pitcher.framework */; };
 		8F0F3CDC1C5D583000747FE4 /* PitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */; };
+		8F0F3D051C5D5AD600747FE4 /* Beethoven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3D041C5D5AD600747FE4 /* Beethoven.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 		8F0F3CD61C5D583000747FE4 /* PitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitcherTests.swift; sourceTree = "<group>"; };
 		8F0F3CDD1C5D583000747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0F3D021C5D5AAF00747FE4 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = ../Beethoven/build/Debug/Beethoven.framework; sourceTree = "<group>"; };
+		8F0F3D041C5D5AD600747FE4 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = ../Beethoven/build/Debug/Beethoven.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0F3D051C5D5AD600747FE4 /* Beethoven.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,8 @@
 		8F0F3CC21C5D583000747FE4 = {
 			isa = PBXGroup;
 			children = (
+				8F0F3D041C5D5AD600747FE4 /* Beethoven.framework */,
+				8F0F3D021C5D5AAF00747FE4 /* Beethoven.framework */,
 				8F0F3CCE1C5D583000747FE4 /* Pitcher */,
 				8F0F3CDA1C5D583000747FE4 /* PitcherTests */,
 				8F0F3CCD1C5D583000747FE4 /* Products */,

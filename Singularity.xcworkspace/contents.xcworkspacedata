@@ -16,4 +16,10 @@
    <FileRef
       location = "group:Singularity-Desktop/Singularity-Desktop.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Beethoven/Beethoven.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pitchy/Pitchy.xcodeproj">
+   </FileRef>
 </Workspace>
