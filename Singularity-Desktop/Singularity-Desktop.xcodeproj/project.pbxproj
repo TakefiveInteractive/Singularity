@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C31C5D4FF20037578B /* AppDelegate.swift */; };
+		88BBC3C61C5D4FF20037578B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C51C5D4FF20037578B /* ViewController.swift */; };
+		88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C71C5D4FF20037578B /* Assets.xcassets */; };
+		88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C91C5D4FF20037578B /* Main.storyboard */; };
+		88BBC3D61C5D4FF20037578B /* Singularity_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */; };
+		88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88BBC3D21C5D4FF20037578B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BBC3B81C5D4FF20037578B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BBC3BF1C5D4FF20037578B;
+			remoteInfo = "Singularity-Desktop";
+		};
+		88BBC3DD1C5D4FF20037578B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BBC3B81C5D4FF20037578B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BBC3BF1C5D4FF20037578B;
+			remoteInfo = "Singularity-Desktop";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singularity-Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BBC3C31C5D4FF20037578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88BBC3C51C5D4FF20037578B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88BBC3C71C5D4FF20037578B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88BBC3CA1C5D4FF20037578B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88BBC3CC1C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BBC3D11C5D4FF20037578B /* Singularity-DesktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singularity-DesktopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopTests.swift; sourceTree = "<group>"; };
+		88BBC3D71C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singularity-DesktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopUITests.swift; sourceTree = "<group>"; };
+		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88BBC3BD1C5D4FF20037578B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BBC3CE1C5D4FF20037578B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BBC3D91C5D4FF20037578B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88BBC3B71C5D4FF20037578B = {
+			isa = PBXGroup;
+			children = (
+				88BBC3C21C5D4FF20037578B /* Singularity-Desktop */,
+				88BBC3D41C5D4FF20037578B /* Singularity-DesktopTests */,
+				88BBC3DF1C5D4FF20037578B /* Singularity-DesktopUITests */,
+				88BBC3C11C5D4FF20037578B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88BBC3C11C5D4FF20037578B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */,
+				88BBC3D11C5D4FF20037578B /* Singularity-DesktopTests.xctest */,
+				88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88BBC3C21C5D4FF20037578B /* Singularity-Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				88BBC3C31C5D4FF20037578B /* AppDelegate.swift */,
+				88BBC3C51C5D4FF20037578B /* ViewController.swift */,
+				88BBC3C71C5D4FF20037578B /* Assets.xcassets */,
+				88BBC3C91C5D4FF20037578B /* Main.storyboard */,
+				88BBC3CC1C5D4FF20037578B /* Info.plist */,
+			);
+			path = "Singularity-Desktop";
+			sourceTree = "<group>";
+		};
+		88BBC3D41C5D4FF20037578B /* Singularity-DesktopTests */ = {
+			isa = PBXGroup;
+			children = (
+				88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */,
+				88BBC3D71C5D4FF20037578B /* Info.plist */,
+			);
+			path = "Singularity-DesktopTests";
+			sourceTree = "<group>";
+		};
+		88BBC3DF1C5D4FF20037578B /* Singularity-DesktopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */,
+				88BBC3E21C5D4FF20037578B /* Info.plist */,
+			);
+			path = "Singularity-DesktopUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88BBC3BF1C5D4FF20037578B /* Singularity-Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BBC3E51C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-Desktop" */;
+			buildPhases = (
+				88BBC3BC1C5D4FF20037578B /* Sources */,
+				88BBC3BD1C5D4FF20037578B /* Frameworks */,
+				88BBC3BE1C5D4FF20037578B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Singularity-Desktop";
+			productName = "Singularity-Desktop";
+			productReference = 88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88BBC3D01C5D4FF20037578B /* Singularity-DesktopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BBC3E81C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-DesktopTests" */;
+			buildPhases = (
+				88BBC3CD1C5D4FF20037578B /* Sources */,
+				88BBC3CE1C5D4FF20037578B /* Frameworks */,
+				88BBC3CF1C5D4FF20037578B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BBC3D31C5D4FF20037578B /* PBXTargetDependency */,
+			);
+			name = "Singularity-DesktopTests";
+			productName = "Singularity-DesktopTests";
+			productReference = 88BBC3D11C5D4FF20037578B /* Singularity-DesktopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88BBC3DB1C5D4FF20037578B /* Singularity-DesktopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BBC3EB1C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-DesktopUITests" */;
+			buildPhases = (
+				88BBC3D81C5D4FF20037578B /* Sources */,
+				88BBC3D91C5D4FF20037578B /* Frameworks */,
+				88BBC3DA1C5D4FF20037578B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BBC3DE1C5D4FF20037578B /* PBXTargetDependency */,
+			);
+			name = "Singularity-DesktopUITests";
+			productName = "Singularity-DesktopUITests";
+			productReference = 88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88BBC3B81C5D4FF20037578B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Takefive Interactive";
+				TargetAttributes = {
+					88BBC3BF1C5D4FF20037578B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					88BBC3D01C5D4FF20037578B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 88BBC3BF1C5D4FF20037578B;
+					};
+					88BBC3DB1C5D4FF20037578B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 88BBC3BF1C5D4FF20037578B;
+					};
+				};
+			};
+			buildConfigurationList = 88BBC3BB1C5D4FF20037578B /* Build configuration list for PBXProject "Singularity-Desktop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88BBC3B71C5D4FF20037578B;
+			productRefGroup = 88BBC3C11C5D4FF20037578B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88BBC3BF1C5D4FF20037578B /* Singularity-Desktop */,
+				88BBC3D01C5D4FF20037578B /* Singularity-DesktopTests */,
+				88BBC3DB1C5D4FF20037578B /* Singularity-DesktopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88BBC3BE1C5D4FF20037578B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */,
+				88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BBC3CF1C5D4FF20037578B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BBC3DA1C5D4FF20037578B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88BBC3BC1C5D4FF20037578B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BBC3C61C5D4FF20037578B /* ViewController.swift in Sources */,
+				88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BBC3CD1C5D4FF20037578B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BBC3D61C5D4FF20037578B /* Singularity_DesktopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BBC3D81C5D4FF20037578B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88BBC3D31C5D4FF20037578B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BBC3BF1C5D4FF20037578B /* Singularity-Desktop */;
+			targetProxy = 88BBC3D21C5D4FF20037578B /* PBXContainerItemProxy */;
+		};
+		88BBC3DE1C5D4FF20037578B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BBC3BF1C5D4FF20037578B /* Singularity-Desktop */;
+			targetProxy = 88BBC3DD1C5D4FF20037578B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88BBC3C91C5D4FF20037578B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88BBC3CA1C5D4FF20037578B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88BBC3E31C5D4FF20037578B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88BBC3E41C5D4FF20037578B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		88BBC3E61C5D4FF20037578B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Singularity-Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88BBC3E71C5D4FF20037578B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Singularity-Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		88BBC3E91C5D4FF20037578B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Singularity-DesktopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-DesktopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Singularity-Desktop.app/Contents/MacOS/Singularity-Desktop";
+			};
+			name = Debug;
+		};
+		88BBC3EA1C5D4FF20037578B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Singularity-DesktopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-DesktopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Singularity-Desktop.app/Contents/MacOS/Singularity-Desktop";
+			};
+			name = Release;
+		};
+		88BBC3EC1C5D4FF20037578B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Singularity-DesktopUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-DesktopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Singularity-Desktop";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		88BBC3ED1C5D4FF20037578B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Singularity-DesktopUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-DesktopUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Singularity-Desktop";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88BBC3BB1C5D4FF20037578B /* Build configuration list for PBXProject "Singularity-Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BBC3E31C5D4FF20037578B /* Debug */,
+				88BBC3E41C5D4FF20037578B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BBC3E51C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BBC3E61C5D4FF20037578B /* Debug */,
+				88BBC3E71C5D4FF20037578B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88BBC3E81C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-DesktopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BBC3E91C5D4FF20037578B /* Debug */,
+				88BBC3EA1C5D4FF20037578B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88BBC3EB1C5D4FF20037578B /* Build configuration list for PBXNativeTarget "Singularity-DesktopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BBC3EC1C5D4FF20037578B /* Debug */,
+				88BBC3ED1C5D4FF20037578B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88BBC3B81C5D4FF20037578B /* Project object */;
+}
