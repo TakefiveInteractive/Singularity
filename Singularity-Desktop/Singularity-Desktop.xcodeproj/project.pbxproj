@@ -62,10 +62,10 @@
 		88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singularity-DesktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopUITests.swift; sourceTree = "<group>"; };
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88E956401C5D7820007D0296 /* Pitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Pitcher.framework; path = "/Users/wangyu/Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Pitcher.framework"; sourceTree = "<absolute>"; };
-		88E956441C5D7845007D0296 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Beethoven.framework"; sourceTree = "<group>"; };
-		8F2724AD1C5DBD9600787B02 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Beethoven.framework; path = "/Users/yifei/Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/Beethoven.framework"; sourceTree = "<absolute>"; };
-		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pitcher.framework; path = "../../../Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/Pitcher.framework"; sourceTree = "<group>"; };
+		88E956401C5D7820007D0296 /* Pitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Pitcher.framework; path = "../../../../../../../../../wangyu/Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Pitcher.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E956441C5D7845007D0296 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Beethoven.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2724AD1C5DBD9600787B02 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

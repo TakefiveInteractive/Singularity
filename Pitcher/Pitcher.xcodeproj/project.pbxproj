@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88E9563C1C5D7705007D0296 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Beethoven.framework"; sourceTree = "<group>"; };
+		88E9563C1C5D7705007D0296 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Beethoven.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CCC1C5D583000747FE4 /* Pitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CCF1C5D583000747FE4 /* Pitcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pitcher.h; sourceTree = "<group>"; };
 		8F0F3CD11C5D583000747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
