@@ -26,6 +26,7 @@ flacWriterState * flacWriterStateCons() {
     mem->capacity = 10;
     mem->pointer = 0;
     mem->data = (FLAC__byte *) malloc(10);
+    return mem;
 }
 
 void flacWriterStateDes(flacWriterState * state) {

@@ -1,5 +1,6 @@
 import Alamofire
 import AVFoundation
+import SwiftyJSON
 import PromiseKit
 import Flac
 
@@ -17,6 +18,7 @@ private let VoiceApiKeys = [
 
 enum VoiceRecognitionError: ErrorType {
     case InvalidSampleRate
+    case ApiFailure
 }
 
 class VoiceRecognition {
@@ -37,7 +39,13 @@ class VoiceRecognition {
             
             Alamofire.upload(.POST, url, headers: ["Content-Type": "audio/x-flac; rate=44100;"], data: data)
             .responseJSON { response in
-                resolve(response.description)
+                let result = JSON(response.result.value!)["result"]
+                print(result)
+                if result.count == 0 {
+                    reject(VoiceRecognitionError.ApiFailure)
+                } else {
+                    resolve(result[0]["alternative"][0]["transcript"].string!)
+                }
             }
             
             // Free the writer structure
