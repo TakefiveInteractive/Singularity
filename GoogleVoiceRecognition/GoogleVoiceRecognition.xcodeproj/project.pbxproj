@@ -11,6 +11,7 @@
 		8F0F3C641C5D523E00747FE4 /* GoogleVoiceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3C631C5D523E00747FE4 /* GoogleVoiceRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3C6B1C5D523E00747FE4 /* GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C601C5D523E00747FE4 /* GoogleVoiceRecognition.framework */; };
 		8F0F3C701C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */; };
+		8F8DCD9E1C5EE398002A79A6 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		8F0F3C6A1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleVoiceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVoiceRecognitionTests.swift; sourceTree = "<group>"; };
 		8F0F3C711C5D523E00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceRecognition.swift; path = Source/VoiceRecognition.swift; sourceTree = "<group>"; };
 		D6C037F77D6F4A6583621894 /* Pods_GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVoiceRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		8F0F3C561C5D523E00747FE4 = {
 			isa = PBXGroup;
 			children = (
+				8F8DCD9C1C5EE35C002A79A6 /* Source */,
 				8F0F3C621C5D523E00747FE4 /* GoogleVoiceRecognition */,
 				8F0F3C6E1C5D523E00747FE4 /* GoogleVoiceRecognitionTests */,
 				8F0F3C611C5D523E00747FE4 /* Products */,
@@ -108,6 +111,14 @@
 				8F0F3C711C5D523E00747FE4 /* Info.plist */,
 			);
 			path = GoogleVoiceRecognitionTests;
+			sourceTree = "<group>";
+		};
+		8F8DCD9C1C5EE35C002A79A6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8DCD9E1C5EE398002A79A6 /* VoiceRecognition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 042DD4770BE49908913A47BC /* Pods-GoogleVoiceRecognition.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -377,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yifei.GoogleVoiceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -384,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED3875AE64A7C0C645BCBAD /* Pods-GoogleVoiceRecognition.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
