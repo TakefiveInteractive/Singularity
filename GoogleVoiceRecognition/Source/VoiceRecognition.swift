@@ -1,4 +1,7 @@
 import SwiftHTTP
+import AVFoundation
+import PromiseKit
+import Flac
 
 public enum VoiceLanguages : String {
     case English = "en_US"
@@ -12,8 +15,21 @@ private let VoiceApiKeys = [
     "AIzaSyDcaEqYmbfmRtMMSCRRgwYrituNgrhmlsE"
 ]
 
+enum VoiceRecognitionError: ErrorType {
+    case InvalidSampleRate
+}
+
 class VoiceRecognition {
-    class func recognize() {
-        
+    
+    /// Converts a piece of audio to string
+    class func recognize(audio: AVAudioPCMBuffer, atTime: AVAudioTime) -> Promise<String> {
+        return Promise { resolve, reject in
+            if atTime.sampleRate != 44100 {
+                reject(VoiceRecognitionError.InvalidSampleRate)
+            }
+            // Encode PCM into FLAC
+            
+        }
     }
 }
+

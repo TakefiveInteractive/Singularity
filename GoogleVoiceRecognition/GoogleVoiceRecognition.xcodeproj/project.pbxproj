@@ -12,8 +12,9 @@
 		8F0F3C6B1C5D523E00747FE4 /* GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C601C5D523E00747FE4 /* GoogleVoiceRecognition.framework */; };
 		8F0F3C701C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */; };
 		8F8DCD9E1C5EE398002A79A6 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */; };
-		8F8DCDB81C5F1427002A79A6 /* ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8DCDB71C5F1427002A79A6 /* ogg.framework */; };
-		8F8DCDBA1C5F142B002A79A6 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8DCDB91C5F142B002A79A6 /* FLAC.framework */; };
+		8F8DCDBF1C5F1B19002A79A6 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8DCDBB1C5F1AC8002A79A6 /* libFLAC.a */; };
+		8F8DCDC11C5F1C0E002A79A6 /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8DCDC01C5F1C0E002A79A6 /* FLAC.framework */; };
+		8F8DCDC31C5F1C19002A79A6 /* ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8DCDC21C5F1C19002A79A6 /* ogg.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,9 @@
 		8F8DCDB51C5F1420002A79A6 /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC.a; path = ../flac/build/Debug/libFLAC.a; sourceTree = "<group>"; };
 		8F8DCDB71C5F1427002A79A6 /* ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ogg.framework; path = ../ogg/build/Debug/ogg.framework; sourceTree = "<group>"; };
 		8F8DCDB91C5F142B002A79A6 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = ../flac/build/Debug/FLAC.framework; sourceTree = "<group>"; };
+		8F8DCDBB1C5F1AC8002A79A6 /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC.a; path = "../../../Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/libFLAC.a"; sourceTree = "<group>"; };
+		8F8DCDC01C5F1C0E002A79A6 /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = "../../../Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/FLAC.framework"; sourceTree = "<group>"; };
+		8F8DCDC21C5F1C19002A79A6 /* ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ogg.framework; path = "../../../Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/ogg.framework"; sourceTree = "<group>"; };
 		D6C037F77D6F4A6583621894 /* Pods_GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVoiceRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -47,8 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F8DCDBA1C5F142B002A79A6 /* FLAC.framework in Frameworks */,
-				8F8DCDB81C5F1427002A79A6 /* ogg.framework in Frameworks */,
+				8F8DCDC11C5F1C0E002A79A6 /* FLAC.framework in Frameworks */,
+				8F8DCDC31C5F1C19002A79A6 /* ogg.framework in Frameworks */,
+				8F8DCDBF1C5F1B19002A79A6 /* libFLAC.a in Frameworks */,
 				290FD39887E0AB0E97B1AB44 /* Pods_GoogleVoiceRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +81,9 @@
 		485E95D47E046091D8D46F9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F8DCDC21C5F1C19002A79A6 /* ogg.framework */,
+				8F8DCDC01C5F1C0E002A79A6 /* FLAC.framework */,
+				8F8DCDBB1C5F1AC8002A79A6 /* libFLAC.a */,
 				8F8DCDB91C5F142B002A79A6 /* FLAC.framework */,
 				8F8DCDB71C5F1427002A79A6 /* ogg.framework */,
 				8F8DCDB51C5F1420002A79A6 /* libFLAC.a */,
@@ -400,6 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yifei.GoogleVoiceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Flac";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -421,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Yifei.GoogleVoiceRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Flac";
 			};
 			name = Release;
 		};

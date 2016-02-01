@@ -1,0 +1,4 @@
+module Flac [system] {
+    header "../../flac/flac-src/include/FLAC/all.h"
+    export *
+}
