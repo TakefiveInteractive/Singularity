@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (3.1.5)
   - OMGHTTPURLRQ (3.1.1):
     - OMGHTTPURLRQ/RQ (= 3.1.1)
   - OMGHTTPURLRQ/FormURLEncode (3.1.1)
@@ -18,12 +19,11 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (3.0.2):
     - PromiseKit/CorePromise
-  - SwiftHTTP (1.0.3)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.0)
   - PromiseKit (~> 3.0)
-  - SwiftHTTP (~> 1.0.3)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
@@ -36,9 +36,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
   OMGHTTPURLRQ: 633f98ee745aeda02345935a52eec1784cddb589
   PromiseKit: ab1a380f7a30cf8cce663a2411e8b3580b10313d
-  SwiftHTTP: fface018ab365bfb49fa3dca9fdfe77cafccde8b
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

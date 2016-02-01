@@ -1,4 +1,4 @@
-import SwiftHTTP
+import Alamofire
 import AVFoundation
 import PromiseKit
 import Flac
@@ -22,7 +22,7 @@ enum VoiceRecognitionError: ErrorType {
 class VoiceRecognition {
     
     /// Converts a piece of audio to string
-    class func recognize(audio: AVAudioPCMBuffer, atTime: AVAudioTime) -> Promise<String> {
+    class func recognize(audio: AVAudioPCMBuffer, atTime: AVAudioTime, lang: VoiceLanguages = .English) -> Promise<String> {
         return Promise { resolve, reject in
             if atTime.sampleRate != 44100 {
                 reject(VoiceRecognitionError.InvalidSampleRate)
@@ -31,6 +31,14 @@ class VoiceRecognition {
             let outputState = FLAC__encode44100single16bit(audio.int16ChannelData.memory, audio.frameLength)
             
             let flacData = outputState.memory.data
+            
+            let url = "https://www.google.com/speech-api/v2/recognize?output=json&lang=\(lang.rawValue)&key=\(VoiceApiKeys[Int(arc4random_uniform(UInt32(VoiceApiKeys.count)))])&app=Singularity"
+            let data = NSData(bytes: flacData, length: outputState.memory.pointer)
+            
+            Alamofire.upload(.POST, url, headers: ["Content-Type": "audio/x-flac; rate=44100;"], data: data)
+            .responseJSON { response in
+                resolve(response.description)
+            }
             
             // Free the writer structure
             flacWriterStateDes(outputState)
