@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:flac/flac.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ogg/ogg.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:Pitcher/Pitcher.xcodeproj">
    </FileRef>
    <FileRef
