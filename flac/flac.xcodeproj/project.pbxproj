@@ -120,6 +120,10 @@
 		32FB64EB10F04BFD00BC90EC /* framing.c in Sources */ = {isa = PBXBuildFile; fileRef = 32FB64E910F04BFD00BC90EC /* framing.c */; };
 		32FB64EE10F04C1500BC90EC /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FB64EC10F04C1500BC90EC /* ogg.h */; };
 		32FB64EF10F04C1500BC90EC /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FB64ED10F04C1500BC90EC /* os_types.h */; };
+		8F8DCDC81C5F1FE8002A79A6 /* encode_44100_single_16bit.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCDC61C5F1FE8002A79A6 /* encode_44100_single_16bit.c */; };
+		8F8DCDC91C5F1FE8002A79A6 /* encode_44100_single_16bit.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCDC61C5F1FE8002A79A6 /* encode_44100_single_16bit.c */; };
+		8F8DCDCA1C5F1FE8002A79A6 /* encode_44100_single_16bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8DCDC71C5F1FE8002A79A6 /* encode_44100_single_16bit.h */; };
+		8F8DCDCB1C5F1FE8002A79A6 /* encode_44100_single_16bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8DCDC71C5F1FE8002A79A6 /* encode_44100_single_16bit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,6 +312,8 @@
 		32FB64E910F04BFD00BC90EC /* framing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = framing.c; path = "../ogg/libogg-src/src/framing.c"; sourceTree = SOURCE_ROOT; };
 		32FB64EC10F04C1500BC90EC /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = "../ogg/libogg-src/include/ogg/ogg.h"; sourceTree = SOURCE_ROOT; };
 		32FB64ED10F04C1500BC90EC /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = "../ogg/libogg-src/include/ogg/os_types.h"; sourceTree = SOURCE_ROOT; };
+		8F8DCDC61C5F1FE8002A79A6 /* encode_44100_single_16bit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encode_44100_single_16bit.c; sourceTree = "<group>"; };
+		8F8DCDC71C5F1FE8002A79A6 /* encode_44100_single_16bit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode_44100_single_16bit.h; sourceTree = "<group>"; };
 		D2AAC046055464E500DB518D /* libFLAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFLAC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -426,6 +432,8 @@
 				320A7AB90DCF9F4E00FBB728 /* libFLAC */,
 				320A7B5E0DCFA0D100FBB728 /* flac */,
 				320A7C560DCFA76700FBB728 /* metaflac */,
+				8F8DCDC61C5F1FE8002A79A6 /* encode_44100_single_16bit.c */,
+				8F8DCDC71C5F1FE8002A79A6 /* encode_44100_single_16bit.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -683,6 +691,7 @@
 				32D865AB10530AF0002E8E1A /* format.h in Headers */,
 				32D865AC10530AF0002E8E1A /* metadata.h in Headers */,
 				32D865AD10530AF0002E8E1A /* ordinals.h in Headers */,
+				8F8DCDCB1C5F1FE8002A79A6 /* encode_44100_single_16bit.h in Headers */,
 				32D865AE10530AF0002E8E1A /* stream_decoder.h in Headers */,
 				32D865AF10530AF0002E8E1A /* stream_encoder.h in Headers */,
 				32FB64EE10F04C1500BC90EC /* ogg.h in Headers */,
@@ -695,6 +704,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				320A7B110DCF9F9E00FBB728 /* config.h in Headers */,
+				8F8DCDCA1C5F1FE8002A79A6 /* encode_44100_single_16bit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1043,6 +1053,7 @@
 				32D8652910530753002E8E1A /* window.c in Sources */,
 				32D8652D1053076A002E8E1A /* stream_encoder.c in Sources */,
 				32D8652E1053076B002E8E1A /* stream_decoder.c in Sources */,
+				8F8DCDC91C5F1FE8002A79A6 /* encode_44100_single_16bit.c in Sources */,
 				32D8658910530A31002E8E1A /* stream_encoder_framing.c in Sources */,
 				32FB64D510F04B8600BC90EC /* ogg_decoder_aspect.c in Sources */,
 				32FB64D610F04B8700BC90EC /* ogg_encoder_aspect.c in Sources */,
@@ -1067,6 +1078,7 @@
 				320A7B440DCFA05100FBB728 /* format.c in Sources */,
 				320A7B450DCFA05100FBB728 /* lpc.c in Sources */,
 				320A7B460DCFA05100FBB728 /* md5.c in Sources */,
+				8F8DCDC81C5F1FE8002A79A6 /* encode_44100_single_16bit.c in Sources */,
 				320A7B470DCFA05100FBB728 /* memory.c in Sources */,
 				320A7B480DCFA05100FBB728 /* metadata_iterators.c in Sources */,
 				320A7B490DCFA05100FBB728 /* metadata_object.c in Sources */,

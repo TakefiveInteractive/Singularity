@@ -28,7 +28,12 @@ class VoiceRecognition {
                 reject(VoiceRecognitionError.InvalidSampleRate)
             }
             // Encode PCM into FLAC
+            let outputState = FLAC__encode44100single16bit(audio.int16ChannelData.memory, audio.frameLength)
             
+            let flacData = outputState.memory.data
+            
+            // Free the writer structure
+            flacWriterStateDes(outputState)
         }
     }
 }
