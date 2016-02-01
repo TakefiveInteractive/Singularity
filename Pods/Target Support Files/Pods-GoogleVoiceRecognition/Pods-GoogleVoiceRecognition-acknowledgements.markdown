@@ -1,6 +1,14 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## OMGHTTPURLRQ
+
+See README.markdown for full license text.
+
+## PromiseKit
+
+@see README
+
 ## SwiftHTTP
 
 Apache License
