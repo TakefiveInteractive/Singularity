@@ -1,15 +1,13 @@
 //
-//  encode_44100_single_16bit.c
+//  encode_single_16bit.c
 //  flac
 //
 //  Created by Yifei Teng on 1/31/16.
 //  Copyright © 2016 sbooth.org. All rights reserved.
 //
 
-#include "encode_44100_single_16bit.h"
+#include "encode_single_16bit.h"
 #include "flac-src/include/FLAC/all.h"
-#include <stdbool.h>
-#include <string.h>
 
 #define READSIZE 1024
 
@@ -61,7 +59,7 @@ FLAC__StreamEncoderWriteStatus flac_writeCallback(const FLAC__StreamEncoder *enc
     return FLAC__STREAM_ENCODER_WRITE_STATUS_OK;
 }
 
-flacWriterState * FLAC__encode44100single16bit(int16_t *inputBuffer16, unsigned int total_samples)
+flacWriterState * FLAC__encodeSingle16bit(int16_t *inputBuffer16, unsigned int sample_rate, unsigned int total_samples)
 {
     FLAC__bool ok = true;
     FLAC__StreamEncoder *encoder = 0;
@@ -72,13 +70,11 @@ flacWriterState * FLAC__encode44100single16bit(int16_t *inputBuffer16, unsigned 
     static FLAC__byte buffer[READSIZE/*samples*/ * 2/*bytes_per_sample*/ * 1/*channels*/];
     static FLAC__int32 pcm[READSIZE/*samples*/ * 1/*channels*/];
 
-    unsigned sample_rate = 0;
     unsigned channels = 0;
     unsigned bps = 0;
     
     int8_t * inputBuffer = (int8_t *) inputBuffer16;
 
-    sample_rate = 44100;
     channels = 1;
     bps = 16;
     
@@ -133,7 +129,7 @@ flacWriterState * FLAC__encode44100single16bit(int16_t *inputBuffer16, unsigned 
     
     /* read blocks of samples from WAVE file and feed to encoder */
     if(ok) {
-        size_t left = (size_t)total_samples;
+        size_t left = (size_t) total_samples;
         while(ok && left) {
             size_t need = (left>READSIZE? (size_t)READSIZE : (size_t)left);
             
@@ -169,5 +165,6 @@ flacWriterState * FLAC__encode44100single16bit(int16_t *inputBuffer16, unsigned 
     
     FLAC__stream_encoder_delete(encoder);
     
+    outputState->success = ok;
     return outputState;
 }

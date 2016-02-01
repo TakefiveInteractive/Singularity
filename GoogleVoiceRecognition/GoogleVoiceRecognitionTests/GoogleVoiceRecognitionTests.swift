@@ -22,27 +22,38 @@ class GoogleVoiceRecognitionTests: XCTestCase {
         super.tearDown()
     }
     
-    func testVoiceRecognitionNoMeizi() {
+    func helperTestWithFile(fileName: String, lang: VoiceLanguages, verifier: String -> ()) {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         print(NSBundle.mainBundle().description)
-        let url = NSBundle(forClass: self.dynamicType).URLForResource("test-speech-meizi", withExtension: "wav")
-        let format = AVAudioFormat(commonFormat: .PCMFormatInt16, sampleRate: 44100.0, channels: 1, interleaved: false)
+        let url = NSBundle(forClass: self.dynamicType).URLForResource(fileName, withExtension: "wav")
         let file = try! AVAudioFile(forReading: url!, commonFormat: AVAudioCommonFormat.PCMFormatInt16, interleaved: false)
+        let format = AVAudioFormat(commonFormat: .PCMFormatInt16, sampleRate: file.fileFormat.sampleRate, channels: 1, interleaved: false)
         
         let buf = AVAudioPCMBuffer(PCMFormat: format, frameCapacity: UInt32(file.length))
         try! file.readIntoBuffer(buf)
         
-        let asyncExpectation = expectationWithDescription("waiting for Google API")
+        let asyncExpectation = expectationWithDescription("waiting for Google API in " + fileName)
         
-        let bla : UnsafePointer<AudioTimeStamp> = UnsafePointer<AudioTimeStamp>(calloc(1, Int(sizeof(AudioTimeStamp))))
-        VoiceRecognition.recognize(buf, atTime: AVAudioTime(audioTimeStamp: bla, sampleRate: 44100.0), lang: .Mandarin)
-        .then { (hh: String) -> Void in
-            XCTAssert(hh.containsString("妹子") && hh.containsString("我未来的"))
-            asyncExpectation.fulfill()
+        VoiceRecognition.recognize(buf, sampleRate: Int(file.fileFormat.sampleRate), lang: lang)
+            .then { (hh: String) -> Void in
+                verifier(hh)
+                asyncExpectation.fulfill()
         }
         
         self.waitForExpectationsWithTimeout(10, handler: { print($0) })
+    }
+    
+    func testVoiceRecognitionNoMeizi() {
+        helperTestWithFile("test-speech-meizi", lang: .Mandarin) { hh in
+            XCTAssert(hh.containsString("妹子") && hh.containsString("我未来的"))
+        }
+    }
+    
+    func testVoiceRecognitionEnglish() {
+        helperTestWithFile("good-morning", lang: .English) { hh in
+            XCTAssert(hh.containsString("good morning") && hh.containsString("Google"))
+        }
     }
     
 }

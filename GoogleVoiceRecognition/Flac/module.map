@@ -1,4 +1,4 @@
 module Flac [system] {
-    header "../../flac/encode_44100_single_16bit.h"
+    header "../../flac/encode_single_16bit.h"
     export *
 }
