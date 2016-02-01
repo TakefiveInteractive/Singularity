@@ -53,6 +53,7 @@ FLAC__StreamEncoderWriteStatus flac_writeCallback(const FLAC__StreamEncoder *enc
     for (i = 0; i < bytes; i++, j++) {
         state->data[j] = buffer[i];
     }
+    state->pointer = j;
     if (state->pointer > state->length) {
         state->length = state->pointer;
     }
@@ -159,8 +160,8 @@ flacWriterState * FLAC__encode44100single16bit(int16_t *inputBuffer16, unsigned 
     
     ok &= FLAC__stream_encoder_finish(encoder);
     
-    fprintf(stderr, "encoding: %s\n", ok? "succeeded" : "FAILED");
-    fprintf(stderr, "   state: %s\n", FLAC__StreamEncoderStateString[FLAC__stream_encoder_get_state(encoder)]);
+    // fprintf(stderr, "encoding: %s\n", ok? "succeeded" : "FAILED");
+    // fprintf(stderr, "   state: %s\n", FLAC__StreamEncoderStateString[FLAC__stream_encoder_get_state(encoder)]);
     
     /* now that encoding is finished, the metadata can be freed */
     FLAC__metadata_object_delete(metadata[0]);

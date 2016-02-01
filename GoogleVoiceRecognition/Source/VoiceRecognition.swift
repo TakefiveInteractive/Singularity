@@ -38,9 +38,18 @@ class VoiceRecognition {
             let data = NSData(bytes: flacData, length: outputState.memory.pointer)
             
             Alamofire.upload(.POST, url, headers: ["Content-Type": "audio/x-flac; rate=44100;"], data: data)
-            .responseJSON { response in
-                let result = JSON(response.result.value!)["result"]
-                print(result)
+            .responseString { response in
+                guard response.result.isSuccess else { reject(VoiceRecognitionError.ApiFailure); return }
+                
+                let choufengResult = response.result.value!
+                var goodResult = ""
+                if choufengResult.substringToIndex(choufengResult.startIndex.advancedBy(13)) == "{\"result\":[]}" {
+                    goodResult = choufengResult.substringFromIndex(choufengResult.startIndex.advancedBy(14))
+                } else {
+                    goodResult = choufengResult
+                }
+                
+                let result = JSON.parse(goodResult)["result"]
                 if result.count == 0 {
                     reject(VoiceRecognitionError.ApiFailure)
                 } else {

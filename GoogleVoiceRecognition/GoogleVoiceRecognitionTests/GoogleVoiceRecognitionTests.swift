@@ -27,18 +27,18 @@ class GoogleVoiceRecognitionTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         print(NSBundle.mainBundle().description)
         let url = NSBundle(forClass: self.dynamicType).URLForResource("test-speech-meizi", withExtension: "wav")
-        let file = try! AVAudioFile(forReading: url!)
-        let format = AVAudioFormat(commonFormat: .PCMFormatInt16, sampleRate: file.fileFormat.sampleRate, channels: 1, interleaved: false)
+        let format = AVAudioFormat(commonFormat: .PCMFormatInt16, sampleRate: 44100.0, channels: 1, interleaved: false)
+        let file = try! AVAudioFile(forReading: url!, commonFormat: AVAudioCommonFormat.PCMFormatInt16, interleaved: false)
         
-        let buf = AVAudioPCMBuffer(PCMFormat: format, frameCapacity: 44100 * 4)
+        let buf = AVAudioPCMBuffer(PCMFormat: format, frameCapacity: UInt32(file.length))
         try! file.readIntoBuffer(buf)
         
         let asyncExpectation = expectationWithDescription("waiting for Google API")
         
         let bla : UnsafePointer<AudioTimeStamp> = UnsafePointer<AudioTimeStamp>(calloc(1, Int(sizeof(AudioTimeStamp))))
-        VoiceRecognition.recognize(buf, atTime: AVAudioTime(audioTimeStamp: bla, sampleRate: 44100.0))
+        VoiceRecognition.recognize(buf, atTime: AVAudioTime(audioTimeStamp: bla, sampleRate: 44100.0), lang: .Mandarin)
         .then { (hh: String) -> Void in
-            print(hh)
+            XCTAssert(hh.containsString("妹子") && hh.containsString("我未来的"))
             asyncExpectation.fulfill()
         }
         
