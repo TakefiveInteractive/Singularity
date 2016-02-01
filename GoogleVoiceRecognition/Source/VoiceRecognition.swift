@@ -26,8 +26,9 @@ class VoiceRecognition {
     /// Converts a piece of audio to string
     class func recognize(audio: AVAudioPCMBuffer, atTime: AVAudioTime, lang: VoiceLanguages = .English) -> Promise<String> {
         return Promise { resolve, reject in
-            if atTime.sampleRate != 44100 {
+            guard atTime.sampleRate == 44100 else {
                 reject(VoiceRecognitionError.InvalidSampleRate)
+                return
             }
             // Encode PCM into FLAC
             let outputState = FLAC__encode44100single16bit(audio.int16ChannelData.memory, audio.frameLength)
@@ -43,7 +44,8 @@ class VoiceRecognition {
                 
                 let choufengResult = response.result.value!
                 var goodResult = ""
-                if choufengResult.substringToIndex(choufengResult.startIndex.advancedBy(13)) == "{\"result\":[]}" {
+                if choufengResult.substringToIndex(choufengResult.startIndex.advancedBy(13)) == "{\"result\":[]}"
+                && choufengResult.characters.count > 14 {
                     goodResult = choufengResult.substringFromIndex(choufengResult.startIndex.advancedBy(14))
                 } else {
                     goodResult = choufengResult
