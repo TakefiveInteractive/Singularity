@@ -19,4 +19,10 @@
    <FileRef
       location = "group:Beethoven/Beethoven.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Singularity-Desktop/Singularity-Desktop.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

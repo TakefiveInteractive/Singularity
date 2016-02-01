@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290FD39887E0AB0E97B1AB44 /* Pods_GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C037F77D6F4A6583621894 /* Pods_GoogleVoiceRecognition.framework */; };
 		8F0F3C641C5D523E00747FE4 /* GoogleVoiceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3C631C5D523E00747FE4 /* GoogleVoiceRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3C6B1C5D523E00747FE4 /* GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C601C5D523E00747FE4 /* GoogleVoiceRecognition.framework */; };
 		8F0F3C701C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */; };
@@ -23,12 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042DD4770BE49908913A47BC /* Pods-GoogleVoiceRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleVoiceRecognition.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-GoogleVoiceRecognition/Pods-GoogleVoiceRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		2ED3875AE64A7C0C645BCBAD /* Pods-GoogleVoiceRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleVoiceRecognition.release.xcconfig"; path = "../Pods/Target Support Files/Pods-GoogleVoiceRecognition/Pods-GoogleVoiceRecognition.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F3C601C5D523E00747FE4 /* GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleVoiceRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3C631C5D523E00747FE4 /* GoogleVoiceRecognition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleVoiceRecognition.h; sourceTree = "<group>"; };
 		8F0F3C651C5D523E00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F0F3C6A1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleVoiceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVoiceRecognitionTests.swift; sourceTree = "<group>"; };
 		8F0F3C711C5D523E00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C037F77D6F4A6583621894 /* Pods_GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVoiceRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290FD39887E0AB0E97B1AB44 /* Pods_GoogleVoiceRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04371E712BA7FAE196344927 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				042DD4770BE49908913A47BC /* Pods-GoogleVoiceRecognition.debug.xcconfig */,
+				2ED3875AE64A7C0C645BCBAD /* Pods-GoogleVoiceRecognition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		485E95D47E046091D8D46F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C037F77D6F4A6583621894 /* Pods_GoogleVoiceRecognition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F0F3C561C5D523E00747FE4 = {
 			isa = PBXGroup;
 			children = (
 				8F0F3C621C5D523E00747FE4 /* GoogleVoiceRecognition */,
 				8F0F3C6E1C5D523E00747FE4 /* GoogleVoiceRecognitionTests */,
 				8F0F3C611C5D523E00747FE4 /* Products */,
+				04371E712BA7FAE196344927 /* Pods */,
+				485E95D47E046091D8D46F9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,10 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F0F3C741C5D523E00747FE4 /* Build configuration list for PBXNativeTarget "GoogleVoiceRecognition" */;
 			buildPhases = (
+				913D9E63CB671224869C666D /* Check Pods Manifest.lock */,
 				8F0F3C5B1C5D523E00747FE4 /* Sources */,
 				8F0F3C5C1C5D523E00747FE4 /* Frameworks */,
 				8F0F3C5D1C5D523E00747FE4 /* Headers */,
 				8F0F3C5E1C5D523E00747FE4 /* Resources */,
+				93DB0A181BBF26634090C388 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,6 +214,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		913D9E63CB671224869C666D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93DB0A181BBF26634090C388 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-GoogleVoiceRecognition/Pods-GoogleVoiceRecognition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F0F3C5B1C5D523E00747FE4 /* Sources */ = {
@@ -304,6 +363,7 @@
 		};
 		8F0F3C751C5D523E00747FE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042DD4770BE49908913A47BC /* Pods-GoogleVoiceRecognition.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -322,6 +382,7 @@
 		};
 		8F0F3C761C5D523E00747FE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED3875AE64A7C0C645BCBAD /* Pods-GoogleVoiceRecognition.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -379,6 +440,7 @@
 				8F0F3C761C5D523E00747FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F0F3C771C5D523E00747FE4 /* Build configuration list for PBXNativeTarget "GoogleVoiceRecognitionTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +449,7 @@
 				8F0F3C791C5D523E00747FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
