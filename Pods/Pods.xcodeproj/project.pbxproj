@@ -7,77 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17BED08A9B284E7C0D7DC427D7A95D21 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D65E27D7444DA52DA91F990AB66778 /* Request.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		18A362E8F684CD17CB5822395475A821 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B12E1F1F705E16A4FDCBEB80158B486 /* HTTPSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		214F9F04E3D8C5D442BA7638A92DB9EF /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251CABA47D51B279A7314BA1154E913 /* StatusCode.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4D5207DE44911EA1D834B2F4A60260C2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		517BE8614890C6D6AA54125A9EBE5876 /* SwiftHTTP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E26A5ADADB2BE1A2E7303FF568085D5 /* SwiftHTTP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53795DB9308133F50D68A54B151B4003 /* Pods-GoogleVoiceRecognition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 581130F51B5D5773F17535FC91CCE5E1 /* Pods-GoogleVoiceRecognition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75D1C14E385C5A118BA120B6C342B03A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		7EC1E5E48BA596B7C59A2FE220BD07FB /* Pods-GoogleVoiceRecognition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C78B990A6EC082EDD3A3F5F9D1781F3 /* Pods-GoogleVoiceRecognition-dummy.m */; };
-		A8158DB0A7203C86EA47631AF37370FC /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088287CC71E08E73DB5EA48072E25C0F /* Upload.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CFDC78B18614C043A49892944AE0E767 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E24DF3135EDD1FAE957CE29B786F2 /* Operation.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DFFB7370D7DC9D3FE8A24BA210C9487D /* SwiftHTTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C72704C5184338526DF383D9C0BDF3B5 /* SwiftHTTP-dummy.m */; };
+		1491A370204670DED23E987FC85B4A55 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67D5F39826B64B1648F15AF1D5C2AFB /* HTTPSecurity.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A636D29EE71F896DB2141847EFC6518 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55805CB33A0AB040859D83DD8C306CD3 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40F88ECB1112664FED3086ABF2701367 /* SwiftHTTP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D169F7AA6274E34E543A33EA54EAEE1 /* SwiftHTTP-dummy.m */; };
+		44544E0DD51E1E379E7617D48A60A58E /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E1B0EA25944A48C68D06B015F17DE7 /* Operation.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5B99F13535E99167760B0454CCFCE999 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		5DDE5E6A2B550200908C22FEE8D0F815 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7A19FFEB40062B84E6D360C3508E6 /* Request.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7AC888F6BD055A2DF24D954403AE7306 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A96C0E841F916BE77FFCCAFC275374 /* SwiftyJSON.swift */; };
+		92371C42C9565F6101B23383867C8890 /* Pods-GoogleVoiceRecognition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 581130F51B5D5773F17535FC91CCE5E1 /* Pods-GoogleVoiceRecognition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC5D56DC93F60A9996A9885A064FE691 /* SwiftHTTP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B519B5F8C47D6FF997C7A7FBA469B2 /* SwiftHTTP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91C7903742A1864F64A31B51C7B8893 /* Pods-GoogleVoiceRecognition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C78B990A6EC082EDD3A3F5F9D1781F3 /* Pods-GoogleVoiceRecognition-dummy.m */; };
+		C78E5C8B2C893986F0A4C2AEAB3C3C3C /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C03DDC504708FF16218C1091F3DDA8B /* Upload.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CFCDC390D0B4D6D3DCB202155EFDADD0 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F22EA6721DD55EB3421D56BB505F97 /* StatusCode.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E105250D11A1D2495AC23549C4A1E6AB /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 245F6539C2087D2983F4ADD884182604 /* SwiftyJSON-dummy.m */; };
+		E3C1846938B8ED5034F815C9CCEC2F32 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		EDF2F77AC3E9DA91219C3E668319E3B3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D30B590E82FA4E18EF364AEDD8795ADA /* PBXContainerItemProxy */ = {
+		8E11AD3ED4DCB28A58142862BD896169 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C33F55B3CDC5E910B47D80D27A068731;
+			remoteGlobalIDString = B14B9DDDE73F4BEB3C118C11B9639D17;
+			remoteInfo = SwiftyJSON;
+		};
+		A75BF46D7FBCFD96C4B3CAB483806CF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E40FE00311484CD7E9D9CABE79BCDDAC;
 			remoteInfo = SwiftHTTP;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B7A19FFEB40062B84E6D360C3508E6 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		02FA0DDFC892B4583627EDCD34F04E1C /* Pods-GoogleVoiceRecognition-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleVoiceRecognition-acknowledgements.markdown"; sourceTree = "<group>"; };
-		088287CC71E08E73DB5EA48072E25C0F /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		0503A80688B0A66B29B09E290918E279 /* SwiftHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHTTP-prefix.pch"; sourceTree = "<group>"; };
+		08002684198531FE9D825806267635A8 /* Pods_GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVoiceRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		081882E2E288EC3886D6911A7DF76A22 /* SwiftHTTP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHTTP.xcconfig; sourceTree = "<group>"; };
 		0C78B990A6EC082EDD3A3F5F9D1781F3 /* Pods-GoogleVoiceRecognition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleVoiceRecognition-dummy.m"; sourceTree = "<group>"; };
-		12546D81949D5FA45B692FDA9F813D73 /* SwiftHTTP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHTTP.xcconfig; sourceTree = "<group>"; };
+		12B519B5F8C47D6FF997C7A7FBA469B2 /* SwiftHTTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHTTP-umbrella.h"; sourceTree = "<group>"; };
+		1520CBC32960C43C28C11BAAF9856F25 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		1C03DDC504708FF16218C1091F3DDA8B /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
 		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		1D035FE42580EE264138659B408467B7 /* SwiftHTTP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHTTP-prefix.pch"; sourceTree = "<group>"; };
-		35F8D35D2CD40430C49165298119C95B /* SwiftHTTP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHTTP.modulemap; sourceTree = "<group>"; };
-		4251CABA47D51B279A7314BA1154E913 /* StatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = Source/StatusCode.swift; sourceTree = "<group>"; };
+		245F6539C2087D2983F4ADD884182604 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		2D169F7AA6274E34E543A33EA54EAEE1 /* SwiftHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHTTP-dummy.m"; sourceTree = "<group>"; };
+		55805CB33A0AB040859D83DD8C306CD3 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		581130F51B5D5773F17535FC91CCE5E1 /* Pods-GoogleVoiceRecognition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoogleVoiceRecognition-umbrella.h"; sourceTree = "<group>"; };
+		58E5E67AE67905806DDB38A788B09BF6 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		5941D4066B66C604796B3EC860AE5744 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63CAF78449E6BAE87CFBE142D7FDF653 /* SwiftHTTP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftHTTP.modulemap; sourceTree = "<group>"; };
 		657EF952BCB0C336BD143D1ED28B76ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67D65E27D7444DA52DA91F990AB66778 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		7E26A5ADADB2BE1A2E7303FF568085D5 /* SwiftHTTP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHTTP-umbrella.h"; sourceTree = "<group>"; };
-		815FDD834F72523A1A4DF91A079DAF2C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D7215963135CE3DBEFABA2BCF3BEEE9 /* SwiftHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		692B4FE5CC257215F7C580E0149550CB /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		78A96C0E841F916BE77FFCCAFC275374 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		88E1B0EA25944A48C68D06B015F17DE7 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Source/Operation.swift; sourceTree = "<group>"; };
 		929B318890C76E9853CB499D0875B091 /* Pods-GoogleVoiceRecognition-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoogleVoiceRecognition-frameworks.sh"; sourceTree = "<group>"; };
-		9B12E1F1F705E16A4FDCBEB80158B486 /* HTTPSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPSecurity.swift; path = Source/HTTPSecurity.swift; sourceTree = "<group>"; };
 		9E0066207D4A54B407F6B49A0FF07633 /* Pods-GoogleVoiceRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleVoiceRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F22EA6721DD55EB3421D56BB505F97 /* StatusCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusCode.swift; path = Source/StatusCode.swift; sourceTree = "<group>"; };
+		A67D5F39826B64B1648F15AF1D5C2AFB /* HTTPSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPSecurity.swift; path = Source/HTTPSecurity.swift; sourceTree = "<group>"; };
+		A8A64EBFCD357693C95A533036C4F65C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B9FF6BDD0DED2B19BA6ABB588D7056 /* SwiftHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CC3F85CC890A91581E1704684B77F1 /* Pods-GoogleVoiceRecognition-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoogleVoiceRecognition-resources.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C72704C5184338526DF383D9C0BDF3B5 /* SwiftHTTP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHTTP-dummy.m"; sourceTree = "<group>"; };
 		C7B6B5266E48D9525F8634D45C527798 /* Pods-GoogleVoiceRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleVoiceRecognition.release.xcconfig"; sourceTree = "<group>"; };
-		C8D159BC7E0F12BBC7961E686A274459 /* Pods_GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleVoiceRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D11E24DF3135EDD1FAE957CE29B786F2 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Source/Operation.swift; sourceTree = "<group>"; };
 		D43D26CA732CE0B8AFBF94016758F706 /* Pods-GoogleVoiceRecognition-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleVoiceRecognition-acknowledgements.plist"; sourceTree = "<group>"; };
 		E3F6F55CF473AAE3EC7A10B6BB1F8A93 /* Pods-GoogleVoiceRecognition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GoogleVoiceRecognition.modulemap"; sourceTree = "<group>"; };
+		F8E807B7DBB25F6D7C513CD6E9FAC0AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FCE22B5D927F3D167EDBA9ACD8F49F9 /* Frameworks */ = {
+		0F9B380E68D0DA57A207CA51C8422625 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75D1C14E385C5A118BA120B6C342B03A /* Cocoa.framework in Frameworks */,
+				5B99F13535E99167760B0454CCFCE999 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30A1918E24D844A226EF7ED699406817 /* Frameworks */ = {
+		D2254A17EB340CFBB7C01ED38220AEFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5207DE44911EA1D834B2F4A60260C2 /* Cocoa.framework in Frameworks */,
+				E3C1846938B8ED5034F815C9CCEC2F32 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0BA6D0EDA5935B14CBD26847566A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF2F77AC3E9DA91219C3E668319E3B3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02380C6AF3C174CBFA5966C2AB28A6A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08002684198531FE9D825806267635A8 /* Pods_GoogleVoiceRecognition.framework */,
+				B0B9FF6BDD0DED2B19BA6ABB588D7056 /* SwiftHTTP.framework */,
+				A8A64EBFCD357693C95A533036C4F65C /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		07CCE8D33FA90F8571C6E3904DF38652 /* Pods-GoogleVoiceRecognition */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,18 +133,50 @@
 			path = "Target Support Files/Pods-GoogleVoiceRecognition";
 			sourceTree = "<group>";
 		};
-		1F6EF9BDBFE3792E8F0E1CC3060B17E0 /* Support Files */ = {
+		093435381E7FDFD50BFD1073B5335B5F /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				815FDD834F72523A1A4DF91A079DAF2C /* Info.plist */,
-				35F8D35D2CD40430C49165298119C95B /* SwiftHTTP.modulemap */,
-				12546D81949D5FA45B692FDA9F813D73 /* SwiftHTTP.xcconfig */,
-				C72704C5184338526DF383D9C0BDF3B5 /* SwiftHTTP-dummy.m */,
-				1D035FE42580EE264138659B408467B7 /* SwiftHTTP-prefix.pch */,
-				7E26A5ADADB2BE1A2E7303FF568085D5 /* SwiftHTTP-umbrella.h */,
+				78A96C0E841F916BE77FFCCAFC275374 /* SwiftyJSON.swift */,
+				0FD71F0C2686F1A4F14F71BE1A6B613E /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		0A6D33E4CCD463340F0E37F2D9DCDE66 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E807B7DBB25F6D7C513CD6E9FAC0AE /* Info.plist */,
+				63CAF78449E6BAE87CFBE142D7FDF653 /* SwiftHTTP.modulemap */,
+				081882E2E288EC3886D6911A7DF76A22 /* SwiftHTTP.xcconfig */,
+				2D169F7AA6274E34E543A33EA54EAEE1 /* SwiftHTTP-dummy.m */,
+				0503A80688B0A66B29B09E290918E279 /* SwiftHTTP-prefix.pch */,
+				12B519B5F8C47D6FF997C7A7FBA469B2 /* SwiftHTTP-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftHTTP";
+			sourceTree = "<group>";
+		};
+		0FD71F0C2686F1A4F14F71BE1A6B613E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5941D4066B66C604796B3EC860AE5744 /* Info.plist */,
+				58E5E67AE67905806DDB38A788B09BF6 /* SwiftyJSON.modulemap */,
+				1520CBC32960C43C28C11BAAF9856F25 /* SwiftyJSON.xcconfig */,
+				245F6539C2087D2983F4ADD884182604 /* SwiftyJSON-dummy.m */,
+				692B4FE5CC257215F7C580E0149550CB /* SwiftyJSON-prefix.pch */,
+				55805CB33A0AB040859D83DD8C306CD3 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		1FC5B4D2E64E21E1DF0CA93EAD142498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E563CF81F7FCC070C1948ECA1575D13 /* SwiftHTTP */,
+				093435381E7FDFD50BFD1073B5335B5F /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
@@ -118,14 +187,6 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		3510D63EC130FBF054FB92BDC00B1AB3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E482EC000F6F81999104742E649FF6EB /* SwiftHTTP */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,37 +195,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E563CF81F7FCC070C1948ECA1575D13 /* SwiftHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				A67D5F39826B64B1648F15AF1D5C2AFB /* HTTPSecurity.swift */,
+				88E1B0EA25944A48C68D06B015F17DE7 /* Operation.swift */,
+				01B7A19FFEB40062B84E6D360C3508E6 /* Request.swift */,
+				A5F22EA6721DD55EB3421D56BB505F97 /* StatusCode.swift */,
+				1C03DDC504708FF16218C1091F3DDA8B /* Upload.swift */,
+				0A6D33E4CCD463340F0E37F2D9DCDE66 /* Support Files */,
+			);
+			path = SwiftHTTP;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				3510D63EC130FBF054FB92BDC00B1AB3 /* Pods */,
-				94498FC6AA05ABCA93AB43E8905C7A2E /* Products */,
+				1FC5B4D2E64E21E1DF0CA93EAD142498 /* Pods */,
+				02380C6AF3C174CBFA5966C2AB28A6A0 /* Products */,
 				E4907C23819BE7D3F17CC584C4294722 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		94498FC6AA05ABCA93AB43E8905C7A2E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C8D159BC7E0F12BBC7961E686A274459 /* Pods_GoogleVoiceRecognition.framework */,
-				8D7215963135CE3DBEFABA2BCF3BEEE9 /* SwiftHTTP.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E482EC000F6F81999104742E649FF6EB /* SwiftHTTP */ = {
-			isa = PBXGroup;
-			children = (
-				9B12E1F1F705E16A4FDCBEB80158B486 /* HTTPSecurity.swift */,
-				D11E24DF3135EDD1FAE957CE29B786F2 /* Operation.swift */,
-				67D65E27D7444DA52DA91F990AB66778 /* Request.swift */,
-				4251CABA47D51B279A7314BA1154E913 /* StatusCode.swift */,
-				088287CC71E08E73DB5EA48072E25C0F /* Upload.swift */,
-				1F6EF9BDBFE3792E8F0E1CC3060B17E0 /* Support Files */,
-			);
-			path = SwiftHTTP;
 			sourceTree = "<group>";
 		};
 		E4907C23819BE7D3F17CC584C4294722 /* Targets Support Files */ = {
@@ -178,50 +230,76 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8CC84B35267ACE1BE0F4D84D37801DF3 /* Headers */ = {
+		30186334A46455BF9F9B59E58A294CF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				517BE8614890C6D6AA54125A9EBE5876 /* SwiftHTTP-umbrella.h in Headers */,
+				AC5D56DC93F60A9996A9885A064FE691 /* SwiftHTTP-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2C0D93CE0815443DFAEAF6EB9B82A04 /* Headers */ = {
+		77DA28B043F158444A526721B60EC658 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53795DB9308133F50D68A54B151B4003 /* Pods-GoogleVoiceRecognition-umbrella.h in Headers */,
+				92371C42C9565F6101B23383867C8890 /* Pods-GoogleVoiceRecognition-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F95DCBDD2D61B238DFEDB9A1664DF11C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A636D29EE71F896DB2141847EFC6518 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5FEC8B8EA7500AB0539EE8E7C66FA710 /* Pods-GoogleVoiceRecognition */ = {
+		1AC0B490399D78BE750D4043A51795D5 /* Pods-GoogleVoiceRecognition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8681D1422DF58051B5C2515D3EF66502 /* Build configuration list for PBXNativeTarget "Pods-GoogleVoiceRecognition" */;
+			buildConfigurationList = 7699B5BC5350DC8071B36D1F27AEC7D9 /* Build configuration list for PBXNativeTarget "Pods-GoogleVoiceRecognition" */;
 			buildPhases = (
-				78CCF3F6413E03468A8F1F9E59176E5B /* Sources */,
-				30A1918E24D844A226EF7ED699406817 /* Frameworks */,
-				E2C0D93CE0815443DFAEAF6EB9B82A04 /* Headers */,
+				6C0F3F261C6B1DCE9AFAE709DA46364A /* Sources */,
+				0F9B380E68D0DA57A207CA51C8422625 /* Frameworks */,
+				77DA28B043F158444A526721B60EC658 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C4EB0F57471D9ED6CEFAD10B63C0036E /* PBXTargetDependency */,
+				8C5A465FB33446AABA241D70008ED85C /* PBXTargetDependency */,
+				45EBA04EFE65C4F942DACA7628F20096 /* PBXTargetDependency */,
 			);
 			name = "Pods-GoogleVoiceRecognition";
 			productName = "Pods-GoogleVoiceRecognition";
-			productReference = C8D159BC7E0F12BBC7961E686A274459 /* Pods_GoogleVoiceRecognition.framework */;
+			productReference = 08002684198531FE9D825806267635A8 /* Pods_GoogleVoiceRecognition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C33F55B3CDC5E910B47D80D27A068731 /* SwiftHTTP */ = {
+		B14B9DDDE73F4BEB3C118C11B9639D17 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3E8308FCC0CAFF2B71D1D82B62A9E /* Build configuration list for PBXNativeTarget "SwiftHTTP" */;
+			buildConfigurationList = 0E9CFE6B8281DAE57ACDD4885059BAE4 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				C7296F9A56443F9BA1329923EE9F13DC /* Sources */,
-				2FCE22B5D927F3D167EDBA9ACD8F49F9 /* Frameworks */,
-				8CC84B35267ACE1BE0F4D84D37801DF3 /* Headers */,
+				BF6AF7ACCBE95BE24C763AE25A6C9A8E /* Sources */,
+				D2254A17EB340CFBB7C01ED38220AEFC /* Frameworks */,
+				F95DCBDD2D61B238DFEDB9A1664DF11C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = A8A64EBFCD357693C95A533036C4F65C /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E40FE00311484CD7E9D9CABE79BCDDAC /* SwiftHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F101DBE43C2CA2833BD0C163C1C208 /* Build configuration list for PBXNativeTarget "SwiftHTTP" */;
+			buildPhases = (
+				5C697C8C065F8379D8BCBA5CACDD01F9 /* Sources */,
+				FAF0BA6D0EDA5935B14CBD26847566A6 /* Frameworks */,
+				30186334A46455BF9F9B59E58A294CF7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -229,7 +307,7 @@
 			);
 			name = SwiftHTTP;
 			productName = SwiftHTTP;
-			productReference = 8D7215963135CE3DBEFABA2BCF3BEEE9 /* SwiftHTTP.framework */;
+			productReference = B0B9FF6BDD0DED2B19BA6ABB588D7056 /* SwiftHTTP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -249,78 +327,66 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 94498FC6AA05ABCA93AB43E8905C7A2E /* Products */;
+			productRefGroup = 02380C6AF3C174CBFA5966C2AB28A6A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FEC8B8EA7500AB0539EE8E7C66FA710 /* Pods-GoogleVoiceRecognition */,
-				C33F55B3CDC5E910B47D80D27A068731 /* SwiftHTTP */,
+				1AC0B490399D78BE750D4043A51795D5 /* Pods-GoogleVoiceRecognition */,
+				E40FE00311484CD7E9D9CABE79BCDDAC /* SwiftHTTP */,
+				B14B9DDDE73F4BEB3C118C11B9639D17 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		78CCF3F6413E03468A8F1F9E59176E5B /* Sources */ = {
+		5C697C8C065F8379D8BCBA5CACDD01F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC1E5E48BA596B7C59A2FE220BD07FB /* Pods-GoogleVoiceRecognition-dummy.m in Sources */,
+				1491A370204670DED23E987FC85B4A55 /* HTTPSecurity.swift in Sources */,
+				44544E0DD51E1E379E7617D48A60A58E /* Operation.swift in Sources */,
+				5DDE5E6A2B550200908C22FEE8D0F815 /* Request.swift in Sources */,
+				CFCDC390D0B4D6D3DCB202155EFDADD0 /* StatusCode.swift in Sources */,
+				40F88ECB1112664FED3086ABF2701367 /* SwiftHTTP-dummy.m in Sources */,
+				C78E5C8B2C893986F0A4C2AEAB3C3C3C /* Upload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7296F9A56443F9BA1329923EE9F13DC /* Sources */ = {
+		6C0F3F261C6B1DCE9AFAE709DA46364A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A362E8F684CD17CB5822395475A821 /* HTTPSecurity.swift in Sources */,
-				CFDC78B18614C043A49892944AE0E767 /* Operation.swift in Sources */,
-				17BED08A9B284E7C0D7DC427D7A95D21 /* Request.swift in Sources */,
-				214F9F04E3D8C5D442BA7638A92DB9EF /* StatusCode.swift in Sources */,
-				DFFB7370D7DC9D3FE8A24BA210C9487D /* SwiftHTTP-dummy.m in Sources */,
-				A8158DB0A7203C86EA47631AF37370FC /* Upload.swift in Sources */,
+				B91C7903742A1864F64A31B51C7B8893 /* Pods-GoogleVoiceRecognition-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF6AF7ACCBE95BE24C763AE25A6C9A8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E105250D11A1D2495AC23549C4A1E6AB /* SwiftyJSON-dummy.m in Sources */,
+				7AC888F6BD055A2DF24D954403AE7306 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C4EB0F57471D9ED6CEFAD10B63C0036E /* PBXTargetDependency */ = {
+		45EBA04EFE65C4F942DACA7628F20096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B14B9DDDE73F4BEB3C118C11B9639D17 /* SwiftyJSON */;
+			targetProxy = 8E11AD3ED4DCB28A58142862BD896169 /* PBXContainerItemProxy */;
+		};
+		8C5A465FB33446AABA241D70008ED85C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftHTTP;
-			target = C33F55B3CDC5E910B47D80D27A068731 /* SwiftHTTP */;
-			targetProxy = D30B590E82FA4E18EF364AEDD8795ADA /* PBXContainerItemProxy */;
+			target = E40FE00311484CD7E9D9CABE79BCDDAC /* SwiftHTTP */;
+			targetProxy = A75BF46D7FBCFD96C4B3CAB483806CF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06065CCDCF00F843E779D14487725DE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12546D81949D5FA45B692FDA9F813D73 /* SwiftHTTP.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHTTP/SwiftHTTP-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHTTP/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/SwiftHTTP/SwiftHTTP.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftHTTP;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		10B2EE21B5D67EE2C819831CCC43832B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -360,37 +426,6 @@
 			};
 			name = Debug;
 		};
-		4B4E5854D066BC65589F2ADE23470844 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B6B5266E48D9525F8634D45C527798 /* Pods-GoogleVoiceRecognition.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-GoogleVoiceRecognition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-GoogleVoiceRecognition/Pods-GoogleVoiceRecognition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_GoogleVoiceRecognition;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7C07D96CC7C445E83983A6C6420BC692 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,9 +460,9 @@
 			};
 			name = Release;
 		};
-		AD08C55C66D543B5FC3457AAEBD1C65A /* Debug */ = {
+		9BDF729FCBB6ED46B46149078E8F8877 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12546D81949D5FA45B692FDA9F813D73 /* SwiftHTTP.xcconfig */;
+			baseConfigurationReference = 1520CBC32960C43C28C11BAAF9856F25 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -437,14 +472,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHTTP/SwiftHTTP-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHTTP/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/SwiftHTTP/SwiftHTTP.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftHTTP;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -453,7 +488,7 @@
 			};
 			name = Debug;
 		};
-		E1C908C5184F6B1012332250B5D4448D /* Debug */ = {
+		9F7A77610EC8C871716565F906695DEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E0066207D4A54B407F6B49A0FF07633 /* Pods-GoogleVoiceRecognition.debug.xcconfig */;
 			buildSettings = {
@@ -484,9 +519,133 @@
 			};
 			name = Debug;
 		};
+		A07A0F9DFDD952843AA1DB7FA47D70E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7B6B5266E48D9525F8634D45C527798 /* Pods-GoogleVoiceRecognition.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-GoogleVoiceRecognition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoogleVoiceRecognition/Pods-GoogleVoiceRecognition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GoogleVoiceRecognition;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC2077679E46E5BAEC0A9D23E288F7B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081882E2E288EC3886D6911A7DF76A22 /* SwiftHTTP.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHTTP/SwiftHTTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHTTP/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/SwiftHTTP/SwiftHTTP.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftHTTP;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0CA5F373C45FA8FE271CCFF1256AAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 081882E2E288EC3886D6911A7DF76A22 /* SwiftHTTP.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHTTP/SwiftHTTP-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHTTP/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/SwiftHTTP/SwiftHTTP.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftHTTP;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D254C0BE50B86542F5F6FFD093F4BA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1520CBC32960C43C28C11BAAF9856F25 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E9CFE6B8281DAE57ACDD4885059BAE4 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDF729FCBB6ED46B46149078E8F8877 /* Debug */,
+				D254C0BE50B86542F5F6FFD093F4BA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -496,20 +655,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8681D1422DF58051B5C2515D3EF66502 /* Build configuration list for PBXNativeTarget "Pods-GoogleVoiceRecognition" */ = {
+		59F101DBE43C2CA2833BD0C163C1C208 /* Build configuration list for PBXNativeTarget "SwiftHTTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1C908C5184F6B1012332250B5D4448D /* Debug */,
-				4B4E5854D066BC65589F2ADE23470844 /* Release */,
+				B0CA5F373C45FA8FE271CCFF1256AAD2 /* Debug */,
+				AC2077679E46E5BAEC0A9D23E288F7B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3E8308FCC0CAFF2B71D1D82B62A9E /* Build configuration list for PBXNativeTarget "SwiftHTTP" */ = {
+		7699B5BC5350DC8071B36D1F27AEC7D9 /* Build configuration list for PBXNativeTarget "Pods-GoogleVoiceRecognition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD08C55C66D543B5FC3457AAEBD1C65A /* Debug */,
-				06065CCDCF00F843E779D14487725DE2 /* Release */,
+				9F7A77610EC8C871716565F906695DEB /* Debug */,
+				A07A0F9DFDD952843AA1DB7FA47D70E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
