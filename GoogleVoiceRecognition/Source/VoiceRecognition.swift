@@ -49,7 +49,7 @@ class VoiceRecognition {
         })
         .then({ data in
             return Promise { resolve, reject in
-                let url = "https://www.google.com/speech-api/v2/recognize?output=json&lang=\(lang.rawValue)&key=\(VoiceApiKeys[Int(arc4random_uniform(UInt32(VoiceApiKeys.count)))])&app=Singularity"
+                let url = "https://www.google.com/speech-api/v2/recognize?output=json&lang=\(lang.rawValue)&key=\(VoiceApiKeys[Int(arc4random_uniform(UInt32(VoiceApiKeys.count)))])"
                 
                 Alamofire.upload(.POST, url, headers: ["Content-Type": "audio/x-flac; rate=\(sampleRate);"], data: data)
                 .responseString { response in
