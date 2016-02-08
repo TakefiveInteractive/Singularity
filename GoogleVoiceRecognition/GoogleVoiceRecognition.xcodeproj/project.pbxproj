@@ -11,6 +11,7 @@
 		8F0F3C641C5D523E00747FE4 /* GoogleVoiceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3C631C5D523E00747FE4 /* GoogleVoiceRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3C6B1C5D523E00747FE4 /* GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C601C5D523E00747FE4 /* GoogleVoiceRecognition.framework */; };
 		8F0F3C701C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */; };
+		8F186BF61C62B4EC00BFAE72 /* moha.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F186BF51C62B4EC00BFAE72 /* moha.wav */; };
 		8F5E5B691C601F8D00EEA851 /* good-morning.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F5E5B681C601F8D00EEA851 /* good-morning.wav */; };
 		8F8DCD9E1C5EE398002A79A6 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */; };
 		8F8DCDBF1C5F1B19002A79A6 /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8DCDBB1C5F1AC8002A79A6 /* libFLAC.a */; };
@@ -39,6 +40,7 @@
 		8F0F3C6A1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleVoiceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVoiceRecognitionTests.swift; sourceTree = "<group>"; };
 		8F0F3C711C5D523E00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F186BF51C62B4EC00BFAE72 /* moha.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = moha.wav; sourceTree = "<group>"; };
 		8F5E5B681C601F8D00EEA851 /* good-morning.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "good-morning.wav"; sourceTree = "<group>"; };
 		8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VoiceRecognition.swift; path = Source/VoiceRecognition.swift; sourceTree = "<group>"; };
 		8F8DCDB51C5F1420002A79A6 /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC.a; path = ../flac/build/Debug/libFLAC.a; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		8F0F3C561C5D523E00747FE4 = {
 			isa = PBXGroup;
 			children = (
+				8F186BF51C62B4EC00BFAE72 /* moha.wav */,
 				8F5E5B681C601F8D00EEA851 /* good-morning.wav */,
 				8F8DCDD41C5F3C65002A79A6 /* test-speech-meizi.wav */,
 				8F8DCD9C1C5EE35C002A79A6 /* Source */,
@@ -247,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F186BF61C62B4EC00BFAE72 /* moha.wav in Resources */,
 				8F5E5B691C601F8D00EEA851 /* good-morning.wav in Resources */,
 				8F8DCDD51C5F3C65002A79A6 /* test-speech-meizi.wav in Resources */,
 			);

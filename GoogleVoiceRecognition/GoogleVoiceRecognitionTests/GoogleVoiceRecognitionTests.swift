@@ -56,4 +56,10 @@ class GoogleVoiceRecognitionTests: XCTestCase {
         }
     }
     
+    func testVoiceRecognitionMoha() {
+        helperTestWithFile("moha", lang: .Mandarin) { hh in
+            XCTAssert(hh.containsString("总想着搞个大新闻"))
+        }
+    }
+    
 }
