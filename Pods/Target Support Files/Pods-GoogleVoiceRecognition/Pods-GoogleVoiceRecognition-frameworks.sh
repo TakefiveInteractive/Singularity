@@ -87,11 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-GoogleVoiceRecognition/Alamofire.framework"
   install_framework "Pods-GoogleVoiceRecognition/OMGHTTPURLRQ.framework"
   install_framework "Pods-GoogleVoiceRecognition/PromiseKit.framework"
+  install_framework "Pods-GoogleVoiceRecognition/SnapKit.framework"
   install_framework "Pods-GoogleVoiceRecognition/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-GoogleVoiceRecognition/Alamofire.framework"
   install_framework "Pods-GoogleVoiceRecognition/OMGHTTPURLRQ.framework"
   install_framework "Pods-GoogleVoiceRecognition/PromiseKit.framework"
+  install_framework "Pods-GoogleVoiceRecognition/SnapKit.framework"
   install_framework "Pods-GoogleVoiceRecognition/SwiftyJSON.framework"
 fi

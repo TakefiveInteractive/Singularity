@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		885EB24E1C699E120025DA28 /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 885EB24D1C699E120025DA28 /* particleTexture.png */; };
+		885EB2541C699E690025DA28 /* VisualizerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 885EB2531C699E690025DA28 /* VisualizerView.mm */; };
+		885EB2561C699F000025DA28 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB2551C699F000025DA28 /* AVFoundation.framework */; };
+		885EB2581C699F070025DA28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB2571C699F070025DA28 /* QuartzCore.framework */; };
+		885EB25A1C699F1E0025DA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB2591C699F1E0025DA28 /* Foundation.framework */; };
+		885EB25C1C699F250025DA28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB25B1C699F250025DA28 /* CoreGraphics.framework */; };
 		88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C31C5D4FF20037578B /* AppDelegate.swift */; };
-		88BBC3C61C5D4FF20037578B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C51C5D4FF20037578B /* ViewController.swift */; };
+		88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C51C5D4FF20037578B /* MainViewController.swift */; };
 		88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C71C5D4FF20037578B /* Assets.xcassets */; };
 		88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C91C5D4FF20037578B /* Main.storyboard */; };
 		88BBC3D61C5D4FF20037578B /* Singularity_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */; };
@@ -50,9 +56,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		885EB24D1C699E120025DA28 /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
+		885EB24F1C699E5B0025DA28 /* Singularity-Desktop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Singularity-Desktop-Bridging-Header.h"; sourceTree = "<group>"; };
+		885EB2521C699E690025DA28 /* VisualizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisualizerView.h; sourceTree = "<group>"; };
+		885EB2531C699E690025DA28 /* VisualizerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VisualizerView.mm; sourceTree = "<group>"; };
+		885EB2551C699F000025DA28 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		885EB2571C699F070025DA28 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		885EB2591C699F1E0025DA28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		885EB25B1C699F250025DA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singularity-Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3C31C5D4FF20037578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88BBC3C51C5D4FF20037578B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88BBC3C51C5D4FF20037578B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		88BBC3C71C5D4FF20037578B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88BBC3CA1C5D4FF20037578B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88BBC3CC1C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885EB25C1C699F250025DA28 /* CoreGraphics.framework in Frameworks */,
+				885EB25A1C699F1E0025DA28 /* Foundation.framework in Frameworks */,
+				885EB2581C699F070025DA28 /* QuartzCore.framework in Frameworks */,
+				885EB2561C699F000025DA28 /* AVFoundation.framework in Frameworks */,
 				8F2724B11C5DBDE400787B02 /* Pitcher.framework in Frameworks */,
 				8F2724B71C5DBE7600787B02 /* Beethoven.framework in Frameworks */,
 			);
@@ -98,6 +116,10 @@
 		88BBC3B71C5D4FF20037578B = {
 			isa = PBXGroup;
 			children = (
+				885EB25B1C699F250025DA28 /* CoreGraphics.framework */,
+				885EB2591C699F1E0025DA28 /* Foundation.framework */,
+				885EB2571C699F070025DA28 /* QuartzCore.framework */,
+				885EB2551C699F000025DA28 /* AVFoundation.framework */,
 				8F2724AD1C5DBD9600787B02 /* Beethoven.framework */,
 				8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */,
 				88E956441C5D7845007D0296 /* Beethoven.framework */,
@@ -123,10 +145,14 @@
 			isa = PBXGroup;
 			children = (
 				88BBC3C31C5D4FF20037578B /* AppDelegate.swift */,
-				88BBC3C51C5D4FF20037578B /* ViewController.swift */,
+				88BBC3C51C5D4FF20037578B /* MainViewController.swift */,
 				88BBC3C71C5D4FF20037578B /* Assets.xcassets */,
 				88BBC3C91C5D4FF20037578B /* Main.storyboard */,
 				88BBC3CC1C5D4FF20037578B /* Info.plist */,
+				885EB24D1C699E120025DA28 /* particleTexture.png */,
+				885EB2521C699E690025DA28 /* VisualizerView.h */,
+				885EB2531C699E690025DA28 /* VisualizerView.mm */,
+				885EB24F1C699E5B0025DA28 /* Singularity-Desktop-Bridging-Header.h */,
 			);
 			path = "Singularity-Desktop";
 			sourceTree = "<group>";
@@ -254,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885EB24E1C699E120025DA28 /* particleTexture.png in Resources */,
 				88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */,
 				88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */,
 			);
@@ -280,7 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BBC3C61C5D4FF20037578B /* ViewController.swift in Sources */,
+				88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */,
+				885EB2541C699E690025DA28 /* VisualizerView.mm in Sources */,
 				88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,11 +440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Singularity-Desktop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-Desktop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Singularity-Desktop/Singularity-Desktop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,11 +455,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Singularity-Desktop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tk5.Singularity-Desktop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Singularity-Desktop/Singularity-Desktop-Bridging-Header.h";
 			};
 			name = Release;
 		};

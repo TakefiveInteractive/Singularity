@@ -7,7 +7,8 @@ xcodeproj 'Singularity-Desktop/Singularity-Desktop.xcodeproj'
 
 target :GoogleVoiceRecognition do
     xcodeproj 'GoogleVoiceRecognition/GoogleVoiceRecognition.xcodeproj'
-    pod 'Alamofire', '~> 3.0'
+    pod 'Alamofire'
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-    pod "PromiseKit", "~> 3.0"
+    pod "PromiseKit"
+    pod 'SnapKit'
 end

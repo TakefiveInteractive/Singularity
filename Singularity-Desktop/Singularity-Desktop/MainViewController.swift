@@ -9,7 +9,7 @@
 import Cocoa
 import Beethoven
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
     
     lazy var pitchEngine: PitchEngine = { [unowned self] in
         let pitchEngine = PitchEngine(config: Config(bufferSize: 10000, estimationStrategy: .QuinnsSecond), delegate: self)
@@ -20,7 +20,18 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        pitchEngine.start()
+//        pitchEngine.start()
+
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        let imageView = NSImageView(frame: self.view.bounds)
+        imageView.image = NSImage(named: "particleTexture")
+        let effectView = VisualizerView(frame: self.view.bounds)
+        effectView.layer?.backgroundColor = NSColor.blackColor().CGColor
+//        effectView.update(0.5)
+        self.view.addSubview(imageView)
     }
 
     override var representedObject: AnyObject? {
@@ -35,7 +46,7 @@ class ViewController: NSViewController {
 
 // MARK: - PitchEngineDelegate
 
-extension ViewController: PitchEngineDelegate {
+extension MainViewController: PitchEngineDelegate {
     
     func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch) {
         print(pitch.frequency)
