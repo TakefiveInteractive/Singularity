@@ -23,9 +23,9 @@
       location = "container:Singularity-Desktop/Singularity-Desktop.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Beethoven/Beethoven.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:Singularity-Desktop/Singularity-Desktop.xcodeproj">
    </FileRef>
 </Workspace>

@@ -4,6 +4,7 @@ platform :osx, '10.11'
 use_frameworks!
 
 xcodeproj 'Singularity-Desktop/Singularity-Desktop.xcodeproj'
+pod 'EZAudio'
 
 target :GoogleVoiceRecognition do
     xcodeproj 'GoogleVoiceRecognition/GoogleVoiceRecognition.xcodeproj'
@@ -12,3 +13,5 @@ target :GoogleVoiceRecognition do
     pod "PromiseKit"
     pod 'SnapKit'
 end
+
+
