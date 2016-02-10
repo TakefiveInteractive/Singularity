@@ -668,6 +668,7 @@
         <!--Tab View Controller-->
         <scene sceneID="o79-Y8-ozU">
             <objects>
+                <customObject id="aDY-s1-jRw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <tabViewController selectedTabViewItemIndex="0" id="7qV-Vl-ZWM" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" id="B0u-Wk-zvf"/>
@@ -684,7 +685,6 @@
                         <segue destination="zrH-ot-b6G" kind="relationship" relationship="tabItems" id="qEd-uT-RxR"/>
                     </connections>
                 </tabViewController>
-                <customObject id="aDY-s1-jRw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="738"/>
         </scene>
@@ -693,26 +693,26 @@
             <objects>
                 <viewController title="Main" id="bU3-d1-655" customClass="MainViewController" customModule="Singularity_Desktop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="d7L-Mu-u3S">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
                 <customObject id="Mlx-b6-EVg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="546"/>
+            <point key="canvasLocation" x="75" y="1324"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ils-1p-kyC">
             <objects>
+                <customObject id="z0p-eB-ib3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController id="zrH-ot-b6G" sceneMemberID="viewController">
                     <view key="view" id="Inn-Md-WwA">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="z0p-eB-ib3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="967"/>
+            <point key="canvasLocation" x="788" y="738"/>
         </scene>
     </scenes>
 </document>

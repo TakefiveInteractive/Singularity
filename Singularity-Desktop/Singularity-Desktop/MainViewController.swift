@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SnapKit
 
 class MainViewController: NSViewController {
     
@@ -14,19 +15,23 @@ class MainViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.snp_makeConstraints {
+            $0.width.equalTo(1024)
+            $0.height.equalTo(576)
+        }
+        preferredContentSize = view.fittingSize
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
+        self.view.window?.styleMask = NSClosableWindowMask | NSTitledWindowMask | NSMiniaturizableWindowMask
         effectView = VisualizerView(frame: self.view.bounds)
         effectView.layer?.backgroundColor = NSColor.blackColor().CGColor
-//        effectView.update(0.5)
         self.view.addSubview(effectView)
-        NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "update", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateVisualizationView", userInfo: nil, repeats: true)
     }
 
-    func update() {
+    func updateVisualizationView() {
         effectView.update(Double(Double(rand() % 100) / 30.0))
     }
 
