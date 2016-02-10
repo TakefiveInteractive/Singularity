@@ -113,6 +113,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		888F61751C6ADAE5001CD64B /* VisualizeView */ = {
+			isa = PBXGroup;
+			children = (
+				885EB24D1C699E120025DA28 /* particleTexture.png */,
+				885EB2521C699E690025DA28 /* VisualizerView.h */,
+				885EB2531C699E690025DA28 /* VisualizerView.mm */,
+			);
+			name = VisualizeView;
+			sourceTree = "<group>";
+		};
 		88BBC3B71C5D4FF20037578B = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +159,7 @@
 				88BBC3C71C5D4FF20037578B /* Assets.xcassets */,
 				88BBC3C91C5D4FF20037578B /* Main.storyboard */,
 				88BBC3CC1C5D4FF20037578B /* Info.plist */,
-				885EB24D1C699E120025DA28 /* particleTexture.png */,
-				885EB2521C699E690025DA28 /* VisualizerView.h */,
-				885EB2531C699E690025DA28 /* VisualizerView.mm */,
+				888F61751C6ADAE5001CD64B /* VisualizeView */,
 				885EB24F1C699E5B0025DA28 /* Singularity-Desktop-Bridging-Header.h */,
 			);
 			path = "Singularity-Desktop";

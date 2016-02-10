@@ -12,26 +12,31 @@ import Beethoven
 class MainViewController: NSViewController {
     
     lazy var pitchEngine: PitchEngine = { [unowned self] in
-        let pitchEngine = PitchEngine(config: Config(bufferSize: 10000, estimationStrategy: .QuinnsSecond), delegate: self)
+        let pitchEngine = PitchEngine(config: Config(bufferSize: 16000, estimationStrategy: .QuinnsSecond), delegate: self)
             return pitchEngine
         }()
+    
+    var effectView: VisualizerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        pitchEngine.start()
+        pitchEngine.start()
 
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        let imageView = NSImageView(frame: self.view.bounds)
-        imageView.image = NSImage(named: "particleTexture")
-        let effectView = VisualizerView(frame: self.view.bounds)
+        effectView = VisualizerView(frame: self.view.bounds)
         effectView.layer?.backgroundColor = NSColor.blackColor().CGColor
 //        effectView.update(0.5)
-        self.view.addSubview(imageView)
+        self.view.addSubview(effectView)
+        NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "update", userInfo: nil, repeats: true)
+    }
+
+    func update() {
+        effectView.update(Double(Double(rand() % 100) / 30.0))
     }
 
     override var representedObject: AnyObject? {
