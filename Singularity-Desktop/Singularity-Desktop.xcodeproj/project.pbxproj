@@ -63,9 +63,6 @@
 		88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singularity-DesktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopUITests.swift; sourceTree = "<group>"; };
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88E956401C5D7820007D0296 /* Pitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Pitcher.framework; path = "../../../../../../../../../wangyu/Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Pitcher.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E956441C5D7845007D0296 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../../../../../../../../Library/Developer/Xcode/DerivedData/Singularity-fpybxdbeiylbschfhkoxvtfmthfp/Build/Products/Debug/Beethoven.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F2724AD1C5DBD9600787B02 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D489DDCDB8FA3A1EF060A65B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,10 +124,7 @@
 				885EB2591C699F1E0025DA28 /* Foundation.framework */,
 				885EB2571C699F070025DA28 /* QuartzCore.framework */,
 				885EB2551C699F000025DA28 /* AVFoundation.framework */,
-				8F2724AD1C5DBD9600787B02 /* Beethoven.framework */,
 				8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */,
-				88E956441C5D7845007D0296 /* Beethoven.framework */,
-				88E956401C5D7820007D0296 /* Pitcher.framework */,
 				88BBC3C21C5D4FF20037578B /* Singularity-Desktop */,
 				88BBC3D41C5D4FF20037578B /* Singularity-DesktopTests */,
 				88BBC3DF1C5D4FF20037578B /* Singularity-DesktopUITests */,
