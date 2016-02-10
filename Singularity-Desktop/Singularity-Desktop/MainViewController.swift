@@ -7,22 +7,13 @@
 //
 
 import Cocoa
-import Beethoven
 
 class MainViewController: NSViewController {
-    
-    lazy var pitchEngine: PitchEngine = { [unowned self] in
-        let pitchEngine = PitchEngine(config: Config(bufferSize: 16000, estimationStrategy: .QuinnsSecond), delegate: self)
-            return pitchEngine
-        }()
     
     var effectView: VisualizerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        pitchEngine.start()
 
     }
     
@@ -48,16 +39,3 @@ class MainViewController: NSViewController {
 
 }
 
-
-// MARK: - PitchEngineDelegate
-
-extension MainViewController: PitchEngineDelegate {
-    
-    func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch) {
-        print(pitch.frequency)
-    }
-    
-    func pitchEngineDidRecieveError(pitchEngine: PitchEngine, error: ErrorType) {
-        print(error)
-    }
-}

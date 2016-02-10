@@ -85,9 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/EZAudio.framework"
+  install_framework "Pods/OMGHTTPURLRQ.framework"
+  install_framework "Pods/PromiseKit.framework"
+  install_framework "Pods/SnapKit.framework"
   install_framework "Pods/TPCircularBuffer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/EZAudio.framework"
+  install_framework "Pods/OMGHTTPURLRQ.framework"
+  install_framework "Pods/PromiseKit.framework"
+  install_framework "Pods/SnapKit.framework"
   install_framework "Pods/TPCircularBuffer.framework"
 fi

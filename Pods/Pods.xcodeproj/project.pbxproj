@@ -7,153 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0184D55784057BF940BA468EBD232944 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A548B15AC96051FF0AA535858AAFDBC0 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02283F4D4156D7AC847FFFC2D7B92B7C /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE83BA5C0068BE3EF3200DA725D80770 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		091EDE9D284F0ED1EAF91778DD1DC727 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243B0AA8879EC6C6EA72753EBA4E9FE /* ConstraintAttributes.swift */; };
 		093C0837651AECC4118C90ECE09F7D56 /* TPCircularBuffer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BBCAA9D6365F7129224DA6E8099F15 /* TPCircularBuffer-dummy.m */; };
 		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB8EF1A97F47CD983DBEE35E604BC8 /* Error.swift */; };
-		0969A97F52D63FA68DF937C747B653BC /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 770EF4D6C4DAAB86F8FD25808AB6F8C3 /* CALayer+AnyPromise.m */; };
 		0A79F03B4C23C513E2DE389BD8805EC1 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0DA1ABB8867549CBB83B66154D21DA /* AudioUnit.framework */; };
 		0B34EB4425C08BB021C2D09F75C9C146 /* OMGHTTPURLRQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ED032CC55426E2F54B1C32A93F84696 /* OMGHTTPURLRQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C6D75A82169E79199B72FE5902D4430 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134B0E39D49C82143FACFEC2533D1F6 /* NSNotificationCenter+Promise.swift */; };
+		0E436BF573BC27730FB891CA88AB8109 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A8B3CF08314CB003E95C3F23F1F802 /* OMGHTTPURLRQ.framework */; };
+		10181454E2783B3282E8CC13C5E5681F /* dispatch_promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C44308624493185A3134292DE46EA /* dispatch_promise.swift */; };
+		14B9805B60F812965A2CAEADE4C642D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
+		156C821286C587FED8BBB27E88D710A7 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498ABD38994398B420C93AE46C1B2F7 /* NSObject+Promise.swift */; };
 		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847700AC354A28C8DBFFC0EC813F0BDB /* Timeline.swift */; };
-		180AADECF1AD7AE936F759FD89FC2DF4 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CCFC89CC8E53A11FDC927F564DC96F /* hang.m */; };
-		1D7FE9C9858B5DDEBA4DB27A63A8291E /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF122B46CB3BB6DE6D3B32AC0C05E9E1 /* ViewController+SnapKit.swift */; };
 		1E8653667310B0E6B75E603642CE5989 /* EZAudioFFT.h in Headers */ = {isa = PBXBuildFile; fileRef = B3490AD82DAE3BBFE977D4F3FAC873D9 /* EZAudioFFT.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2060B95F89F5A43B4A9EAE026A845D1E /* dispatch_promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08C44308624493185A3134292DE46EA /* dispatch_promise.swift */; };
-		20E4920FA4F4B7FF442F36839552C010 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3E3E6B6D9429DF6B121652A5F5D3F0 /* View+SnapKit.swift */; };
-		2516ED0C74B9B8DB264828D0CEA27F21 /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = F477A97AC8074DC965355E6FC4DEFF0D /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2546C4DA6330ADF2E76130B638CD4D54 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134B0E39D49C82143FACFEC2533D1F6 /* NSNotificationCenter+Promise.swift */; };
 		25B6496C54620D355D75890AD44E9677 /* EZRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6034FED244C524D8F0E971757C3AAC28 /* EZRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		263F02D9AE44BD157FC8E6C230995789 /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 770EF4D6C4DAAB86F8FD25808AB6F8C3 /* CALayer+AnyPromise.m */; };
 		26DDD51E8FDD49C2C654FE37761610E4 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EE237D0B17843431D12222129191FEF /* TPCircularBuffer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2869C3B69CCFA2FD6ED745C9E664838D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
+		27DDBCF7EABEDFA40BF251111A6FBCFC /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EC6484FBE29C28E76FD85936821127 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28C2BAFA9E564AE9534C62D8A4C7310B /* EZMicrophone.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1578F02D5A079CCDDAE9F98AE6D0F5 /* EZMicrophone.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A2D56B43552D4603489DE264DCAB606 /* Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 801463A06D5D5F097171D0C6A728D861 /* Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B878A4DC8D27160ACE370EBBB4AB544 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66FC55D4610EE2C9729A378E84CF290 /* Pods-dummy.m */; };
+		28D20FD24C33DA61BAFA1CF5FD94C292 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
 		2BFEDD0A3DBE952A111CC62FFC7E069A /* EZOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = EA046D1455EEC0E7CC7DEF368488C0F0 /* EZOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C721571E7141A007E27B46FCD83A1ED /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AA37D576E5948BA04B177DF377205D /* when.swift */; };
 		2C80D773054B560A1B9F30F5E4BD190A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
 		2CBD24FF4E6A31E3FD57960C417C597E /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 38432E2779C0A53BF85350FEBDBB21A9 /* TPCircularBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CFEAFE4160A9DC57B1C9B63FD4339EC /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3D3456565DBF0C11BC575EA696FD2F /* TPCircularBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D65ADD5AFBBE6E00CC3888931F7BD9 /* Validation.swift */; };
+		2EE32A7B29DE6ACF8A278E0620BF0D3B /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9D2D337EFC9FAC3B07EC36176B455F /* NSNotificationCenter+AnyPromise.m */; };
 		2EFC028582EA4C51F0A50BC352A6F7F3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
 		32AC1C7E387EA1C086941944A1E02D8D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94625AD79DD58CCC043C8F5F4223ED /* SwiftyJSON.swift */; };
+		3381C8F824F3F150674D5B551362AE2B /* NSURLConnection+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7FEF82F462780B4964E2B49D71257 /* NSURLConnection+Promise.swift */; };
 		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3348D4151BA4EA5A1D8517ABE18C724F /* NetworkReachabilityManager.swift */; };
 		3A8D316D4266A3309D0A98ED74F8A13A /* OMGUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A160B0069250FE1ACA82CB7A30FA60 /* OMGUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AAC718B6502A530CA4499CD8C857E08 /* EZAudioFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 283E012BD71C46449CD5A9627E40C0E1 /* EZAudioFloatConverter.m */; };
-		3C1A8C8DA3BE2589266A0407758A0265 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFF71313805E1079C1366BA62EBE0FB /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA37DB7DBE0E4C30160DF3D2DD2EC1 /* ResponseSerialization.swift */; };
 		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF2EA15BF499E8D0F1B47205C73B71E /* Manager.swift */; };
+		4141EF0C4339947029F4FF96DD6427A4 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B38C2C85AA3A88F5211C8DA39E49C /* State.swift */; };
+		41826C8898418EA552EA103028C015EE /* Umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 801463A06D5D5F097171D0C6A728D861 /* Umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		428AF3A284D837EC3E950573FA2634F7 /* EZAudioUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F1F0E097E1CC1F3E969CD7063FA9A9 /* EZAudioUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43E5B874FD51BF757CEE307330DC0F47 /* NSTask+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1EEE8462889868F79581D6EC095ED /* NSTask+Promise.swift */; };
+		441E50BB4A4FABBB239023AB097B70B7 /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C0CCA76215AC691E3516E93536B8 /* AnyPromise.swift */; };
 		448DE1D83568F9CB2C118FDC2A54787D /* EZAudioDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 9976734323104E35D02295EDC79E1D21 /* EZAudioDisplayLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47067F6830B68402139A47F5F2EC1767 /* CALayer+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EC6484FBE29C28E76FD85936821127 /* CALayer+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		484463232BFBC5FE5DE48631AA0A4202 /* EZAudioFloatData.m in Sources */ = {isa = PBXBuildFile; fileRef = 915A44C95FAA63F302578DAA004D386A /* EZAudioFloatData.m */; };
+		48494CEFF3530FEF12C7DD2DB4295907 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9627099ED7BFA1B8121A4261001AC5A /* Foundation.framework */; };
 		48CB8E7E16443CA771E4DCFB3E0709A2 /* OMGHTTPURLRQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 2675FE582AB3BE1A3F971B8C143FDC6B /* OMGHTTPURLRQ.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4B15FC2C287E5A5A8ADD84A97314ACC8 /* EZAudioPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = F7EC2A72C05AF538C59470C5E5EABFF4 /* EZAudioPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0DA407F6BE728A5A8D3B4375B1C9B1 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95E78C8A834112B3DA0B155CB929E /* after.swift */; };
+		4E3C8C2C1D38F3299E12ABF610336AD7 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F014C48AD6984A9301E4E98F9ADDDE63 /* PromiseKit-dummy.m */; };
 		5192A7466019F9B3D7F1E987124E96BC /* OMGHTTPURLRQ-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8804557CE515D81474B849690D0077 /* OMGHTTPURLRQ-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D51291F8BE2C8BB848317B4F05B378 /* EZAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AC41E5670D3E0BF8068A9A8A933B37 /* EZAudioPlayer.m */; };
-		5225667E3D0BA11B6411552587AF9BAD /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C0CCA76215AC691E3516E93536B8 /* AnyPromise.swift */; };
-		538B95EE2723AF95DFA506FA1E02A9C3 /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1F24D7CABA765D07E1A68CB873FF8 /* join.swift */; };
-		53F65E7A1BBF57DA3A98E305214CC4D8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BDC95C8A6C5E3E2BF546173895BA50 /* Error.swift */; };
+		521370BF00CBE17D5528E0AB4AB48A44 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70D3A0EF7AA9D136C30AD5AEFB2EAF /* race.swift */; };
 		5480169E42C456C49BE59E273D7E0115 /* OMGFormURLEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F271DB91AFB27FD425F57C29C8F9CDE /* OMGFormURLEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55A9AFFE4456E61A6EEA4901E369DF10 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48E8E4E026A11F10D7CE826442051 /* Debugging.swift */; };
-		563D03716BB0A3ACB0DEB5159F8D65D7 /* OMGHTTPURLRQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A8B3CF08314CB003E95C3F23F1F802 /* OMGHTTPURLRQ.framework */; };
-		575975A51B6DF2098D2B479E95C87367 /* NSError+Cancellation.h in Headers */ = {isa = PBXBuildFile; fileRef = B28BDD8FD52AD742C86CBEA7D9181131 /* NSError+Cancellation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C791081D4E3BC20269DA7479CC1F5E /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F3CB4BDAAAF89AE89512C4BC03C675 /* AnyPromise.m */; };
+		5795EF4FD1E4F8FD74B85A5DB8611DC6 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874CF65E1F1C5D9C41ECBB0FCD5C9B5 /* Constraint.swift */; };
 		5A89417D37C5B63688DDD6177B6F9AE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B62FC5B99CEBEEBDC8D35FA933C41D9 /* AudioToolbox.framework */; };
 		5B43017BCCD81D13D281E2A59F15A78F /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2121D5FA27B9E970B586EC30AB110849 /* EZMicrophone.m */; };
 		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BA3FE0D40EA754CC02DC96A0717181 /* Upload.swift */; };
 		5C2E8CEF35F7F8CB8EBEB3D52FAC0873 /* EZAudioiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 766AFD783DEFDFD0C1669D883E89D2B7 /* EZAudioiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEEDB23A8477D561927635A81F5A4FC /* Download.swift */; };
-		5CCE33FA2F692F58196F5BEC038177C9 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F014C48AD6984A9301E4E98F9ADDDE63 /* PromiseKit-dummy.m */; };
 		5FD3371C6CB36C4FCF004DD875B1D649 /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F2F2D2DAFD9070798DE7EE945E285 /* EZOutput.m */; };
+		60D707422BAE82491BF8F73F4E50B65A /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C1F24D7CABA765D07E1A68CB873FF8 /* join.swift */; };
 		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E006D8815A8F9ACB10E212A851661579 /* Response.swift */; };
-		646CE5868E950A7DCB4EE18BF17FAD4D /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8EBF173E84047630A11551D0CDB6DC /* dispatch_promise.m */; };
 		6C85B10F6D0CA901B15934A07C5ADCA7 /* TPCircularBuffer+AudioBufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = 22FABCC8BBCE8B5385DCBA9F7247F4F8 /* TPCircularBuffer+AudioBufferList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CB84A616D7B4D189A4E94BD37621575 /* OMGUserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D0C10CDE7CDFC7927ADDB59D7D6BCF /* OMGUserAgent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6DCCAFE3EA09387FDEEFDB74F410B754 /* EZAudioPlotGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 47A80233FF067835A55C150A937621EE /* EZAudioPlotGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F63943B0E954F701F32BC7A1F4C2FEC /* OMGFormURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 280327D3E066F315A9A382546DF5A200 /* OMGFormURLEncode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6F74FA9DAD440075770706A87930189C /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44357BCFAA80C0BC0A9C2B4AB2B2907F /* ConstraintMaker.swift */; };
-		6F95ADE044E29BB7C19CAF674D3E0DC2 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9D2D337EFC9FAC3B07EC36176B455F /* NSNotificationCenter+AnyPromise.m */; };
-		722F222B3962793C783A2007EF52EFF2 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0115232547B50BB31182FEBAD37F69C7 /* LayoutConstraint.swift */; };
+		767A059B9A1C62EE3B8727DA6A89E8CA /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6021D516AD9FB51B3C26127F9A402 /* ConstraintRelation.swift */; };
 		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640A90BE86E5C803C2FAE219A1E11834 /* ServerTrustPolicy.swift */; };
+		7D3866D3B656F151081EF06140549203 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8EBF173E84047630A11551D0CDB6DC /* dispatch_promise.m */; };
 		7D518D417BD2BBB70EEB5B757DBC815F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
-		7D8B5F5F56609FB3E7FDB2C72F409CF0 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD620BFE18D81F05748886CC0D5E1C /* Promise.swift */; };
-		80280BB4065CA4DBF7A8B0C48FF49E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9627099ED7BFA1B8121A4261001AC5A /* Foundation.framework */; };
+		80222EF76480DE27D8F83DB761E0B46A /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FFF71313805E1079C1366BA62EBE0FB /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		813125A3EE7D348DFA2929BC86ABEB4B /* EZAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9505B61111C8197333C5E4DD2E2594FC /* EZAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81721575F097E6FFEBC926016EF8CFBC /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBACCC221CFF78814AC552BFE79F3B1D /* NSURLSession+Promise.swift */; };
-		8709F2ED2D431E0A503ECD242A2E2D42 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AA37D576E5948BA04B177DF377205D /* when.swift */; };
 		887B2110BAAE0AA115C9352C19FD2D2F /* Pods-GoogleVoiceRecognition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8BA93152446AE05D13ADA012CEDE5C7 /* Pods-GoogleVoiceRecognition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BF46AFA376F8D17AE0AD1D94EF942A9 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 8938993B660AD550EC58B583BD487589 /* after.m */; };
 		8D5CB989B031881E36EBA98B9694CF37 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 68615FF091BD51C021C8FBC9AFD15C58 /* TPCircularBuffer.c */; };
-		8D99B59603D665BF5F4BEE4993FED34E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
+		8E105526F741D9D3B796AA895B2EDED9 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBACCC221CFF78814AC552BFE79F3B1D /* NSURLSession+Promise.swift */; };
 		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9A4621D51F35BFEC6D141875FBDDE /* Alamofire.swift */; };
 		8FD09771EEBDCF4142DC45221E838101 /* Pods-GoogleVoiceRecognition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 212DC2F667E7CD62AE7FF9A6FC5B29E0 /* Pods-GoogleVoiceRecognition-dummy.m */; };
-		8FF5BB43C924171E972C2A2D108FAAB9 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00531E7768A97BC40B26007832123CF0 /* EdgeInsets.swift */; };
 		905B360EA0BBE74BD24F9FFA9AF12227 /* EZAudioOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 069B3811E9BBCF0C77B14B4935FACAD3 /* EZAudioOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91C01D0ADB9669855AD886FF4896F0E9 /* EZAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E44116575F0BE28A0B6453C86BA51EF /* EZAudioFile.m */; };
 		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CEB0221623F94A291C0DABAC574D9A8 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		963D81403784BAD736320F2E462DA5D9 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F02AFC1F780DF6545CFDA5F1FF11FAD /* join.m */; };
+		9673D8C70D01BA88ACF5CCB8C0AB8238 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44357BCFAA80C0BC0A9C2B4AB2B2907F /* ConstraintMaker.swift */; };
 		97515845DBD21B909070E8CB793016B2 /* EZAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 996268236954AECFE2B3618ED4642D5D /* EZAudio.m */; };
-		9AF10E6D1AF64FEED64CC22940993B66 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB70D3A0EF7AA9D136C30AD5AEFB2EAF /* race.swift */; };
-		9D17F83B2366370AEA07615140DF6F3E /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498ABD38994398B420C93AE46C1B2F7 /* NSObject+Promise.swift */; };
-		9EF4DF5ED5A515EF9263B5D36A347B58 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB453FB46DC32D7F78CDDE6D08CF5B /* afterlife.swift */; };
+		9F6816C7954D74B13B18438B96698B7F /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243B0AA8879EC6C6EA72753EBA4E9FE /* ConstraintAttributes.swift */; };
 		A37758D3390A600C7D3C35E022BE339B /* EZAudioFile.h in Headers */ = {isa = PBXBuildFile; fileRef = AB432709C11F0FD3CFD944CA616ACB26 /* EZAudioFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A56430D5D70A36E13EDD35D201CADE90 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0115232547B50BB31182FEBAD37F69C7 /* LayoutConstraint.swift */; };
 		A569A5B8DAD548BE7BBBA1EE545DDAAC /* EZAudioDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F62DAEE6ADEEA815AD92C79FD2AC996 /* EZAudioDisplayLink.m */; };
 		A6F9FEBF149F7EB7EB7BD7C1DE2DF01F /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 909A7987E1AEBE7FD6116A6053B20A5A /* TPCircularBuffer+AudioBufferList.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8E061112B9B40ADEB9479D50852FF7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90006A368C0B0A5F1BC945DB677C1E6D /* QuartzCore.framework */; };
 		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43A9FF8166EC80D3BB2D73B1266C42A /* Result.swift */; };
-		AD0C4B9041A00E5313A171D5F1487E91 /* NSTask+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1EEE8462889868F79581D6EC095ED /* NSTask+Promise.swift */; };
-		ADE9EA005E827BDA9EB417622D92C88F /* NSURLConnection+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7FEF82F462780B4964E2B49D71257 /* NSURLConnection+Promise.swift */; };
+		ACE0127F5A7049291BBB153A627CD2B5 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22240C67E4A3F7372320DDD8D3F89E8 /* ConstraintItem.swift */; };
 		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DE1E2E5D1593F314E48FFCFC7BB14 /* Alamofire-dummy.m */; };
 		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDF7992B740812C8684484DD3855AE9 /* Stream.swift */; };
+		AECD930E030C1B5839933B339E7A4CA4 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 8938993B660AD550EC58B583BD487589 /* after.m */; };
 		B0C49FCEF248B97A4703BED5DF78BEBD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B62FC5B99CEBEEBDC8D35FA933C41D9 /* AudioToolbox.framework */; };
-		B1321633C1157F52E4BFE66A6088873C /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D9466F71D8D02A088C24674B771824 /* SnapKit-dummy.m */; };
-		B2D9577D3D5037AB2801D81159D209B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90006A368C0B0A5F1BC945DB677C1E6D /* QuartzCore.framework */; };
-		B543F1E8E20F79C4073E6ACF2FD9DC97 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FF7BA998A071952AA66EB1DE3870FD /* SnapKit.swift */; };
+		B19F08F7F661AC4452FEAEE39B756A87 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC48E8E4E026A11F10D7CE826442051 /* Debugging.swift */; };
+		B59F160553B1BEAC21E76AE408CDCA2B /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD620BFE18D81F05748886CC0D5E1C /* Promise.swift */; };
 		B675DF0CADAE869993D90CC423C0D52E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90006A368C0B0A5F1BC945DB677C1E6D /* QuartzCore.framework */; };
+		B6E04AADD0324E08FA0BA1CCB0773F3B /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BDC95C8A6C5E3E2BF546173895BA50 /* Error.swift */; };
 		B73581EB44EEEFE962205A1339F778F3 /* EZAudioFloatData.h in Headers */ = {isa = PBXBuildFile; fileRef = 435244CB12481995BED615C74A34DD81 /* EZAudioFloatData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8AD4225A571186875F5BC45FBD9504F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
 		B9B8BCB03D9EE30A06901F6A19909357 /* EZAudio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52180A96101576767AC7037C494DCC3C /* EZAudio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA54D57D1907946BB50C083D07FC64B5 /* EZAudioPlotGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A693F5BC677210B4E470982AD57C533 /* EZAudioPlotGL.m */; };
 		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E8620F82FF9FEBD22D1361C7A90AF /* Notifications.swift */; };
-		BFF7E9014D0F5E3D38542342D92085E4 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9027C5526D03A0CD9379F2E5F78F98BF /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BED8EE2EB7229142AEEA6C7153EE7440 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00531E7768A97BC40B26007832123CF0 /* EdgeInsets.swift */; };
+		BEE1F281957308548526516AA6833840 /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 77216C16BFC78B3C3AB57BC87A46A1B6 /* when.m */; };
+		BF91EF96590ED8E279FFA6CB26D9EEE1 /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FEABB560D420D1BDB8FFA513DB733 /* URLDataPromise.swift */; };
 		C0ADBEE79F0BA0958E87FE4F93EBB3C7 /* EZAudioDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E641621B21A8B46266239192D661C9CC /* EZAudioDevice.m */; };
 		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0964C0C9BF0057C96FFEE1F14FCA31C7 /* ParameterEncoding.swift */; };
-		C249071AA82777A418CDCA29740429A9 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B38C2C85AA3A88F5211C8DA39E49C /* State.swift */; };
+		C12FFA0193B5236CD75575250B97431F /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D9466F71D8D02A088C24674B771824 /* SnapKit-dummy.m */; };
 		C309E446349A0F93FC42E6705A1D121E /* EZPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 394C4BC624CBB8B467019279D7AC064F /* EZPlot.m */; };
-		C4423EA928C0C45EA1E5D47165701A4C /* NSURLConnection+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 705B684E60527E56EECFF0CB17E1D132 /* NSURLConnection+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5DB967FCD77AA6AB04ACF76C7799322 /* NSError+Cancellation.h in Headers */ = {isa = PBXBuildFile; fileRef = B28BDD8FD52AD742C86CBEA7D9181131 /* NSError+Cancellation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C68F821CAA45F21EAC3D13AC7F1857E0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3A74C3861926E1A65B842BFBCDD046 /* GLKit.framework */; };
 		C6C572369BA4757C516B3DB1AD85BD54 /* TPCircularBuffer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C231534AD02BE272732117BA87CE223F /* TPCircularBuffer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C758B55BDA62C8966E3248B356A0F8BD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
 		C7700F73B498E73E7B6BCF9AFE990656 /* EZAudioUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0273F54030717EB24345DF7C6258F2 /* EZAudioUtilities.m */; };
 		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8651AE61FD3958D726BCB7791DA96CBE /* MultipartFormData.swift */; };
 		C8A9EF444BD4C8B1B53B0AAC0B1F68B7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CBC9D1098AECF255864D11883F8FA5 /* OpenGL.framework */; };
-		CA7D2EF209CC33FCF8C394207A19BBCC /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874CF65E1F1C5D9C41ECBB0FCD5C9B5 /* Constraint.swift */; };
+		CB2630C78421A31DE8FFCD2DF85EEDA0 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = F9CCFC89CC8E53A11FDC927F564DC96F /* hang.m */; };
+		CB569F41FDC693F8DC03302187EB0BBB /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE83BA5C0068BE3EF3200DA725D80770 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB6958FD4EFE1FCFB9A9216769C92D4A /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2855663D5FA6BD53C5EFB59BB2481EAC /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDEBC079AD7BD6856C6720BC91CCA408 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F66FC55D4610EE2C9729A378E84CF290 /* Pods-dummy.m */; };
 		CE6F7F506873365F0B60658F1D696507 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1329D149FCBF02B36332142C892D3C /* SwiftyJSON-dummy.m */; };
-		D2EDF5459A62C7424C79EE5247794F23 /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 473E3CDB77C02254D94973BDDCD5A3EE /* NSTask+AnyPromise.m */; };
+		D26ABB0762C8A7BCF13508EEA0CA551D /* NSURLConnection+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 0766CFD3AB90A35ACAAD2190B7B43582 /* NSURLConnection+AnyPromise.m */; };
 		D358A828E68E152D06FC8E35533BF00B /* OMGHTTPURLRQ-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC0F766E7D42049818A30DEDCB2D34A /* OMGHTTPURLRQ-dummy.m */; };
 		D63818FBE55FE91F0663521B3BD739AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
-		D9C20DB8686D154BD63A894A4D8AE084 /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 77216C16BFC78B3C3AB57BC87A46A1B6 /* when.m */; };
-		DA3DC44BC73AA590005EA625A1B9D11D /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F3CB4BDAAAF89AE89512C4BC03C675 /* AnyPromise.m */; };
+		D74CB74BF255D784D74BEE13ABDB61B3 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726E9E7A1651DB2E31EFC623229C3154 /* Promise+Properties.swift */; };
+		DAA54CE5C1228FCAE010CDD17D8CC492 /* NSURLConnection+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 705B684E60527E56EECFF0CB17E1D132 /* NSURLConnection+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB52B7DF65737DE44A6ECF0287BF74BC /* EZAudioPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = D6883E63DDEEF3D65A842E009E511142 /* EZAudioPlot.m */; };
 		DDF86420892CB041C2F75088FFEC04B3 /* EZAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 553F236BC41D9B8E81EE388A29223E32 /* EZAudio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE0C6EFEA2B8874FE0D5DD810EDB6125 /* EZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BF5C301790D7ECB138F3BCE6D95EC1 /* EZRecorder.m */; };
-		DFFA0D17B1AA422FCE6B3590F327B279 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE175698E72C0774E91848FE8F1F2ED /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E229411606F39D59F497F770AC9B890F /* EZAudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A634C22BAFD4EE0694EF7C8937A4C /* EZAudio-dummy.m */; };
-		E29D335ABA7CF733C454C762C1784962 /* URLDataPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FEABB560D420D1BDB8FFA513DB733 /* URLDataPromise.swift */; };
-		EAD538002F9B3FA170E123625418CC73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
-		EB9CE7721E526B22AE1594DBEDAFC589 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B723798976564A0EEA41DEB08EED5 /* ConstraintDescription.swift */; };
-		ED8754C1A0F30CCEB93245ACD6AC4013 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22240C67E4A3F7372320DDD8D3F89E8 /* ConstraintItem.swift */; };
+		E31F2C56CA0C8DD2CD4B788F802957CE /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EB453FB46DC32D7F78CDDE6D08CF5B /* afterlife.swift */; };
+		E37C23F4420FEC76631EF829B30D9767 /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 473E3CDB77C02254D94973BDDCD5A3EE /* NSTask+AnyPromise.m */; };
+		E5E09D874A57C7FB462F5BDA9722B618 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F02AFC1F780DF6545CFDA5F1FF11FAD /* join.m */; };
+		E6064FEC5BDF1323CF71D5267A8CA3C4 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B723798976564A0EEA41DEB08EED5 /* ConstraintDescription.swift */; };
+		E775CDFC51A993CC24C521BA95A677DA /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = F477A97AC8074DC965355E6FC4DEFF0D /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7DEB590965E10634DA16F7B58C0702C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9027C5526D03A0CD9379F2E5F78F98BF /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDC210F3986A8A2C75767E0EB53A0A9A /* EZAudioFFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC78AD482E983800689ED76E093E9A /* EZAudioFFT.m */; };
 		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A57233C2253BA0F023AE935A572FA6 /* Request.swift */; };
 		F0AA0E08FB4E7EAD313119B4713CDDE9 /* EZAudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CA0E0D3C48E50C909160C2F6A36AAC /* EZAudioDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1892B60E3C5930CF9D6EB073B2C6155 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3E3E6B6D9429DF6B121652A5F5D3F0 /* View+SnapKit.swift */; };
 		F20AD38B1F11529B78D6E8EF0DC7F942 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8A1D78E41842B3146F3E9880A73D54 /* CoreAudio.framework */; };
-		F2665C8D23106674326AEF719FA352D9 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D95E78C8A834112B3DA0B155CB929E /* after.swift */; };
 		F3F3FD9096F43B73CBB52EF0E1CCF73E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B440A7230CB18C445D677B7E8CCAB44 /* Cocoa.framework */; };
-		F5B6939B72249989AE7B62F1B0A109C1 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726E9E7A1651DB2E31EFC623229C3154 /* Promise+Properties.swift */; };
+		F51423D52EC0D17FB0F18BE818C2F135 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FF7BA998A071952AA66EB1DE3870FD /* SnapKit.swift */; };
 		F6434BD3416A804C7BF9B626D13FA0D2 /* EZAudioFloatConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 66FEEC7909E289826AAA7A075F4AC621 /* EZAudioFloatConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F67D902DB5D9B340463FE98078CCEED6 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A548B15AC96051FF0AA535858AAFDBC0 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F896E3DD1F8BE99D5E1103A3EF88DE02 /* TPCircularBuffer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B0BE7A427FE69EC96066F397772FC1 /* TPCircularBuffer.framework */; };
-		F925CA7F1D6EA38A9FB7A3DBB888460D /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C6021D516AD9FB51B3C26127F9A402 /* ConstraintRelation.swift */; };
+		F89AF5681EF119E0EC2991AB8A3E8FD9 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF122B46CB3BB6DE6D3B32AC0C05E9E1 /* ViewController+SnapKit.swift */; };
+		FA32B043F2DBA5E8981A3F6A60DD5894 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE175698E72C0774E91848FE8F1F2ED /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC42ABB544AC794E77A7B85A4AB78CD4 /* EZPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 366DA2FD9148090F407A6FEC2B29377D /* EZPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD9583DAD839C983BCA331352FC519A4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA517DAA6433070C3EE43920C919B93 /* Accelerate.framework */; };
-		FEEB7455FC20B0A2FB1105694E39F9C2 /* NSURLConnection+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 0766CFD3AB90A35ACAAD2190B7B43582 /* NSURLConnection+AnyPromise.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,11 +164,25 @@
 			remoteGlobalIDString = 01CB872C519691665E566D7E26A5EEF0;
 			remoteInfo = TPCircularBuffer;
 		};
+		459BB60562E1CE656D51BC96D8DB60AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85752752BCE7ADE30FAFD7ADDA89C5EB;
+			remoteInfo = PromiseKit;
+		};
+		638FDA19A78F712DDD285B53B1C23FE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190ACD3A51BC90B85EADB13E9CDD207B;
+			remoteInfo = OMGHTTPURLRQ;
+		};
 		6D61486994B020777699B6C9B6AE63F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7D6A04DDEC6D88844C95A20049FA852;
+			remoteGlobalIDString = 5C8A6F6F8BE950E697F23EA5F1DC6A76;
 			remoteInfo = SnapKit;
 		};
 		6D7A76F104FE296BEE39CA36371A5459 /* PBXContainerItemProxy */ = {
@@ -182,7 +196,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CDA05904FE6F35CB0B16ADD3746B6221;
+			remoteGlobalIDString = 85752752BCE7ADE30FAFD7ADDA89C5EB;
 			remoteInfo = PromiseKit;
 		};
 		8A9C65F630F0D72C281EC129B694F71E /* PBXContainerItemProxy */ = {
@@ -191,6 +205,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
 			remoteInfo = Alamofire;
+		};
+		8F32D3AF1C5F45D1DBF63832FF004006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B775D918970788EA677D9780C86879F4;
+			remoteInfo = EZAudio;
 		};
 		90E7AA9BE9B1016E033BB42CA70EB24D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -206,28 +227,28 @@
 			remoteGlobalIDString = 190ACD3A51BC90B85EADB13E9CDD207B;
 			remoteInfo = OMGHTTPURLRQ;
 		};
-		C13736F3885B98D54D96383CB52A2052 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 01CB872C519691665E566D7E26A5EEF0;
-			remoteInfo = TPCircularBuffer;
-		};
-		D7F967AD40F8C65CC72599659A7EF34F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B775D918970788EA677D9780C86879F4;
-			remoteInfo = EZAudio;
-		};
-		E1D4CB67C50422D9A6D13B5C1A1C4B1F /* PBXContainerItemProxy */ = {
+		DED90E0FD5EA439313E9801F84D4EF8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 190ACD3A51BC90B85EADB13E9CDD207B;
 			remoteInfo = OMGHTTPURLRQ;
 		};
+		E4B307B3F21806AD209DD889FA506061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8A6F6F8BE950E697F23EA5F1DC6A76;
+			remoteInfo = SnapKit;
+		};
 		EE4914D3DB87F6D4FDC0034B55216CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01CB872C519691665E566D7E26A5EEF0;
+			remoteInfo = TPCircularBuffer;
+		};
+		F2820AEE0CFCA803E84DA686CC6AE785 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -431,11 +452,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		265B8784F187F014987C8B1EB949382A /* Frameworks */ = {
+		0BEEE4590E465FB2F68A313945B237E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2869C3B69CCFA2FD6ED745C9E664838D /* Cocoa.framework in Frameworks */,
+				14B9805B60F812965A2CAEADE4C642D1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1901258FCC178954C7049CF650A2F835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AD4225A571186875F5BC45FBD9504F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,14 +473,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63818FBE55FE91F0663521B3BD739AD /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36F53E76EF28785A50BEE99CB10D4751 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAD538002F9B3FA170E123625418CC73 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,22 +501,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4B306B0676D57F43AFE96283B425542 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D99B59603D665BF5F4BEE4993FED34E /* Cocoa.framework in Frameworks */,
-				80280BB4065CA4DBF7A8B0C48FF49E82 /* Foundation.framework in Frameworks */,
-				563D03716BB0A3ACB0DEB5159F8D65D7 /* OMGHTTPURLRQ.framework in Frameworks */,
-				B2D9577D3D5037AB2801D81159D209B9 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B96CF6385FD53067D867CE0366ECC8C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C80D773054B560A1B9F30F5E4BD190A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF5BBD03125C48CD68CE1D0F9E8250C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D20FD24C33DA61BAFA1CF5FD94C292 /* Cocoa.framework in Frameworks */,
+				48494CEFF3530FEF12C7DD2DB4295907 /* Foundation.framework in Frameworks */,
+				0E436BF573BC27730FB891CA88AB8109 /* OMGHTTPURLRQ.framework in Frameworks */,
+				A8E061112B9B40ADEB9479D50852FF7A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -959,34 +980,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31879CF0146109E7EF7F472283ED8B5A /* Headers */ = {
+		515CA8005CDDE3A4120C7F01D2A07AE7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02283F4D4156D7AC847FFFC2D7B92B7C /* Pods-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4E3A6DBC2E0E09D6BE2EA13639E01D18 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFFA0D17B1AA422FCE6B3590F327B279 /* AnyPromise.h in Headers */,
-				47067F6830B68402139A47F5F2EC1767 /* CALayer+AnyPromise.h in Headers */,
-				575975A51B6DF2098D2B479E95C87367 /* NSError+Cancellation.h in Headers */,
-				3C1A8C8DA3BE2589266A0407758A0265 /* NSNotificationCenter+AnyPromise.h in Headers */,
-				2516ED0C74B9B8DB264828D0CEA27F21 /* NSTask+AnyPromise.h in Headers */,
-				C4423EA928C0C45EA1E5D47165701A4C /* NSURLConnection+AnyPromise.h in Headers */,
-				0184D55784057BF940BA468EBD232944 /* PromiseKit.h in Headers */,
-				2A2D56B43552D4603489DE264DCAB606 /* Umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6157779CC1CB473BF1DB30E7EF6F9189 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFF7E9014D0F5E3D38542342D92085E4 /* SnapKit-umbrella.h in Headers */,
+				E7DEB590965E10634DA16F7B58C0702C /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,6 +1043,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B719B9971DD8CA26FA524CD8A2AC3E0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA32B043F2DBA5E8981A3F6A60DD5894 /* AnyPromise.h in Headers */,
+				27DDBCF7EABEDFA40BF251111A6FBCFC /* CALayer+AnyPromise.h in Headers */,
+				C5DB967FCD77AA6AB04ACF76C7799322 /* NSError+Cancellation.h in Headers */,
+				80222EF76480DE27D8F83DB761E0B46A /* NSNotificationCenter+AnyPromise.h in Headers */,
+				E775CDFC51A993CC24C521BA95A677DA /* NSTask+AnyPromise.h in Headers */,
+				DAA54CE5C1228FCAE010CDD17D8CC492 /* NSURLConnection+AnyPromise.h in Headers */,
+				F67D902DB5D9B340463FE98078CCEED6 /* PromiseKit.h in Headers */,
+				41826C8898418EA552EA103028C015EE /* Umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C6972C76332058EA2EF7587EE1DFF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB569F41FDC693F8DC03302187EB0BBB /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFDF3B631BBB965A372347705CA14854 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1090,6 +1111,45 @@
 			productReference = 9669810407FE51BE019F67F1C661BAFA /* OMGHTTPURLRQ.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		58B624D15B7BD7AD19EB3BE2547A4DAF /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963FFC9D5CF425F745F86610165B1542 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				E5ADA715C02D8CDDAF9D1DE5A5253D57 /* Sources */,
+				1901258FCC178954C7049CF650A2F835 /* Frameworks */,
+				C4C6972C76332058EA2EF7587EE1DFF4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D243D9AD0D116198C6C54897AFDA03 /* PBXTargetDependency */,
+				C07323EF7367B01DD70BC9B5EA2DA4F3 /* PBXTargetDependency */,
+				14537D612F9B6AE970E9054CF884B5C0 /* PBXTargetDependency */,
+				545303294E8BE95CC2CBA29B82A15180 /* PBXTargetDependency */,
+				E028C698FCA0C53541A6A07FA4E212E5 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 7F785B46A75BDC466DE9A3263192E8A2 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C8A6F6F8BE950E697F23EA5F1DC6A76 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C704FD70F9782DD161329FB02251380A /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				DCDCCC42BC4565B3C2D974E44FBE4231 /* Sources */,
+				0BEEE4590E465FB2F68A313945B237E1 /* Frameworks */,
+				515CA8005CDDE3A4120C7F01D2A07AE7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 10894736E12B64FEEF4EAA6A0F83263E /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -1105,6 +1165,24 @@
 			name = Alamofire;
 			productName = Alamofire;
 			productReference = 6C3E649DADE1A5DE80AE76A6FA818E4B /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85752752BCE7ADE30FAFD7ADDA89C5EB /* PromiseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F01283461EA73368CD1EBD9B140536 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildPhases = (
+				3092E2CF73950D516B65542A4184EE93 /* Sources */,
+				BEF5BBD03125C48CD68CE1D0F9E8250C /* Frameworks */,
+				B719B9971DD8CA26FA524CD8A2AC3E0A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F7FBB984EBFD8398F16864B59D2869 /* PBXTargetDependency */,
+			);
+			name = PromiseKit;
+			productName = PromiseKit;
+			productReference = 7D535B013C5FAAAA5F490FADCDCB64EF /* PromiseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8F1DF1021DF87D4DC419B5C7CF635E44 /* SwiftyJSON */ = {
@@ -1140,60 +1218,6 @@
 			name = EZAudio;
 			productName = EZAudio;
 			productReference = E149E18C6060D9573FFD3A0EE9FE574C /* EZAudio.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C7D6A04DDEC6D88844C95A20049FA852 /* SnapKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 902996454945BF47B26BD68DE4980D39 /* Build configuration list for PBXNativeTarget "SnapKit" */;
-			buildPhases = (
-				C5AB0DF111428E8D0874D53CEAD38AE9 /* Sources */,
-				265B8784F187F014987C8B1EB949382A /* Frameworks */,
-				6157779CC1CB473BF1DB30E7EF6F9189 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SnapKit;
-			productName = SnapKit;
-			productReference = 10894736E12B64FEEF4EAA6A0F83263E /* SnapKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CDA05904FE6F35CB0B16ADD3746B6221 /* PromiseKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3D59D20E718C94A988994447CE3F5623 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
-			buildPhases = (
-				B5364FCFA5664A0F06623110601F3055 /* Sources */,
-				B4B306B0676D57F43AFE96283B425542 /* Frameworks */,
-				4E3A6DBC2E0E09D6BE2EA13639E01D18 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E581294399FFA00CEF4C67E3C426F710 /* PBXTargetDependency */,
-			);
-			name = PromiseKit;
-			productName = PromiseKit;
-			productReference = 7D535B013C5FAAAA5F490FADCDCB64EF /* PromiseKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D8019B69503A8C7C1C3C42EE970144E3 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDB81AE6571C6E45C16D67BAA20BE169 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				FC2FA24085F82BA5FE726A8979E8089B /* Sources */,
-				36F53E76EF28785A50BEE99CB10D4751 /* Frameworks */,
-				31879CF0146109E7EF7F472283ED8B5A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8662A9FA915432644D066A185BE8086 /* PBXTargetDependency */,
-				21D2284BBC6F7D9BFF50A9319CC3245B /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 7F785B46A75BDC466DE9A3263192E8A2 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F26F15016EE806818C650CDDADC8505A /* Pods-GoogleVoiceRecognition */ = {
@@ -1244,10 +1268,10 @@
 				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
 				B775D918970788EA677D9780C86879F4 /* EZAudio */,
 				190ACD3A51BC90B85EADB13E9CDD207B /* OMGHTTPURLRQ */,
-				D8019B69503A8C7C1C3C42EE970144E3 /* Pods */,
+				58B624D15B7BD7AD19EB3BE2547A4DAF /* Pods */,
 				F26F15016EE806818C650CDDADC8505A /* Pods-GoogleVoiceRecognition */,
-				CDA05904FE6F35CB0B16ADD3746B6221 /* PromiseKit */,
-				C7D6A04DDEC6D88844C95A20049FA852 /* SnapKit */,
+				85752752BCE7ADE30FAFD7ADDA89C5EB /* PromiseKit */,
+				5C8A6F6F8BE950E697F23EA5F1DC6A76 /* SnapKit */,
 				8F1DF1021DF87D4DC419B5C7CF635E44 /* SwiftyJSON */,
 				01CB872C519691665E566D7E26A5EEF0 /* TPCircularBuffer */,
 			);
@@ -1260,6 +1284,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FD09771EEBDCF4142DC45221E838101 /* Pods-GoogleVoiceRecognition-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3092E2CF73950D516B65542A4184EE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECD930E030C1B5839933B339E7A4CA4 /* after.m in Sources */,
+				4E0DA407F6BE728A5A8D3B4375B1C9B1 /* after.swift in Sources */,
+				E31F2C56CA0C8DD2CD4B788F802957CE /* afterlife.swift in Sources */,
+				56C791081D4E3BC20269DA7479CC1F5E /* AnyPromise.m in Sources */,
+				441E50BB4A4FABBB239023AB097B70B7 /* AnyPromise.swift in Sources */,
+				263F02D9AE44BD157FC8E6C230995789 /* CALayer+AnyPromise.m in Sources */,
+				7D3866D3B656F151081EF06140549203 /* dispatch_promise.m in Sources */,
+				10181454E2783B3282E8CC13C5E5681F /* dispatch_promise.swift in Sources */,
+				B6E04AADD0324E08FA0BA1CCB0773F3B /* Error.swift in Sources */,
+				CB2630C78421A31DE8FFCD2DF85EEDA0 /* hang.m in Sources */,
+				E5E09D874A57C7FB462F5BDA9722B618 /* join.m in Sources */,
+				60D707422BAE82491BF8F73F4E50B65A /* join.swift in Sources */,
+				2EE32A7B29DE6ACF8A278E0620BF0D3B /* NSNotificationCenter+AnyPromise.m in Sources */,
+				2546C4DA6330ADF2E76130B638CD4D54 /* NSNotificationCenter+Promise.swift in Sources */,
+				156C821286C587FED8BBB27E88D710A7 /* NSObject+Promise.swift in Sources */,
+				E37C23F4420FEC76631EF829B30D9767 /* NSTask+AnyPromise.m in Sources */,
+				43E5B874FD51BF757CEE307330DC0F47 /* NSTask+Promise.swift in Sources */,
+				D26ABB0762C8A7BCF13508EEA0CA551D /* NSURLConnection+AnyPromise.m in Sources */,
+				3381C8F824F3F150674D5B551362AE2B /* NSURLConnection+Promise.swift in Sources */,
+				8E105526F741D9D3B796AA895B2EDED9 /* NSURLSession+Promise.swift in Sources */,
+				D74CB74BF255D784D74BEE13ABDB61B3 /* Promise+Properties.swift in Sources */,
+				B59F160553B1BEAC21E76AE408CDCA2B /* Promise.swift in Sources */,
+				4E3C8C2C1D38F3299E12ABF610336AD7 /* PromiseKit-dummy.m in Sources */,
+				521370BF00CBE17D5528E0AB4AB48A44 /* race.swift in Sources */,
+				4141EF0C4339947029F4FF96DD6427A4 /* State.swift in Sources */,
+				BF91EF96590ED8E279FFA6CB26D9EEE1 /* URLDataPromise.swift in Sources */,
+				BEE1F281957308548526516AA6833840 /* when.m in Sources */,
+				2C721571E7141A007E27B46FCD83A1ED /* when.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1318,61 +1377,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5364FCFA5664A0F06623110601F3055 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BF46AFA376F8D17AE0AD1D94EF942A9 /* after.m in Sources */,
-				F2665C8D23106674326AEF719FA352D9 /* after.swift in Sources */,
-				9EF4DF5ED5A515EF9263B5D36A347B58 /* afterlife.swift in Sources */,
-				DA3DC44BC73AA590005EA625A1B9D11D /* AnyPromise.m in Sources */,
-				5225667E3D0BA11B6411552587AF9BAD /* AnyPromise.swift in Sources */,
-				0969A97F52D63FA68DF937C747B653BC /* CALayer+AnyPromise.m in Sources */,
-				646CE5868E950A7DCB4EE18BF17FAD4D /* dispatch_promise.m in Sources */,
-				2060B95F89F5A43B4A9EAE026A845D1E /* dispatch_promise.swift in Sources */,
-				53F65E7A1BBF57DA3A98E305214CC4D8 /* Error.swift in Sources */,
-				180AADECF1AD7AE936F759FD89FC2DF4 /* hang.m in Sources */,
-				963D81403784BAD736320F2E462DA5D9 /* join.m in Sources */,
-				538B95EE2723AF95DFA506FA1E02A9C3 /* join.swift in Sources */,
-				6F95ADE044E29BB7C19CAF674D3E0DC2 /* NSNotificationCenter+AnyPromise.m in Sources */,
-				0C6D75A82169E79199B72FE5902D4430 /* NSNotificationCenter+Promise.swift in Sources */,
-				9D17F83B2366370AEA07615140DF6F3E /* NSObject+Promise.swift in Sources */,
-				D2EDF5459A62C7424C79EE5247794F23 /* NSTask+AnyPromise.m in Sources */,
-				AD0C4B9041A00E5313A171D5F1487E91 /* NSTask+Promise.swift in Sources */,
-				FEEB7455FC20B0A2FB1105694E39F9C2 /* NSURLConnection+AnyPromise.m in Sources */,
-				ADE9EA005E827BDA9EB417622D92C88F /* NSURLConnection+Promise.swift in Sources */,
-				81721575F097E6FFEBC926016EF8CFBC /* NSURLSession+Promise.swift in Sources */,
-				F5B6939B72249989AE7B62F1B0A109C1 /* Promise+Properties.swift in Sources */,
-				7D8B5F5F56609FB3E7FDB2C72F409CF0 /* Promise.swift in Sources */,
-				5CCE33FA2F692F58196F5BEC038177C9 /* PromiseKit-dummy.m in Sources */,
-				9AF10E6D1AF64FEED64CC22940993B66 /* race.swift in Sources */,
-				C249071AA82777A418CDCA29740429A9 /* State.swift in Sources */,
-				E29D335ABA7CF733C454C762C1784962 /* URLDataPromise.swift in Sources */,
-				D9C20DB8686D154BD63A894A4D8AE084 /* when.m in Sources */,
-				8709F2ED2D431E0A503ECD242A2E2D42 /* when.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5AB0DF111428E8D0874D53CEAD38AE9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA7D2EF209CC33FCF8C394207A19BBCC /* Constraint.swift in Sources */,
-				091EDE9D284F0ED1EAF91778DD1DC727 /* ConstraintAttributes.swift in Sources */,
-				EB9CE7721E526B22AE1594DBEDAFC589 /* ConstraintDescription.swift in Sources */,
-				ED8754C1A0F30CCEB93245ACD6AC4013 /* ConstraintItem.swift in Sources */,
-				6F74FA9DAD440075770706A87930189C /* ConstraintMaker.swift in Sources */,
-				F925CA7F1D6EA38A9FB7A3DBB888460D /* ConstraintRelation.swift in Sources */,
-				55A9AFFE4456E61A6EEA4901E369DF10 /* Debugging.swift in Sources */,
-				8FF5BB43C924171E972C2A2D108FAAB9 /* EdgeInsets.swift in Sources */,
-				722F222B3962793C783A2007EF52EFF2 /* LayoutConstraint.swift in Sources */,
-				B1321633C1157F52E4BFE66A6088873C /* SnapKit-dummy.m in Sources */,
-				B543F1E8E20F79C4073E6ACF2FD9DC97 /* SnapKit.swift in Sources */,
-				20E4920FA4F4B7FF442F36839552C010 /* View+SnapKit.swift in Sources */,
-				1D7FE9C9858B5DDEBA4DB27A63A8291E /* ViewController+SnapKit.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D66AEC0D2678C21A916D83D670930B47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1397,11 +1401,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC2FA24085F82BA5FE726A8979E8089B /* Sources */ = {
+		DCDCCC42BC4565B3C2D974E44FBE4231 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B878A4DC8D27160ACE370EBBB4AB544 /* Pods-dummy.m in Sources */,
+				5795EF4FD1E4F8FD74B85A5DB8611DC6 /* Constraint.swift in Sources */,
+				9F6816C7954D74B13B18438B96698B7F /* ConstraintAttributes.swift in Sources */,
+				E6064FEC5BDF1323CF71D5267A8CA3C4 /* ConstraintDescription.swift in Sources */,
+				ACE0127F5A7049291BBB153A627CD2B5 /* ConstraintItem.swift in Sources */,
+				9673D8C70D01BA88ACF5CCB8C0AB8238 /* ConstraintMaker.swift in Sources */,
+				767A059B9A1C62EE3B8727DA6A89E8CA /* ConstraintRelation.swift in Sources */,
+				B19F08F7F661AC4452FEAEE39B756A87 /* Debugging.swift in Sources */,
+				BED8EE2EB7229142AEEA6C7153EE7440 /* EdgeInsets.swift in Sources */,
+				A56430D5D70A36E13EDD35D201CADE90 /* LayoutConstraint.swift in Sources */,
+				C12FFA0193B5236CD75575250B97431F /* SnapKit-dummy.m in Sources */,
+				F51423D52EC0D17FB0F18BE818C2F135 /* SnapKit.swift in Sources */,
+				F1892B60E3C5930CF9D6EB073B2C6155 /* View+SnapKit.swift in Sources */,
+				F89AF5681EF119E0EC2991AB8A3E8FD9 /* ViewController+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5ADA715C02D8CDDAF9D1DE5A5253D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEBC079AD7BD6856C6720BC91CCA408 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1411,14 +1435,14 @@
 		0FBE1705815597FD87D5C938D2D6D9D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PromiseKit;
-			target = CDA05904FE6F35CB0B16ADD3746B6221 /* PromiseKit */;
+			target = 85752752BCE7ADE30FAFD7ADDA89C5EB /* PromiseKit */;
 			targetProxy = 7C1F492466799322B4A4605685883DBC /* PBXContainerItemProxy */;
 		};
-		21D2284BBC6F7D9BFF50A9319CC3245B /* PBXTargetDependency */ = {
+		14537D612F9B6AE970E9054CF884B5C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TPCircularBuffer;
-			target = 01CB872C519691665E566D7E26A5EEF0 /* TPCircularBuffer */;
-			targetProxy = C13736F3885B98D54D96383CB52A2052 /* PBXContainerItemProxy */;
+			name = PromiseKit;
+			target = 85752752BCE7ADE30FAFD7ADDA89C5EB /* PromiseKit */;
+			targetProxy = 459BB60562E1CE656D51BC96D8DB60AB /* PBXContainerItemProxy */;
 		};
 		22578D6A192D36064A696E9293C6AB5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1429,7 +1453,7 @@
 		24A7A10CD44725E54C4F407E2FFF25CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
-			target = C7D6A04DDEC6D88844C95A20049FA852 /* SnapKit */;
+			target = 5C8A6F6F8BE950E697F23EA5F1DC6A76 /* SnapKit */;
 			targetProxy = 6D61486994B020777699B6C9B6AE63F7 /* PBXContainerItemProxy */;
 		};
 		2A189678225E2D59C6C8710106200AD5 /* PBXTargetDependency */ = {
@@ -1443,6 +1467,18 @@
 			name = EZAudio;
 			target = B775D918970788EA677D9780C86879F4 /* EZAudio */;
 			targetProxy = 6D7A76F104FE296BEE39CA36371A5459 /* PBXContainerItemProxy */;
+		};
+		48F7FBB984EBFD8398F16864B59D2869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OMGHTTPURLRQ;
+			target = 190ACD3A51BC90B85EADB13E9CDD207B /* OMGHTTPURLRQ */;
+			targetProxy = 638FDA19A78F712DDD285B53B1C23FE3 /* PBXContainerItemProxy */;
+		};
+		545303294E8BE95CC2CBA29B82A15180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 5C8A6F6F8BE950E697F23EA5F1DC6A76 /* SnapKit */;
+			targetProxy = E4B307B3F21806AD209DD889FA506061 /* PBXContainerItemProxy */;
 		};
 		59B1B9F4735D58470E6621FE8456721B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1462,17 +1498,23 @@
 			target = 8F1DF1021DF87D4DC419B5C7CF635E44 /* SwiftyJSON */;
 			targetProxy = 90E7AA9BE9B1016E033BB42CA70EB24D /* PBXContainerItemProxy */;
 		};
-		B8662A9FA915432644D066A185BE8086 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EZAudio;
-			target = B775D918970788EA677D9780C86879F4 /* EZAudio */;
-			targetProxy = D7F967AD40F8C65CC72599659A7EF34F /* PBXContainerItemProxy */;
-		};
-		E581294399FFA00CEF4C67E3C426F710 /* PBXTargetDependency */ = {
+		C07323EF7367B01DD70BC9B5EA2DA4F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OMGHTTPURLRQ;
 			target = 190ACD3A51BC90B85EADB13E9CDD207B /* OMGHTTPURLRQ */;
-			targetProxy = E1D4CB67C50422D9A6D13B5C1A1C4B1F /* PBXContainerItemProxy */;
+			targetProxy = DED90E0FD5EA439313E9801F84D4EF8B /* PBXContainerItemProxy */;
+		};
+		E028C698FCA0C53541A6A07FA4E212E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPCircularBuffer;
+			target = 01CB872C519691665E566D7E26A5EEF0 /* TPCircularBuffer */;
+			targetProxy = F2820AEE0CFCA803E84DA686CC6AE785 /* PBXContainerItemProxy */;
+		};
+		F9D243D9AD0D116198C6C54897AFDA03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EZAudio;
+			target = B775D918970788EA677D9780C86879F4 /* EZAudio */;
+			targetProxy = 8F32D3AF1C5F45D1DBF63832FF004006 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1600,34 +1642,6 @@
 			};
 			name = Debug;
 		};
-		1F13757CF1AA7706975958CEB0F59322 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65A2D423B2C635EEEDFB8D74045A56AA /* PromiseKit.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PromiseKit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		26CA49D1F9CFDE5DD298083E93B817EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8AF9AB1DC46DCB4821873FD264303921 /* OMGHTTPURLRQ.xcconfig */;
@@ -1683,7 +1697,7 @@
 			};
 			name = Release;
 		};
-		715101C362E22008723686BCA3F3A9CE /* Release */ = {
+		41695BFE6433B0F2E8B901B8CE88D989 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65A2D423B2C635EEEDFB8D74045A56AA /* PromiseKit.xcconfig */;
 			buildSettings = {
@@ -1704,37 +1718,6 @@
 				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = PromiseKit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		738C0B3E8012E1D19203C61C23DA7FA2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D4DC3DC4AC1074F595E1767AD198B11 /* Pods.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1804,7 +1787,66 @@
 			};
 			name = Release;
 		};
-		A9E57CF9C07E96CF2ABF5F716AB26B4E /* Release */ = {
+		90053955154A461D5E206DFFFA919F31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D21D515607824B5EA1AB4AE89722BCD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92D15FA9283A2AA606438BF890E2225A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794895EF8B0AEBB8A5DDE9496602A1FC /* SnapKit.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		96F3D0754129522D915ACE013837326D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 794895EF8B0AEBB8A5DDE9496602A1FC /* SnapKit.xcconfig */;
 			buildSettings = {
@@ -1831,6 +1873,34 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A3BEC3451D3E1736975AFFDBFDFD48D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A2D423B2C635EEEDFB8D74045A56AA /* PromiseKit.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		ADD2156EC3C7D5AA6ED6ACED9E8FD924 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1863,36 +1933,6 @@
 			};
 			name = Debug;
 		};
-		C0E48CA275BD5F4388933B42C047E701 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D21D515607824B5EA1AB4AE89722BCD /* Pods.debug.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		C6E27688CD9176EF59F074E5CE27EE34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7DD779EBC7CF74512DAC369DFC7FDA6 /* Pods-GoogleVoiceRecognition.release.xcconfig */;
@@ -1917,6 +1957,37 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = Pods_GoogleVoiceRecognition;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C99CA4DF4EB173DF750B585909B686AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4DC3DC4AC1074F595E1767AD198B11 /* Pods.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2034,37 +2105,18 @@
 			};
 			name = Debug;
 		};
-		FC240D6E1778DA70C7508CD5D1F32F11 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 794895EF8B0AEBB8A5DDE9496602A1FC /* SnapKit.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19F01283461EA73368CD1EBD9B140536 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3BEC3451D3E1736975AFFDBFDFD48D0 /* Debug */,
+				41695BFE6433B0F2E8B901B8CE88D989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2083899CF2E6329E80B9A7861E299F56 /* Build configuration list for PBXNativeTarget "EZAudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2101,15 +2153,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D59D20E718C94A988994447CE3F5623 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1F13757CF1AA7706975958CEB0F59322 /* Debug */,
-				715101C362E22008723686BCA3F3A9CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4778EB9613ED3EBA0B74CBB939DFB306 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2128,20 +2171,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		902996454945BF47B26BD68DE4980D39 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		963FFC9D5CF425F745F86610165B1542 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC240D6E1778DA70C7508CD5D1F32F11 /* Debug */,
-				A9E57CF9C07E96CF2ABF5F716AB26B4E /* Release */,
+				90053955154A461D5E206DFFFA919F31 /* Debug */,
+				C99CA4DF4EB173DF750B585909B686AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDB81AE6571C6E45C16D67BAA20BE169 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		C704FD70F9782DD161329FB02251380A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0E48CA275BD5F4388933B42C047E701 /* Debug */,
-				738C0B3E8012E1D19203C61C23DA7FA2 /* Release */,
+				92D15FA9283A2AA606438BF890E2225A /* Debug */,
+				96F3D0754129522D915ACE013837326D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

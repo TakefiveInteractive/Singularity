@@ -8,8 +8,6 @@
 
 import Cocoa
 
-import Beethoven
-
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 

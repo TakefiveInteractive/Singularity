@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88E9563D1C5D7706007D0296 /* Beethoven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E9563C1C5D7705007D0296 /* Beethoven.framework */; };
 		8F0F3CD01C5D583000747FE4 /* Pitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CCF1C5D583000747FE4 /* Pitcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CD71C5D583000747FE4 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CCC1C5D583000747FE4 /* Pitcher.framework */; };
 		8F0F3CDC1C5D583000747FE4 /* PitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */; };
@@ -38,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E9563D1C5D7706007D0296 /* Beethoven.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
