@@ -25,4 +25,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Singularity-Desktop/Singularity-Desktop.xcodeproj">
+   </FileRef>
 </Workspace>
