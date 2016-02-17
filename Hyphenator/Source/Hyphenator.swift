@@ -9,6 +9,8 @@
 //	http://nedbatchelder.com/code/modules/hyphenate.py
 
 import Foundation
+import PySwiftyRegex
+
 
 //patterns
 //for collaspe
@@ -21,14 +23,34 @@ private let patterns:[String] = [
 //exceptions
 
 private let exceptions:[String] = [
-	"as-so-ciate", "as-so-ciates", "dec-li-na-tion", "oblig-a-tory", "phil-an-thropic", "present",
-	"presents", "project", "projects", "reci-procity", "re-cog-ni-zance", "ref-or-ma-tion",
-	"ret-ri-bu-tion", "ta-ble"
+    "as-so-ciate", "as-so-ciates", "dec-li-na-tion", "oblig-a-tory", "phil-an-thropic", "present",
+    "presents", "project", "projects", "reci-procity", "re-cog-ni-zance", "ref-or-ma-tion",
+    "ret-ri-bu-tion", "ta-ble"
 ]
 
 
 class Hyphenator {
     
+    class func _insert_pattern(pattern: String) {
+        //Convert the a pattern like 'a1bc3d4' into a string of chars 'abcd'
+        //and a list of points [ 1, 0, 3, 4 ].
+        var chars = re.sub("[0-9]", "", pattern)
+        var points = re.split("[.a-z]", "", pattern)
+        points.removeAtIndex(0)
+        var index = 0
+        for el in points {
+            if el == "" {
+                points[index] = "0"
+            }
+            index += 1
+        }
+        
+        //Insert the pattern into the tree.  Each character finds a dict
+        //another level down in the tree, and leaf nodes have the list of
+        //points.
+        
+        
+    }
 }
 
 

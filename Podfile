@@ -14,3 +14,9 @@ target :GoogleVoiceRecognition do
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'PromiseKit'
 end
+
+target :Hyphenator do
+    xcodeproj 'Hyphenator/Hyphenator.xcodeproj'
+    pod 'PySwiftyRegex', '~> 0.2.0'
+end
+

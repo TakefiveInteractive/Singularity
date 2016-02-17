@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432ED1875872405F849A2C35 /* Pods_Hyphenator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89E9916AB06FEB4E5992DEE /* Pods_Hyphenator.framework */; };
 		8F0F3C881C5D537F00747FE4 /* Hyphenator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3C871C5D537F00747FE4 /* Hyphenator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3C8F1C5D537F00747FE4 /* Hyphenator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C841C5D537F00747FE4 /* Hyphenator.framework */; };
 		8F0F3C941C5D537F00747FE4 /* HyphenatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C931C5D537F00747FE4 /* HyphenatorTests.swift */; };
@@ -25,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5674575A7E4B3AEA7334A235 /* Pods-Hyphenator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyphenator.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Hyphenator/Pods-Hyphenator.release.xcconfig"; sourceTree = "<group>"; };
+		61D37AE0483CA643841EA23E /* Pods-Hyphenator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyphenator.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Hyphenator/Pods-Hyphenator.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0F3C841C5D537F00747FE4 /* Hyphenator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hyphenator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3C871C5D537F00747FE4 /* Hyphenator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hyphenator.h; sourceTree = "<group>"; };
 		8F0F3C891C5D537F00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		8F0F3C951C5D537F00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5251FA31C5F35F40080139D /* Hyphenator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hyphenator.swift; sourceTree = "<group>"; };
 		B5DEBF5C1C6BC21C00DFEAFC /* Hyphenator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Hyphenator.py; sourceTree = "<group>"; };
+		C89E9916AB06FEB4E5992DEE /* Pods_Hyphenator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyphenator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432ED1875872405F849A2C35 /* Pods_Hyphenator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823F5220FA6A7FC132443CB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D37AE0483CA643841EA23E /* Pods-Hyphenator.debug.xcconfig */,
+				5674575A7E4B3AEA7334A235 /* Pods-Hyphenator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F0F3C7A1C5D537F00747FE4 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +75,8 @@
 				8F0F3C921C5D537F00747FE4 /* HyphenatorTests */,
 				8F0F3C851C5D537F00747FE4 /* Products */,
 				B5251FA21C5F35DA0080139D /* Source */,
+				823F5220FA6A7FC132443CB9 /* Pods */,
+				D566FD4A063128C18098850B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +116,14 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		D566FD4A063128C18098850B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C89E9916AB06FEB4E5992DEE /* Pods_Hyphenator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -118,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F0F3C981C5D537F00747FE4 /* Build configuration list for PBXNativeTarget "Hyphenator" */;
 			buildPhases = (
+				ACB90BCD548F28CD114FE501 /* Check Pods Manifest.lock */,
 				8F0F3C7F1C5D537F00747FE4 /* Sources */,
 				8F0F3C801C5D537F00747FE4 /* Frameworks */,
 				8F0F3C811C5D537F00747FE4 /* Headers */,
 				8F0F3C821C5D537F00747FE4 /* Resources */,
+				DF7E58E9AD594B911F91646B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +229,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACB90BCD548F28CD114FE501 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7E58E9AD594B911F91646B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Hyphenator/Pods-Hyphenator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F0F3C7F1C5D537F00747FE4 /* Sources */ = {
@@ -320,6 +379,7 @@
 		};
 		8F0F3C991C5D537F00747FE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D37AE0483CA643841EA23E /* Pods-Hyphenator.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -340,6 +400,7 @@
 		};
 		8F0F3C9A1C5D537F00747FE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5674575A7E4B3AEA7334A235 /* Pods-Hyphenator.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
