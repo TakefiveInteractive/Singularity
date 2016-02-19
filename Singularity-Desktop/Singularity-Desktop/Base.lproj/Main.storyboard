@@ -683,9 +683,9 @@
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-IJ-yhA">
-                                <rect key="frame" x="0.0" y="428" width="1024" height="148"/>
+                                <rect key="frame" x="0.0" y="408" width="1024" height="168"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="148" id="XQl-yz-7se"/>
+                                    <constraint firstAttribute="height" constant="168" id="XQl-yz-7se"/>
                                 </constraints>
                             </customView>
                         </subviews>

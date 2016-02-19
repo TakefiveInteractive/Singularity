@@ -41,21 +41,18 @@ class MainViewController: NSViewController {
         self.view.superview?.wantsLayer = true
         self.headerView.wantsLayer = true
         
-        self.headerView.shadow = NSShadow()
-        self.headerView.alphaValue = 0.7
-        self.headerView.layer?.shadowOpacity = 0.7
-        self.headerView.layer?.shadowColor = NSColor.blackColor().CGColor
-        self.headerView.layer?.shadowOffset = NSMakeSize(0, 0)
-        self.headerView.layer?.shadowRadius = 3
-        self.headerView.layer?.backgroundColor = Palette.windowColor
+        let setShadow: NSView -> Void = {
+            $0.shadow = NSShadow()
+            $0.alphaValue = 0.9
+            $0.layer?.shadowOpacity = 0.7
+            $0.layer?.shadowColor = NSColor.blackColor().CGColor
+            $0.layer?.shadowOffset = NSMakeSize(0, 0)
+            $0.layer?.shadowRadius = 3
+            $0.layer?.backgroundColor = Palette.windowColor
+        }
         
-        self.footerView.shadow = NSShadow()
-        self.footerView.alphaValue = 0.7
-        self.footerView.layer?.shadowOpacity = 0.7
-        self.footerView.layer?.shadowColor = NSColor.blackColor().CGColor
-        self.footerView.layer?.shadowOffset = NSMakeSize(0, 0)
-        self.footerView.layer?.shadowRadius = 3
-        self.footerView.layer?.backgroundColor = Palette.windowColor
+        setShadow(headerView)
+        setShadow(footerView)
     }
     
     override func viewDidAppear() {

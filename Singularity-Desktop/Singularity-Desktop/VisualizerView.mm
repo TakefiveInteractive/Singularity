@@ -46,8 +46,8 @@
 
         cell.emitterCells = @[childCell];
 
-        cell.color = [[NSColor colorWithRed:1.0f green:0.53f blue:0.0f alpha:0.8f] CGColor];
-//        cell.color = [[NSColor colorWithRed:0.632f green:0.867f blue:0.8125f alpha:0.8] CGColor];
+//        cell.color = [[NSColor colorWithRed:1.0f green:0.53f blue:0.0f alpha:0.8f] CGColor];
+        cell.color = [NSColor whiteColor].CGColor;
         cell.redRange = 0.46f;
         cell.greenRange = 0.49f;
         cell.blueRange = 0.67f;

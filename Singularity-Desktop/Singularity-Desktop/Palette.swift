@@ -9,6 +9,7 @@
 import Cocoa
 
 struct Palette {
-    static let blurBackColor = NSColor(hexString: "A2DED0")!.CGColor
-    static let windowColor = NSColor(hexString: "65C6BB")!.CGColor
+    static let blurBackColor = NSColor(hexString: "#636B72")!.CGColor
+    static let windowColor = NSColor(hexString: "#2E3A4C")!.CGColor
+    static let visualColor = NSColor(hexString: "#000000")!.CGColor
 }
