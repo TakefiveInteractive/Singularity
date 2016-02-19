@@ -20,9 +20,6 @@
       location = "group:GoogleVoiceRecognition/GoogleVoiceRecognition.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:Singularity-Desktop/Singularity-Desktop.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef

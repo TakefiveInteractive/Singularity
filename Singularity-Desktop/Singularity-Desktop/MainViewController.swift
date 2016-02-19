@@ -15,6 +15,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var headerView: NSView!
     @IBOutlet weak var backView: NSView!
     @IBOutlet weak var footerView: NSView!
+    var fft: FFT!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,9 @@ class MainViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
         
+        
+        fft = FFT()
+        fft.start()
     }
 
     func updateVisualizationView() {
