@@ -7,6 +7,7 @@
 #import "EZAudioFile.h"
 #import "EZAudioFloatConverter.h"
 #import "EZAudioFloatData.h"
+#import "EZAudioiOS.h"
 #import "EZAudioOSX.h"
 #import "EZAudioPlayer.h"
 #import "EZAudioPlot.h"

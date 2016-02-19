@@ -7,6 +7,7 @@ xcodeproj 'Singularity-Desktop/Singularity-Desktop.xcodeproj'
 pod 'EZAudio', '~> 1.1.4'
 pod 'SnapKit'
 pod 'PromiseKit'
+pod 'MusicKit'
 
 target :GoogleVoiceRecognition do
     xcodeproj 'GoogleVoiceRecognition/GoogleVoiceRecognition.xcodeproj'

@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Hyphenator/EZAudio.framework"
+  install_framework "Pods-Hyphenator/MusicKit.framework"
   install_framework "Pods-Hyphenator/OMGHTTPURLRQ.framework"
   install_framework "Pods-Hyphenator/PromiseKit.framework"
   install_framework "Pods-Hyphenator/SnapKit.framework"
@@ -93,6 +94,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Hyphenator/EZAudio.framework"
+  install_framework "Pods-Hyphenator/MusicKit.framework"
   install_framework "Pods-Hyphenator/OMGHTTPURLRQ.framework"
   install_framework "Pods-Hyphenator/PromiseKit.framework"
   install_framework "Pods-Hyphenator/SnapKit.framework"

@@ -12,6 +12,7 @@ import SnapKit
 class MainViewController: NSViewController {
     
     var effectView: VisualizerView!
+    var fft: FFT!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,9 @@ class MainViewController: NSViewController {
         blurView.material = NSVisualEffectMaterial.Light
         self.view.addSubview(blurView)
         
+        
+        fft = FFT()
+        fft.start()
     }
 
     func updateVisualizationView() {
