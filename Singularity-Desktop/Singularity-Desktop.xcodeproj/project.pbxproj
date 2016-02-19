@@ -13,6 +13,8 @@
 		885EB2581C699F070025DA28 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB2571C699F070025DA28 /* QuartzCore.framework */; };
 		885EB25A1C699F1E0025DA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB2591C699F1E0025DA28 /* Foundation.framework */; };
 		885EB25C1C699F250025DA28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB25B1C699F250025DA28 /* CoreGraphics.framework */; };
+		887CC16D1C76C86300894F09 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887CC16C1C76C86300894F09 /* HexColor.swift */; };
+		887CC16F1C76CBB300894F09 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887CC16E1C76CBB300894F09 /* Palette.swift */; };
 		88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C31C5D4FF20037578B /* AppDelegate.swift */; };
 		88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C51C5D4FF20037578B /* MainViewController.swift */; };
 		88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C71C5D4FF20037578B /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		885EB2571C699F070025DA28 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		885EB2591C699F1E0025DA28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		885EB25B1C699F250025DA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		887CC16C1C76C86300894F09 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		887CC16E1C76CBB300894F09 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singularity-Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3C31C5D4FF20037578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88BBC3C51C5D4FF20037578B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 			children = (
 				88BBC3C31C5D4FF20037578B /* AppDelegate.swift */,
 				88BBC3C51C5D4FF20037578B /* MainViewController.swift */,
+				887CC16E1C76CBB300894F09 /* Palette.swift */,
+				887CC16C1C76C86300894F09 /* HexColor.swift */,
 				88BBC3C71C5D4FF20037578B /* Assets.xcassets */,
 				88BBC3C91C5D4FF20037578B /* Main.storyboard */,
 				88BBC3CC1C5D4FF20037578B /* Info.plist */,
@@ -371,6 +377,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */,
+				887CC16D1C76C86300894F09 /* HexColor.swift in Sources */,
+				887CC16F1C76CBB300894F09 /* Palette.swift in Sources */,
 				885EB2541C699E690025DA28 /* VisualizerView.mm in Sources */,
 				88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */,
 			);

@@ -672,7 +672,41 @@
                     <view key="view" id="d7L-Mu-u3S">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abk-Jm-9W8">
+                                <rect key="frame" x="-1" y="0.0" width="1025" height="576"/>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="F3f-4f-M6g">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="QtF-Qr-TT0"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-IJ-yhA">
+                                <rect key="frame" x="0.0" y="428" width="1024" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="XQl-yz-7se"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="F3f-4f-M6g" secondAttribute="trailing" id="9TH-uH-Zxi"/>
+                            <constraint firstAttribute="bottom" secondItem="abk-Jm-9W8" secondAttribute="bottom" id="9Ua-BH-Mma"/>
+                            <constraint firstItem="Uoe-IJ-yhA" firstAttribute="leading" secondItem="d7L-Mu-u3S" secondAttribute="leading" id="Cff-9I-fiv"/>
+                            <constraint firstItem="Uoe-IJ-yhA" firstAttribute="top" secondItem="d7L-Mu-u3S" secondAttribute="top" id="NxC-2j-6g7"/>
+                            <constraint firstItem="abk-Jm-9W8" firstAttribute="leading" secondItem="d7L-Mu-u3S" secondAttribute="leading" id="WLE-0X-ua8"/>
+                            <constraint firstItem="F3f-4f-M6g" firstAttribute="leading" secondItem="d7L-Mu-u3S" secondAttribute="leading" id="Xhe-ah-bam"/>
+                            <constraint firstAttribute="bottom" secondItem="F3f-4f-M6g" secondAttribute="bottom" id="aZU-1o-C7g"/>
+                            <constraint firstItem="abk-Jm-9W8" firstAttribute="top" secondItem="d7L-Mu-u3S" secondAttribute="top" id="l3s-4Q-ahY"/>
+                            <constraint firstAttribute="trailing" secondItem="abk-Jm-9W8" secondAttribute="trailing" id="nYy-sK-jma"/>
+                            <constraint firstAttribute="trailing" secondItem="Uoe-IJ-yhA" secondAttribute="trailing" id="oyU-S6-x5f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backView" destination="abk-Jm-9W8" id="XLn-hv-O4t"/>
+                        <outlet property="footerView" destination="F3f-4f-M6g" id="pdp-wU-Tf1"/>
+                        <outlet property="headerView" destination="Uoe-IJ-yhA" id="AQg-DS-Kkh"/>
+                    </connections>
                 </viewController>
                 <customObject id="Mlx-b6-EVg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
