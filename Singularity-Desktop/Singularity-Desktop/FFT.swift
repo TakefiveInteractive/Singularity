@@ -11,6 +11,11 @@ import EZAudio
 import MusicKit
 import Pitcher
 
+infix operator >>= { associativity left precedence 140 }
+func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
+    return processor(input)
+}
+
 class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     var microphone: EZMicrophone?
@@ -20,12 +25,13 @@ class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var onNewNote: (([Pitch]) -> ())?
     
     var estimator = HPSEstimator()
+    var movingMode = MovingMode<Float>(window: 10)
     
     override init() {
         super.init()
         
         microphone = EZMicrophone(microphoneDelegate: self)
-        fft = EZAudioFFTRolling(windowSize: 4096, sampleRate: Float(microphone!.audioStreamBasicDescription().mSampleRate), delegate: self)
+        fft = EZAudioFFTRolling(windowSize: 8192, sampleRate: Float(microphone!.audioStreamBasicDescription().mSampleRate), delegate: self)
     }
     
     func start() {
@@ -37,7 +43,10 @@ class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     }
     
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
-        let maxFrequency = fft.frequencyAtIndex(estimator.estimateLocation({ fft.frequencyMagnitudeAtIndex(UInt($0)) }, numBins: Int(bufferSize)))
+        let maxFrequency =
+            estimator.estimateLocation({ fft.frequencyMagnitudeAtIndex(UInt($0)) }, numBins: Int(bufferSize))
+                >>= { fft.frequencyAtIndex($0) }
+                >>= { self.movingMode.update($0) }
         
         // histFrequencies?.append(maxFrequency)
         
