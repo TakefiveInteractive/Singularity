@@ -23,7 +23,7 @@
 		88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */; };
 		8F2724B11C5DBDE400787B02 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */; };
 		8FD522971C76AC9200F3EAB4 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD522961C76AC9200F3EAB4 /* bg.jpg */; };
-		8FD5229C1C76B60C00F3EAB4 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229B1C76B60C00F3EAB4 /* FFT.swift */; };
+		8FD5229C1C76B60C00F3EAB4 /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229B1C76B60C00F3EAB4 /* PitchEngine.swift */; };
 		8FD5229E1C76CA2100F3EAB4 /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */; };
 		8FD522A01C76D2DE00F3EAB4 /* MovingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229F1C76D2DE00F3EAB4 /* MovingMode.swift */; };
 		8FD522A21C76D57200F3EAB4 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD522A11C76D57200F3EAB4 /* Ring.swift */; };
@@ -74,7 +74,7 @@
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD522961C76AC9200F3EAB4 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		8FD5229B1C76B60C00F3EAB4 /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		8FD5229B1C76B60C00F3EAB4 /* PitchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchEngine.swift; sourceTree = "<group>"; };
 		8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPSEstimator.swift; sourceTree = "<group>"; };
 		8FD5229F1C76D2DE00F3EAB4 /* MovingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingMode.swift; sourceTree = "<group>"; };
 		8FD522A11C76D57200F3EAB4 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ring.swift; path = ../Ring.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				88BBC3CC1C5D4FF20037578B /* Info.plist */,
 				8FD522961C76AC9200F3EAB4 /* bg.jpg */,
 				888F61751C6ADAE5001CD64B /* VisualizeView */,
-				8FD5229B1C76B60C00F3EAB4 /* FFT.swift */,
+				8FD5229B1C76B60C00F3EAB4 /* PitchEngine.swift */,
 				8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */,
 				8FD5229F1C76D2DE00F3EAB4 /* MovingMode.swift */,
 				8FD522A11C76D57200F3EAB4 /* Ring.swift */,
@@ -388,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD5229C1C76B60C00F3EAB4 /* FFT.swift in Sources */,
+				8FD5229C1C76B60C00F3EAB4 /* PitchEngine.swift in Sources */,
 				88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */,
 				887CC16D1C76C86300894F09 /* HexColor.swift in Sources */,
 				887CC16F1C76CBB300894F09 /* Palette.swift in Sources */,

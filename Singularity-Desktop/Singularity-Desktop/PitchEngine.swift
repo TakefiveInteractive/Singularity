@@ -16,7 +16,7 @@ func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
     return processor(input)
 }
 
-class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
+class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     var microphone: EZMicrophone?
     var fft: EZAudioFFT?
