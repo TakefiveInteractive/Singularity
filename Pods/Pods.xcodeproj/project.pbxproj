@@ -64,7 +64,6 @@
 		5A89417D37C5B63688DDD6177B6F9AE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B62FC5B99CEBEEBDC8D35FA933C41D9 /* AudioToolbox.framework */; };
 		5B43017BCCD81D13D281E2A59F15A78F /* EZMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD332258F9E9AD4EC2D1BF999ECB759 /* EZMicrophone.m */; };
 		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12623DE5843DEFB269177D445534C123 /* Upload.swift */; };
-		5C2E8CEF35F7F8CB8EBEB3D52FAC0873 /* EZAudioiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E7C936408DADADC6EBE15D33B45173 /* EZAudioiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395C28992DE808A64800926AD3E13A33 /* Download.swift */; };
 		5FD3371C6CB36C4FCF004DD875B1D649 /* EZOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 3457E786CDBF6C260D5EC63BA898ECCE /* EZOutput.m */; };
 		60D707422BAE82491BF8F73F4E50B65A /* join.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE531003203AFCDEC969584E5E3E86B /* join.swift */; };
@@ -466,7 +465,6 @@
 		C2CBC8FFC8B6C77366D1BABF1615A577 /* EZPlot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZPlot.m; path = EZAudio/EZPlot.m; sourceTree = "<group>"; };
 		C30E5B0E9BF6E07CE907AB67E7877486 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		C53FCAE3FE944B242C353E28E08D4F3D /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		C5E7C936408DADADC6EBE15D33B45173 /* EZAudioiOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioiOS.h; path = EZAudio/EZAudioiOS.h; sourceTree = "<group>"; };
 		C79E2A5D96474B2F5666D919F60009EA /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		C7E82D34D93CB7A7A05DF7408ED8E9A1 /* EZAudioPlot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZAudioPlot.h; path = EZAudio/EZAudioPlot.h; sourceTree = "<group>"; };
 		C870A625B04DAB1DFD33ADD6C8ADC822 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1009,7 +1007,6 @@
 				FDF3C49D719E2E01416C69C5E2FBB86B /* EZAudioFloatConverter.m */,
 				1A631B6503D8485F05BADF5EBCF90D52 /* EZAudioFloatData.h */,
 				999C4F6D8BC2F30CF6A3B89280176080 /* EZAudioFloatData.m */,
-				C5E7C936408DADADC6EBE15D33B45173 /* EZAudioiOS.h */,
 				D7839067D07A58195D0E1C1BC253313C /* EZAudioOSX.h */,
 				DD9FB78F42B53D9EE5A06EE7E093D0CB /* EZAudioPlayer.h */,
 				BBA6260603F56339DA8A97E36BEBE570 /* EZAudioPlayer.m */,
@@ -1129,7 +1126,6 @@
 				A37758D3390A600C7D3C35E022BE339B /* EZAudioFile.h in Headers */,
 				F6434BD3416A804C7BF9B626D13FA0D2 /* EZAudioFloatConverter.h in Headers */,
 				B73581EB44EEEFE962205A1339F778F3 /* EZAudioFloatData.h in Headers */,
-				5C2E8CEF35F7F8CB8EBEB3D52FAC0873 /* EZAudioiOS.h in Headers */,
 				905B360EA0BBE74BD24F9FFA9AF12227 /* EZAudioOSX.h in Headers */,
 				813125A3EE7D348DFA2929BC86ABEB4B /* EZAudioPlayer.h in Headers */,
 				4B15FC2C287E5A5A8ADD84A97314ACC8 /* EZAudioPlot.h in Headers */,

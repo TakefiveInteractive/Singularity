@@ -1,0 +1,13 @@
+//
+//  FFT.swift
+//  Singularity-Desktop
+//
+//  Created by Yifei Teng on 2/18/16.
+//  Copyright © 2016 Takefive Interactive. All rights reserved.
+//
+
+import Foundation
+import EZAudio
+
+class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate, NSApplicationDelegate {
+}

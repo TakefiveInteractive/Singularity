@@ -21,6 +21,7 @@
 		88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */; };
 		8F2724B11C5DBDE400787B02 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */; };
 		8FD522971C76AC9200F3EAB4 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD522961C76AC9200F3EAB4 /* bg.jpg */; };
+		8FD5229C1C76B60C00F3EAB4 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229B1C76B60C00F3EAB4 /* FFT.swift */; };
 		C4BE6BBDC9C3D26134969492 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7CC20E72E114B8D376D1F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD522961C76AC9200F3EAB4 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		8FD5229B1C76B60C00F3EAB4 /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
 		D489DDCDB8FA3A1EF060A65B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +159,7 @@
 				8FD522961C76AC9200F3EAB4 /* bg.jpg */,
 				888F61751C6ADAE5001CD64B /* VisualizeView */,
 				885EB24F1C699E5B0025DA28 /* Singularity-Desktop-Bridging-Header.h */,
+				8FD5229B1C76B60C00F3EAB4 /* FFT.swift */,
 			);
 			path = "Singularity-Desktop";
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD5229C1C76B60C00F3EAB4 /* FFT.swift in Sources */,
 				88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */,
 				885EB2541C699E690025DA28 /* VisualizerView.mm in Sources */,
 				88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */,

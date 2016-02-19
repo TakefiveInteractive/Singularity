@@ -4,7 +4,7 @@ platform :osx, '10.11'
 use_frameworks!
 
 xcodeproj 'Singularity-Desktop/Singularity-Desktop.xcodeproj'
-pod 'EZAudio'
+pod 'EZAudio', '~> 1.1.4'
 pod 'SnapKit'
 pod 'PromiseKit'
 

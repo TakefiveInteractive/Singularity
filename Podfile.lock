@@ -25,14 +25,14 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (3.0.2):
     - PromiseKit/CorePromise
-  - PySwiftyRegex (0.2.0)
+  - PySwiftyRegex (0.2.1)
   - SnapKit (0.19.1)
   - SwiftyJSON (2.3.2)
   - TPCircularBuffer (1.1)
 
 DEPENDENCIES:
   - Alamofire
-  - EZAudio
+  - EZAudio (~> 1.1.4)
   - PromiseKit
   - PySwiftyRegex (~> 0.2.0)
   - SnapKit
@@ -52,7 +52,7 @@ SPEC CHECKSUMS:
   EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   OMGHTTPURLRQ: 633f98ee745aeda02345935a52eec1784cddb589
   PromiseKit: ab1a380f7a30cf8cce663a2411e8b3580b10313d
-  PySwiftyRegex: f8a4538611825cce883dafe468fe484aca0e945d
+  PySwiftyRegex: 1c1bafecb73bd5261f053a521717ec0000bcc8c2
   SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
