@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
@@ -658,35 +658,12 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
-                        <segue destination="7qV-Vl-ZWM" kind="relationship" relationship="window.shadowedContentViewController" id="ar6-nU-Dxi"/>
+                        <segue destination="bU3-d1-655" kind="relationship" relationship="window.shadowedContentViewController" id="z0U-aK-AXW"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
-        </scene>
-        <!--Tab View Controller-->
-        <scene sceneID="o79-Y8-ozU">
-            <objects>
-                <customObject id="aDY-s1-jRw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <tabViewController selectedTabViewItemIndex="0" id="7qV-Vl-ZWM" sceneMemberID="viewController">
-                    <tabViewItems>
-                        <tabViewItem identifier="" id="B0u-Wk-zvf"/>
-                        <tabViewItem identifier="" id="lFb-jw-5NS"/>
-                    </tabViewItems>
-                    <tabView key="tabView" type="noTabsNoBorder" id="RBN-pt-06b">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
-                        <tabViewItems/>
-                    </tabView>
-                    <connections>
-                        <segue destination="bU3-d1-655" kind="relationship" relationship="tabItems" id="svP-Zh-2D6"/>
-                        <segue destination="zrH-ot-b6G" kind="relationship" relationship="tabItems" id="qEd-uT-RxR"/>
-                    </connections>
-                </tabViewController>
-            </objects>
-            <point key="canvasLocation" x="75" y="738"/>
         </scene>
         <!--Main-->
         <scene sceneID="Fgb-rJ-HTr">
@@ -699,20 +676,7 @@
                 </viewController>
                 <customObject id="Mlx-b6-EVg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1324"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Ils-1p-kyC">
-            <objects>
-                <customObject id="z0p-eB-ib3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController id="zrH-ot-b6G" sceneMemberID="viewController">
-                    <view key="view" id="Inn-Md-WwA">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="788" y="738"/>
+            <point key="canvasLocation" x="75" y="822"/>
         </scene>
     </scenes>
 </document>

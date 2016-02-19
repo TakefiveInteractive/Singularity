@@ -26,9 +26,17 @@ class MainViewController: NSViewController {
         super.viewDidAppear()
         self.view.window?.styleMask = NSClosableWindowMask | NSTitledWindowMask | NSMiniaturizableWindowMask
         effectView = VisualizerView(frame: self.view.bounds)
-        effectView.layer?.backgroundColor = NSColor.blackColor().CGColor
+        effectView.autoresizingMask = [.ViewWidthSizable, .ViewHeightSizable]
+        effectView.layer?.backgroundColor = NSColor.clearColor().CGColor
         self.view.addSubview(effectView)
         NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateVisualizationView", userInfo: nil, repeats: true)
+        
+        let blurView = NSVisualEffectView(frame: self.view.bounds)
+        view.wantsLayer = true
+        blurView.blendingMode = NSVisualEffectBlendingMode.WithinWindow
+        blurView.material = NSVisualEffectMaterial.Light
+        self.view.addSubview(blurView)
+        
     }
 
     func updateVisualizationView() {
