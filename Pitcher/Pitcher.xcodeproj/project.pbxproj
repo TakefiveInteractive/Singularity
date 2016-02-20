@@ -10,7 +10,7 @@
 		8F0F3CD01C5D583000747FE4 /* Pitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CCF1C5D583000747FE4 /* Pitcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CD71C5D583000747FE4 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CCC1C5D583000747FE4 /* Pitcher.framework */; };
 		8F0F3CDC1C5D583000747FE4 /* PitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */; };
-		8FD5229A1C76B4DB00F3EAB4 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD522991C76B4DB00F3EAB4 /* File.swift */; };
+		8FD5229A1C76B4DB00F3EAB4 /* Pitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD522991C76B4DB00F3EAB4 /* Pitcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,7 @@
 		8F0F3CD61C5D583000747FE4 /* PitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitcherTests.swift; sourceTree = "<group>"; };
 		8F0F3CDD1C5D583000747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FD522991C76B4DB00F3EAB4 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Source/File.swift; sourceTree = "<group>"; };
+		8FD522991C76B4DB00F3EAB4 /* Pitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pitcher.swift; path = Source/Pitcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		8FD522981C76B4C700F3EAB4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8FD522991C76B4DB00F3EAB4 /* File.swift */,
+				8FD522991C76B4DB00F3EAB4 /* Pitcher.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD5229A1C76B4DB00F3EAB4 /* File.swift in Sources */,
+				8FD5229A1C76B4DB00F3EAB4 /* Pitcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

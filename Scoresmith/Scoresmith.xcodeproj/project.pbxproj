@@ -10,6 +10,7 @@
 		8F0F3CAC1C5D57DC00747FE4 /* Scoresmith.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CAB1C5D57DC00747FE4 /* Scoresmith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CB31C5D57DC00747FE4 /* Scoresmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CA81C5D57DC00747FE4 /* Scoresmith.framework */; };
 		8F0F3CB81C5D57DC00747FE4 /* ScoresmithTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CB71C5D57DC00747FE4 /* ScoresmithTests.swift */; };
+		8F16409B1C77E71F00250C16 /* ScoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16409A1C77E71F00250C16 /* ScoreEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		8F0F3CB21C5D57DC00747FE4 /* ScoresmithTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoresmithTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CB71C5D57DC00747FE4 /* ScoresmithTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresmithTests.swift; sourceTree = "<group>"; };
 		8F0F3CB91C5D57DC00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F16409A1C77E71F00250C16 /* ScoreEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreEngine.swift; path = Source/ScoreEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		8F0F3C9E1C5D57DC00747FE4 = {
 			isa = PBXGroup;
 			children = (
+				8F1640991C77E6A500250C16 /* Source */,
 				8F0F3CAA1C5D57DC00747FE4 /* Scoresmith */,
 				8F0F3CB61C5D57DC00747FE4 /* ScoresmithTests */,
 				8F0F3CA91C5D57DC00747FE4 /* Products */,
@@ -84,6 +87,14 @@
 				8F0F3CB91C5D57DC00747FE4 /* Info.plist */,
 			);
 			path = ScoresmithTests;
+			sourceTree = "<group>";
+		};
+		8F1640991C77E6A500250C16 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8F16409A1C77E71F00250C16 /* ScoreEngine.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F16409B1C77E71F00250C16 /* ScoreEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +317,7 @@
 		8F0F3CBD1C5D57DC00747FE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -317,12 +330,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Takefive.Scoresmith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8F0F3CBE1C5D57DC00747FE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -379,6 +394,7 @@
 				8F0F3CBE1C5D57DC00747FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F0F3CBF1C5D57DC00747FE4 /* Build configuration list for PBXNativeTarget "ScoresmithTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +403,7 @@
 				8F0F3CC11C5D57DC00747FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

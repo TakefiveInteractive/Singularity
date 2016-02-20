@@ -16,7 +16,7 @@ func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
     return processor(input)
 }
 
-class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
+class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     var microphone: EZMicrophone?
     var fft: EZAudioFFT?
@@ -25,7 +25,7 @@ class FFT: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var onNewNote: (([Pitch]) -> ())?
     
     var estimator = HPSEstimator()
-    var movingMode = MovingMode<Float>(window: 10)
+    var movingMode = MovingMode<Float>(window: 7)
     
     override init() {
         super.init()

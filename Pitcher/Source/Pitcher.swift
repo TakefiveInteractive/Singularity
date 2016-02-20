@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import MusicKit
+
+public enum Duration {
+    case Whole
+    case Half
+    case Quarter
+    case Eigth
+}
+
+public typealias Note = (Pitch, Duration)
+

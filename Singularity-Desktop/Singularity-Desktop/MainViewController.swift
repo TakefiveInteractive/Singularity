@@ -18,6 +18,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var recordButtonFrame: NSView!
     @IBOutlet weak var recordButtonClickArea: NSButton!
     var fft: FFT!
+    var engine: PitchEngine!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,9 +65,8 @@ class MainViewController: NSViewController {
     override func viewDidAppear() {
         super.viewDidAppear()
         
-        
-        fft = FFT()
-        fft.start()
+        engine = PitchEngine()
+        engine.start()
     }
 
     func updateVisualizationView() {
