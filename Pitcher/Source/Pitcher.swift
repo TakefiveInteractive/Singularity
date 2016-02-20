@@ -16,7 +16,12 @@ public enum Duration {
     case Eigth
 }
 
-public typealias Note = (Pitch, Duration)
+public enum MusicElement {
+    case Play(Pitch)
+    case Rest
+}
+
+public typealias Note = (MusicElement, Duration)
 
 public enum Frequency {
     case Freq(Float)
@@ -30,6 +35,12 @@ func ** (num: Float, power: Float) -> Float {
     return Float(pow(Double(num), Double(power)))
 }
 
+// linear processor
+infix operator >>= { associativity left precedence 140 }
+func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
+    return processor(input)
+}
+
 public class NoteEngine {
     
     public init() {
@@ -37,8 +48,8 @@ public class NoteEngine {
     }
     
     public func pitchToNote(pitches: [Frequency], bpm: Float, pitchPerSecond: Float) -> [Note] {
-        // Select best tuning standard frequency
-        // Start from C2
+        // Select best tuning standard frequency that fits the frequency sequence
+        // Start from D2
         
         // Make a semitone sequence from D2
         var sequence: Array<Pitch> = []
@@ -50,7 +61,7 @@ public class NoteEngine {
         
         var bestError: Float = 100000.0
         var bestConcertA = 440
-        for concertA in 430...450 {
+        for concertA in 425...455 {
             MusicKit.concertA = Double(concertA)
             var error: Float = 0.0
             for case let Frequency.Freq(freq) in pitches {
@@ -64,8 +75,23 @@ public class NoteEngine {
                 bestConcertA = concertA
             }
         }
-        print("Best concert pitch: \(bestConcertA)")
+        // print("Best concert pitch: \(bestConcertA)")
         MusicKit.concertA = Double(bestConcertA)
+        
+        // Convert frequencies to notes/rest
+        let notes: [MusicElement] = pitches
+            .map({ pitch in
+                switch pitch {
+                case let .Freq(freq):
+                    return sequence
+                        .minElement({ (a: Pitch, b: Pitch) -> Bool in (a.frequency - freq) ** 2 - (b.frequency - freq) ** 2 < 0})!
+                        >>= { MusicElement.Play($0) }
+                case .VolumeLow:
+                    return .Rest
+                }
+            })
+     
+        print(notes)
         
         return []
     }
