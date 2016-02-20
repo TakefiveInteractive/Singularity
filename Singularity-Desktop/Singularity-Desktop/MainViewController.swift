@@ -65,7 +65,7 @@ class MainViewController: NSViewController {
         super.viewDidAppear()
         
         engine = PitchEngine()
-        engine.start()
+        engine.start(100)
     }
 
     func updateVisualizationView() {

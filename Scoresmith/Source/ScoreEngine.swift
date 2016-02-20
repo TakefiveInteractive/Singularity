@@ -11,13 +11,13 @@ import MusicKit
 import Pitcher
 import PromiseKit
 
-class ScoreEngine {
+public class ScoreEngine {
     
-    init() {
+    public init() {
         
     }
     
-    func makeScore(notes: [Note]) -> Promise<NSImage> {
+    public func makeScore(notes: [Note]) -> Promise<NSImage> {
         return Promise { resolve, reject in
         }
     }

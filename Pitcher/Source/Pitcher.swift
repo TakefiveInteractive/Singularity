@@ -20,8 +20,15 @@ public typealias Note = (Pitch, Duration)
 
 public class NoteEngine {
     
-    init() {
+    public init() {
         
     }
     
+    public func pitchToNote(pitches: [Float], bpm: Float, pitchPerSecond: Float) -> [Note] {
+        // limit pitch range here.
+        // some pitches are erroneously identified to reside in a higher octave.
+        // bring them down by dividing by two.
+        
+        return []
+    }
 }

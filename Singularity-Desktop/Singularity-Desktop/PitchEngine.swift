@@ -10,6 +10,7 @@ import Foundation
 import EZAudio
 import MusicKit
 import Pitcher
+import Scoresmith
 
 infix operator >>= { associativity left precedence 140 }
 func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
@@ -25,16 +26,29 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var onNewNote: (([Pitch]) -> ())?
     
     var estimator = HPSEstimator()
+    var noteEngine = NoteEngine()
+    var scoreEngine = ScoreEngine()
     var movingMode = MovingMode<Float>(window: 7)
+    
+    let FFTWindowSize: UInt = 8192
+    
+    var bpm: Float?
+    var pitchPerSecond: Float?
     
     override init() {
         super.init()
         
         microphone = EZMicrophone(microphoneDelegate: self)
-        fft = EZAudioFFTRolling(windowSize: 8192, sampleRate: Float(microphone!.audioStreamBasicDescription().mSampleRate), delegate: self)
+        fft = EZAudioFFTRolling(
+            windowSize: FFTWindowSize,
+            sampleRate: Float(microphone!.audioStreamBasicDescription().mSampleRate),
+            delegate: self)
     }
     
-    func start() {
+    func start(bpm: Float) {
+        histFrequencies = []
+        self.bpm = bpm
+        
         microphone?.startFetchingAudio()
     }
     
@@ -48,9 +62,15 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                 >>= { fft.frequencyAtIndex($0) }
                 >>= { self.movingMode.update($0) }
         
-        // histFrequencies?.append(maxFrequency)
-        
-        print(maxFrequency)
+        histFrequencies?.append(maxFrequency)
+        if let bpm = bpm, histFrequencies = histFrequencies, pitchPerSecond = pitchPerSecond {
+            let notes = noteEngine.pitchToNote(
+                histFrequencies,
+                bpm: bpm,
+                pitchPerSecond: pitchPerSecond)
+            
+            scoreEngine.makeScore(notes)
+        }
     }
     
     func microphone(microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>>, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
