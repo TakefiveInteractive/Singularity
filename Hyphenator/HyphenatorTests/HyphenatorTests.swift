@@ -24,15 +24,9 @@ class HyphenatorTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let test = Hyphenator()
-        print (test.hyphenate_word("supercalifragilisticexpialidocious") )
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+        let hyp = Hyphenator()
+        print(hyp.hyphenate_word("supercalifragilisticexpialidocious"))
+        XCTAssert(hyp.hyphenate_word("supercalifragilisticexpialidocious") == ["su", "per", "cal", "ifrag", "ilis", "tic", "ex", "pi", "ali", "do", "cious"])
     }
     
 }
