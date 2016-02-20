@@ -22,7 +22,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var microphone: EZMicrophone?
     var fft: EZAudioFFTRolling?
     
-    var histFrequencies: [Float]?
+    var histFrequencies: [Frequency]?
     var onNewNote: (([Pitch]) -> ())?
     var rateTracker: RateTracker?
     
@@ -78,8 +78,10 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                 >>= { self.movingMode.update($0) }
         
         if magnitude > MinimumMagnitude {
-            histFrequencies?.append(maxFrequency)
-            print(maxFrequency)
+            histFrequencies?.append(.Freq(maxFrequency))
+            // print(maxFrequency)
+        } else {
+            histFrequencies?.append(.VolumeLow)
         }
         
         if let bpm = bpm, histFrequencies = histFrequencies, pitchPerSecond = rateTracker?.update(NSDate().timeIntervalSince1970) {

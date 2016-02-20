@@ -18,13 +18,18 @@ public enum Duration {
 
 public typealias Note = (Pitch, Duration)
 
+public enum Frequency {
+    case Freq(Float)
+    case VolumeLow
+}
+
 public class NoteEngine {
     
     public init() {
         
     }
     
-    public func pitchToNote(pitches: [Float], bpm: Float, pitchPerSecond: Float) -> [Note] {
+    public func pitchToNote(pitches: [Frequency], bpm: Float, pitchPerSecond: Float) -> [Note] {
         return []
     }
 }
