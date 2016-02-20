@@ -18,3 +18,10 @@ public enum Duration {
 
 public typealias Note = (Pitch, Duration)
 
+public class NoteEngine {
+    
+    init() {
+        
+    }
+    
+}
