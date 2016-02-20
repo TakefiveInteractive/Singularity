@@ -25,7 +25,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var onNewNote: (([Pitch]) -> ())?
     
     var estimator = HPSEstimator()
-    var movingMode = MovingMode<Float>(window: 10)
+    var movingMode = MovingMode<Float>(window: 7)
     
     override init() {
         super.init()
