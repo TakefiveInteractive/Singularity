@@ -16,7 +16,7 @@ public class TrieNode {
     var hash = [Character : TrieNode]()
     var None: [String?]!
     init() {
-        for char in "abcdefghijklmnopqrstuvwxyz".characters {
+        for char in ".abcdefghijklmnopqrstuvwxyz".characters {
             hash[char] = nil
         }
         
@@ -32,7 +32,8 @@ public class TrieNode {
             
             str_substring = str_substring.substringWithRange(NSRange(location: 1, length: str.characters.count-1))
             hash[str.characters.first!]?.insert(str_substring as String, point: point)
-        }else{
+        }
+        if str.characters.count == 1{
             None = point
         }
         
@@ -75,26 +76,17 @@ class Hyphenator:NSObject {
     func _insert_pattern(pattern: String) {
         //Convert the a pattern like 'a1bc3d4' into a string of chars 'abcd'
         //and a list of points [ 1, 0, 3, 4 ].
-        var chars = re.sub("[0-9]", "", pattern)
-        var out = re.split("[.a-z]", pattern)
+        let chars = re.sub("[0-9]", "", pattern)
+        let out = re.split("[.a-z]", pattern)
         
         var points = [String?]()
         for el in out {
             if el == "" {
                 points.append("0")
             }
-            else if el == "-" {
+            else if el != "" {
                 points.append(el)
             }
-        }
-        
-        //        points.removeAtIndex(0)
-        var index = 0
-        for el in points {
-            if el == "" {
-                points[index] = "0"
-            }
-            index += 1
         }
         
         //Insert the pattern into the tree.  Each character finds a dict
@@ -107,6 +99,8 @@ class Hyphenator:NSObject {
     func hyphenate_word(word:String) -> [String] {
         //Given a word, returns a list of pieces, broken at the possible
         //hyphenation points.
+        
+
         
         //Short words aren't hyphenated.
         if word.characters.count <= 4 {

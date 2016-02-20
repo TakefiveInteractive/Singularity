@@ -73,7 +73,7 @@ class Hyphenator:
             points[1] = points[2] = points[-2] = points[-3] = 0
 
         # Examine the points to build the pieces list.
-        pieces = w
+        pieces = ['']
         for c, p in zip(word, points[2:]):
             pieces[-1] += c
             if p % 2:
