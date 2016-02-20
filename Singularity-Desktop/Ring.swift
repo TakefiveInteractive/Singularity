@@ -98,4 +98,14 @@ public class Ring<T> : SequenceType {
     public func generate() -> RingGenerator<T> {
         return RingGenerator(self)
     }
+    
+    public var first: T? {
+        if isEmpty { return nil }
+        return buffer[(count - 1) % buffer.count]
+    }
+    
+    public var last: T? {
+        if isEmpty { return nil }
+        return buffer[(count - storedCount) % capacity]
+    }
 }

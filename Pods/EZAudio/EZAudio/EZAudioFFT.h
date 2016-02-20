@@ -362,6 +362,12 @@
                        sampleRate:(float)sampleRate
                          delegate:(id<EZAudioFFTDelegate>)delegate;
 
+/**
+ * Append to FFT history without performing computation
+ */
+- (void) appendBuffer: (float *) buffer
+       withBufferSize: (UInt32) bufferSize;
+
 //------------------------------------------------------------------------------
 #pragma mark - Properties
 //------------------------------------------------------------------------------

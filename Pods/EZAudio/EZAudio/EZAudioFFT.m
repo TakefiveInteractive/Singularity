@@ -425,6 +425,22 @@ typedef struct EZAudioFFTInfo
                         withBufferSize:self.historyInfo->bufferSize];
 }
 
+- (void) appendBuffer: (float *) buffer
+       withBufferSize: (UInt32) bufferSize
+{
+    if (buffer == NULL)
+    {
+        return;
+    }
+    
+    //
+    // Append buffer to history window
+    //
+    [EZAudioUtilities appendBuffer:buffer
+                    withBufferSize:bufferSize
+                     toHistoryInfo:self.historyInfo];
+}
+
 //------------------------------------------------------------------------------
 #pragma mark - Getters
 //------------------------------------------------------------------------------
