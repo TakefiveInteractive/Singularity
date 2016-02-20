@@ -12,6 +12,7 @@
 		8F0F3C8F1C5D537F00747FE4 /* Hyphenator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C841C5D537F00747FE4 /* Hyphenator.framework */; };
 		8F0F3C941C5D537F00747FE4 /* HyphenatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C931C5D537F00747FE4 /* HyphenatorTests.swift */; };
 		B5251FA41C5F35F40080139D /* Hyphenator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5251FA31C5F35F40080139D /* Hyphenator.swift */; };
+		B55DDBCC1C77BCA000F9E04E /* source.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DDBCB1C77BCA000F9E04E /* source.swift */; };
 		B5DEBF5D1C6BC21C00DFEAFC /* Hyphenator.py in Resources */ = {isa = PBXBuildFile; fileRef = B5DEBF5C1C6BC21C00DFEAFC /* Hyphenator.py */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		8F0F3C931C5D537F00747FE4 /* HyphenatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyphenatorTests.swift; sourceTree = "<group>"; };
 		8F0F3C951C5D537F00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5251FA31C5F35F40080139D /* Hyphenator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hyphenator.swift; sourceTree = "<group>"; };
+		B55DDBCB1C77BCA000F9E04E /* source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = source.swift; sourceTree = "<group>"; };
 		B5DEBF5C1C6BC21C00DFEAFC /* Hyphenator.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Hyphenator.py; sourceTree = "<group>"; };
 		C89E9916AB06FEB4E5992DEE /* Pods_Hyphenator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyphenator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B5251FA31C5F35F40080139D /* Hyphenator.swift */,
+				B55DDBCB1C77BCA000F9E04E /* source.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55DDBCC1C77BCA000F9E04E /* source.swift in Sources */,
 				B5251FA41C5F35F40080139D /* Hyphenator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
