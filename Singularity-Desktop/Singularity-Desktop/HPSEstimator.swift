@@ -11,7 +11,10 @@ import Foundation
 class HPSEstimator {
     
     let harmonics = 6
-    let minIndex = 9
+    let minIndex = 6
+    
+    var lastLocation: Int?
+    var lastMagnitude: Float?
     
     func sanitize(location: Int, reserveLocation: Int, elements: [Float]) -> Int {
         return location >= 0 && location < elements.count
@@ -19,9 +22,10 @@ class HPSEstimator {
             : reserveLocation
     }
     
-    func estimateLocation(magnitudeAt: Int -> Float, numBins: Int) -> UInt {
+    func estimateLocation(magnitudeAt: Int -> Float, frequencyAt: Int -> Float, numBins: Int) -> UInt {
         let maxIndex = numBins - 1
         var maxHIndex = (numBins - 1) / harmonics
+        let withinBounds: Int -> Bool = { frequencyAt($0) < 700 && frequencyAt($0) > 90 }
         
         var spectrum: [Float] = []
         for var k = 0; k < numBins; k++ {
@@ -48,18 +52,34 @@ class HPSEstimator {
         let maxsearch = location * 3 / 4
         
         for var i = minIndex + 1; i < maxsearch; i++ {
-            if spectrum[i] > spectrum[max2] {
+            if spectrum[i] > spectrum[max2] && withinBounds(i) {
                 max2 = i
             }
         }
         
-        if abs(max2 * 2 - location) < 4 {
-            if spectrum[max2] / spectrum[location] > 0.2 {
+        if abs(max2 * 2 - location) < 20 && withinBounds(max2) {
+            if spectrum[max2] / spectrum[location] > 0.05 {
                 location = max2
             }
         }
-
-        return UInt(sanitize(location, reserveLocation: maxIndex, elements: spectrum))
+        
+        if frequencyAt(location) >= 700 && withinBounds(max2) {
+            location = max2
+        }
+        
+        // hack
+        if let lastLocation = lastLocation, lastMagnitude = lastMagnitude {
+            if abs(lastLocation * 2 - location) < 10 && withinBounds(lastLocation) {
+                if spectrum[lastLocation] / lastMagnitude > 0.7 {
+                    // print("Save")
+                    location = lastLocation
+                }
+            }
+        }
+        
+        lastLocation = sanitize(location, reserveLocation: maxIndex, elements: spectrum)
+        lastMagnitude = spectrum[lastLocation!]
+        return UInt(lastLocation!)
     }
     
 }

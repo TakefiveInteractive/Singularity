@@ -29,9 +29,10 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var estimator = HPSEstimator()
     var noteEngine = NoteEngine()
     var scoreEngine = ScoreEngine()
-    var movingMode = MovingMode<Float>(window: 6)
+    var movingMode = MovingMode<Float>(window: 7)
     
-    let FFTWindowSize: UInt = 4096
+    let FFTWindowSize: UInt = 8192
+    let MinimumMagnitude: Float = 0.001
     var audioCounter = 0
     
     var bpm: Float?
@@ -39,7 +40,13 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     override init() {
         super.init()
         
+        // Enumerate Audio devices
+        let devices = EZAudioDevice.inputDevices()
+        let bestMicrophone = devices.filter({ ($0 as! EZAudioDevice).manufacturer.containsString("BADAAX") }).first ?? devices.first
+        
         microphone = EZMicrophone(microphoneDelegate: self)
+        microphone?.device = bestMicrophone! as! EZAudioDevice
+
         var asbd = microphone!.audioStreamBasicDescription()
         asbd.mSampleRate = 44100
         microphone!.setAudioStreamBasicDescription(asbd)
@@ -64,12 +71,16 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     }
     
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
-        let maxFrequency =
-            estimator.estimateLocation({ fft.frequencyMagnitudeAtIndex(UInt($0)) }, numBins: Int(bufferSize))
+        let maxLocation = estimator.estimateLocation({ fft.frequencyMagnitudeAtIndex(UInt($0)) }, frequencyAt: { fft.frequencyAtIndex(UInt($0)) }, numBins: Int(bufferSize))
+        let magnitude = fft.frequencyMagnitudeAtIndex(maxLocation)
+        let maxFrequency = maxLocation
                 >>= { fft.frequencyAtIndex($0) }
                 >>= { self.movingMode.update($0) }
         
-        histFrequencies?.append(maxFrequency)
+        if magnitude > MinimumMagnitude {
+            histFrequencies?.append(maxFrequency)
+            print(maxFrequency)
+        }
         
         if let bpm = bpm, histFrequencies = histFrequencies, pitchPerSecond = rateTracker?.update(NSDate().timeIntervalSince1970) {
             let notes = noteEngine.pitchToNote(
@@ -77,7 +88,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                 bpm: bpm,
                 pitchPerSecond: Float(pitchPerSecond))
             
-            scoreEngine.makeScore(notes)
+            // scoreEngine.makeScore(notes)
         }
     }
     

@@ -10,7 +10,7 @@ import Foundation
 
 class RateTracker {
     
-    var ring: Ring<NSTimeInterval> = Ring(capacity: 200)
+    var ring: Ring<NSTimeInterval> = Ring(capacity: 100)
     
     init() {
         
