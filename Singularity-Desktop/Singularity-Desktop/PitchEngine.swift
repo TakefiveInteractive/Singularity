@@ -37,6 +37,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     var bpm: Float?
     
+    private let pitchProcessingQueue = dispatch_queue_create("pitch-worker", DISPATCH_QUEUE_SERIAL)
+    
     override init() {
         super.init()
         
@@ -78,6 +80,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                 >>= { self.movingMode.update($0) }
         
         if magnitude > MinimumMagnitude {
+            print(maxFrequency)
             histFrequencies?.append(.Freq(maxFrequency))
             // print(maxFrequency)
         } else {
@@ -85,6 +88,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         }
         
         if let bpm = bpm, histFrequencies = histFrequencies, pitchPerSecond = rateTracker?.update(NSDate().timeIntervalSince1970) {
+            // Every 1 second
+            
             let notes = noteEngine.pitchToNote(
                 histFrequencies,
                 bpm: bpm,
