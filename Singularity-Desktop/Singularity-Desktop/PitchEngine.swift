@@ -10,6 +10,7 @@ import Foundation
 import EZAudio
 import MusicKit
 import Pitcher
+import PromiseKit
 import Scoresmith
 
 infix operator >>= { associativity left precedence 140 }
@@ -72,6 +73,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         microphone?.stopFetchingAudio()
     }
     
+    var fftCounter = 0
+    
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
         let maxLocation = estimator.estimateLocation({ fft.frequencyMagnitudeAtIndex(UInt($0)) }, frequencyAt: { fft.frequencyAtIndex(UInt($0)) }, numBins: Int(bufferSize))
         let magnitude = fft.frequencyMagnitudeAtIndex(maxLocation)
@@ -89,13 +92,15 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         
         if let bpm = bpm, histFrequencies = histFrequencies, pitchPerSecond = rateTracker?.update(NSDate().timeIntervalSince1970) {
             // Every 1 second
-            
-            let notes = noteEngine.pitchToNote(
-                histFrequencies,
-                bpm: bpm,
-                pitchPerSecond: Float(pitchPerSecond))
-            
-            // scoreEngine.makeScore(notes)
+            fftCounter += 1
+            if fftCounter % Int(pitchPerSecond) == 0 {
+                dispatch_promise(on: pitchProcessingQueue) {
+                    return self.noteEngine.pitchToNote(
+                        histFrequencies,
+                        bpm: bpm,
+                        pitchPerSecond: Float(pitchPerSecond))
+                }.then({ self.scoreEngine.makeScore($0) })
+            }
         }
     }
     
