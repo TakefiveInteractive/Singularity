@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,13 +675,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="abk-Jm-9W8">
-                                <rect key="frame" x="-1" y="0.0" width="1025" height="576"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="abk-Jm-9W8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="F3f-4f-M6g">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="88"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="DZq-HH-550">
+                                        <rect key="frame" x="484" y="16" width="56" height="56"/>
+                                        <subviews>
+                                            <button translatesAutoresizingMaskIntoConstraints="NO" id="tGF-qr-FrE">
+                                                <rect key="frame" x="12" y="12" width="32" height="32"/>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="record_icon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="6sN-6h-IDJ">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tGF-qr-FrE" firstAttribute="leading" secondItem="DZq-HH-550" secondAttribute="leading" constant="12" id="3C7-eR-5Kd"/>
+                                            <constraint firstAttribute="bottom" secondItem="tGF-qr-FrE" secondAttribute="bottom" constant="12" id="CcB-dL-cCs"/>
+                                            <constraint firstAttribute="width" constant="56" id="EjF-La-Dgl"/>
+                                            <constraint firstAttribute="width" secondItem="DZq-HH-550" secondAttribute="height" id="Vh0-WE-LLP"/>
+                                            <constraint firstAttribute="trailing" secondItem="tGF-qr-FrE" secondAttribute="trailing" constant="12" id="oMY-8R-oWw"/>
+                                            <constraint firstItem="tGF-qr-FrE" firstAttribute="top" secondItem="DZq-HH-550" secondAttribute="top" constant="12" id="vfs-IV-5Wa"/>
+                                        </constraints>
+                                    </customView>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="PWs-ja-By8">
+                                        <rect key="frame" x="477" y="9" width="70" height="70"/>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ACd-zi-bvK">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
                                 <constraints>
+                                    <constraint firstItem="DZq-HH-550" firstAttribute="centerX" secondItem="F3f-4f-M6g" secondAttribute="centerX" id="9qz-uZ-KRm"/>
+                                    <constraint firstItem="PWs-ja-By8" firstAttribute="width" secondItem="DZq-HH-550" secondAttribute="width" multiplier="1.25" id="EBp-Wd-ENi"/>
+                                    <constraint firstItem="PWs-ja-By8" firstAttribute="centerX" secondItem="DZq-HH-550" secondAttribute="centerX" id="IBy-uQ-lsE"/>
                                     <constraint firstAttribute="height" constant="88" id="QtF-Qr-TT0"/>
+                                    <constraint firstItem="PWs-ja-By8" firstAttribute="centerY" secondItem="DZq-HH-550" secondAttribute="centerY" id="US7-qY-B5D"/>
+                                    <constraint firstItem="PWs-ja-By8" firstAttribute="height" secondItem="DZq-HH-550" secondAttribute="height" multiplier="1.25" id="Wh1-ki-e3B"/>
+                                    <constraint firstItem="DZq-HH-550" firstAttribute="centerY" secondItem="F3f-4f-M6g" secondAttribute="centerY" id="iQj-lj-Eqv"/>
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-IJ-yhA">
@@ -706,6 +743,9 @@
                         <outlet property="backView" destination="abk-Jm-9W8" id="XLn-hv-O4t"/>
                         <outlet property="footerView" destination="F3f-4f-M6g" id="pdp-wU-Tf1"/>
                         <outlet property="headerView" destination="Uoe-IJ-yhA" id="AQg-DS-Kkh"/>
+                        <outlet property="recordButtonClickArea" destination="PWs-ja-By8" id="X67-ad-hYX"/>
+                        <outlet property="recordButtonFrame" destination="DZq-HH-550" id="u6z-4t-bZD"/>
+                        <outlet property="recordButtonFrameView" destination="DZq-HH-550" id="xJX-TO-gVn"/>
                     </connections>
                 </viewController>
                 <customObject id="Mlx-b6-EVg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -713,4 +753,7 @@
             <point key="canvasLocation" x="75" y="822"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="record_icon" width="64" height="64"/>
+    </resources>
 </document>

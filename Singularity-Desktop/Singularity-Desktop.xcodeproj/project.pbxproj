@@ -15,6 +15,7 @@
 		885EB25C1C699F250025DA28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885EB25B1C699F250025DA28 /* CoreGraphics.framework */; };
 		887CC16D1C76C86300894F09 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887CC16C1C76C86300894F09 /* HexColor.swift */; };
 		887CC16F1C76CBB300894F09 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887CC16E1C76CBB300894F09 /* Palette.swift */; };
+		887CC1711C7772E500894F09 /* record_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887CC1701C7772E500894F09 /* record_icon@2x.png */; };
 		88BBC3C41C5D4FF20037578B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C31C5D4FF20037578B /* AppDelegate.swift */; };
 		88BBC3C61C5D4FF20037578B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3C51C5D4FF20037578B /* MainViewController.swift */; };
 		88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C71C5D4FF20037578B /* Assets.xcassets */; };
@@ -22,7 +23,6 @@
 		88BBC3D61C5D4FF20037578B /* Singularity_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */; };
 		88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */; };
 		8F2724B11C5DBDE400787B02 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */; };
-		8FD522971C76AC9200F3EAB4 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FD522961C76AC9200F3EAB4 /* bg.jpg */; };
 		8FD5229C1C76B60C00F3EAB4 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229B1C76B60C00F3EAB4 /* FFT.swift */; };
 		8FD5229E1C76CA2100F3EAB4 /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */; };
 		8FD522A01C76D2DE00F3EAB4 /* MovingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229F1C76D2DE00F3EAB4 /* MovingMode.swift */; };
@@ -60,6 +60,7 @@
 		885EB25B1C699F250025DA28 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		887CC16C1C76C86300894F09 /* HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		887CC16E1C76CBB300894F09 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		887CC1701C7772E500894F09 /* record_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record_icon@2x.png"; sourceTree = "<group>"; };
 		88BBC3C01C5D4FF20037578B /* Singularity-Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singularity-Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3C31C5D4FF20037578B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88BBC3C51C5D4FF20037578B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopUITests.swift; sourceTree = "<group>"; };
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FD522961C76AC9200F3EAB4 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		8FD5229B1C76B60C00F3EAB4 /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
 		8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPSEstimator.swift; sourceTree = "<group>"; };
 		8FD5229F1C76D2DE00F3EAB4 /* MovingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingMode.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				88BBC3C71C5D4FF20037578B /* Assets.xcassets */,
 				88BBC3C91C5D4FF20037578B /* Main.storyboard */,
 				88BBC3CC1C5D4FF20037578B /* Info.plist */,
-				8FD522961C76AC9200F3EAB4 /* bg.jpg */,
+				887CC1701C7772E500894F09 /* record_icon@2x.png */,
 				888F61751C6ADAE5001CD64B /* VisualizeView */,
 				8FD5229B1C76B60C00F3EAB4 /* FFT.swift */,
 				8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */,
@@ -314,8 +314,8 @@
 			files = (
 				885EB24E1C699E120025DA28 /* particleTexture.png in Resources */,
 				88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */,
-				8FD522971C76AC9200F3EAB4 /* bg.jpg in Resources */,
 				88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */,
+				887CC1711C7772E500894F09 /* record_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

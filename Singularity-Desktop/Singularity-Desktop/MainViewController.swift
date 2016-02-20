@@ -15,6 +15,8 @@ class MainViewController: NSViewController {
     @IBOutlet weak var headerView: NSView!
     @IBOutlet weak var backView: NSView!
     @IBOutlet weak var footerView: NSView!
+    @IBOutlet weak var recordButtonFrame: NSView!
+    @IBOutlet weak var recordButtonClickArea: NSButton!
     var fft: FFT!
     
     override func viewDidLoad() {
@@ -53,6 +55,10 @@ class MainViewController: NSViewController {
         
         setShadow(headerView)
         setShadow(footerView)
+        
+        recordButtonFrame.layer?.cornerRadius = recordButtonFrame.bounds.width / 2
+        recordButtonFrame.layer?.borderWidth = 2
+        recordButtonFrame.layer?.borderColor = NSColor.whiteColor().CGColor
     }
     
     override func viewDidAppear() {
