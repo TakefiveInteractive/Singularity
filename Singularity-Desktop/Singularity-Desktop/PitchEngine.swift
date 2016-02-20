@@ -12,11 +12,9 @@ import MusicKit
 import Pitcher
 import PromiseKit
 import Scoresmith
+import SingularityLib
 
 infix operator >>= { associativity left precedence 140 }
-func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
-    return processor(input)
-}
 
 class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
@@ -30,7 +28,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var estimator = HPSEstimator()
     var noteEngine = NoteEngine()
     var scoreEngine = ScoreEngine()
-    var movingModeL1 = MovingMode<Float>(window: 6)
+    var movingModeL1 = MovingMode<Float>(window: 7)
     var movingModeL2 = MovingMode<Float>(window: 21)
     
     let FFTWindowSize: UInt = 8192

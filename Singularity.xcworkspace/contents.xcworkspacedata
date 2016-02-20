@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SingularityLib/SingularityLib.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:flac/flac.xcodeproj">
    </FileRef>
    <FileRef

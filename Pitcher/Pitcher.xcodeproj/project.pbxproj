@@ -10,6 +10,8 @@
 		8F0F3CD01C5D583000747FE4 /* Pitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CCF1C5D583000747FE4 /* Pitcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CD71C5D583000747FE4 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CCC1C5D583000747FE4 /* Pitcher.framework */; };
 		8F0F3CDC1C5D583000747FE4 /* PitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */; };
+		8F2FC3861C792478005687AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2FC3851C792478005687AF /* Pods.framework */; };
+		8F2FC3881C79247E005687AF /* SingularityLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2FC3871C79247E005687AF /* SingularityLib.framework */; };
 		8FD5229A1C76B4DB00F3EAB4 /* Pitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD522991C76B4DB00F3EAB4 /* Pitcher.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		8F0F3CD61C5D583000747FE4 /* PitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitcherTests.swift; sourceTree = "<group>"; };
 		8F0F3CDD1C5D583000747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F2FC3851C792478005687AF /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "../../../Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/Pods.framework"; sourceTree = "<group>"; };
+		8F2FC3871C79247E005687AF /* SingularityLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SingularityLib.framework; path = "../../../Library/Developer/Xcode/DerivedData/Singularity-dzcienpqyqoxqadxuskxzywijwgz/Build/Products/Debug/SingularityLib.framework"; sourceTree = "<group>"; };
 		8FD522991C76B4DB00F3EAB4 /* Pitcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pitcher.swift; path = Source/Pitcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2FC3881C79247E005687AF /* SingularityLib.framework in Frameworks */,
+				8F2FC3861C792478005687AF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +61,8 @@
 		8F0F3CC21C5D583000747FE4 = {
 			isa = PBXGroup;
 			children = (
+				8F2FC3871C79247E005687AF /* SingularityLib.framework */,
+				8F2FC3851C792478005687AF /* Pods.framework */,
 				8FD522981C76B4C700F3EAB4 /* Source */,
 				8F0F3CCE1C5D583000747FE4 /* Pitcher */,
 				8F0F3CDA1C5D583000747FE4 /* PitcherTests */,

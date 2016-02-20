@@ -8,6 +8,7 @@
 
 import Foundation
 import MusicKit
+import SingularityLib
 
 public enum Duration {
     case Whole
@@ -28,17 +29,36 @@ public enum Frequency {
     case VolumeLow
 }
 
-/// Exponentiation operator
 infix operator ** { associativity left precedence 170 }
+infix operator >>= { associativity left precedence 140 }
 
-func ** (num: Float, power: Float) -> Float {
-    return Float(pow(Double(num), Double(power)))
+extension MusicElement: Hashable, Equatable {
+    public var hashValue: Int {
+        switch self {
+        case let .Play(pitch):
+            return pitch.hashValue
+        case .Rest:
+            return 0
+        }
+    }
 }
 
-// linear processor
-infix operator >>= { associativity left precedence 140 }
-func >>= <T, R> (input: T, processor: (T) -> (R)) -> R {
-    return processor(input)
+public func == (lhs: MusicElement, rhs: MusicElement) -> Bool {
+    switch lhs {
+    case let .Play(pitch):
+        if case let .Play(pitch2) = rhs {
+            return pitch == pitch2
+        } else {
+            return false
+        }
+    case .Rest:
+        switch rhs {
+        case .Rest:
+            return true
+        default:
+            return false
+        }
+    }
 }
 
 public class NoteEngine {
@@ -90,8 +110,11 @@ public class NoteEngine {
                     return .Rest
                 }
             })
-     
-        print(notes)
+        
+        // Identify duration
+        var movingMode = MovingMode<MusicElement>(window: 5)
+        let smoothNotes = notes.map { movingMode.update($0) }
+        print(smoothNotes)
         
         return []
     }
