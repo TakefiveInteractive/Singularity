@@ -17,7 +17,6 @@ class MainViewController: NSViewController {
     @IBOutlet weak var footerView: NSView!
     @IBOutlet weak var recordButtonFrame: NSView!
     @IBOutlet weak var recordButtonClickArea: NSButton!
-    var fft: FFT!
     var engine: PitchEngine!
     
     override func viewDidLoad() {
