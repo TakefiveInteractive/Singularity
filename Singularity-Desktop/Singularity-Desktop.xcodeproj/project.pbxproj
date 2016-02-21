@@ -22,6 +22,8 @@
 		88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BBC3C91C5D4FF20037578B /* Main.storyboard */; };
 		88BBC3D61C5D4FF20037578B /* Singularity_DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3D51C5D4FF20037578B /* Singularity_DesktopTests.swift */; };
 		88BBC3E11C5D4FF20037578B /* Singularity_DesktopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */; };
+		88E8CB441C7994D700306FF8 /* Metromf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88E8CB431C7994D700306FF8 /* Metromf.mp3 */; };
+		88E8CB461C7996FC00306FF8 /* pause_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E8CB451C7996FC00306FF8 /* pause_icon@2x.png */; };
 		8F16A6A71C77F7FA00168FB0 /* RateTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16A6A61C77F7FA00168FB0 /* RateTracker.swift */; };
 		8F2724B11C5DBDE400787B02 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */; };
 		8F2FC3821C7922DB005687AF /* SingularityLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2FC3811C7922DB005687AF /* SingularityLib.framework */; };
@@ -75,6 +77,8 @@
 		88BBC3DC1C5D4FF20037578B /* Singularity-DesktopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Singularity-DesktopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BBC3E01C5D4FF20037578B /* Singularity_DesktopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singularity_DesktopUITests.swift; sourceTree = "<group>"; };
 		88BBC3E21C5D4FF20037578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E8CB431C7994D700306FF8 /* Metromf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Metromf.mp3; sourceTree = "<group>"; };
+		88E8CB451C7996FC00306FF8 /* pause_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause_icon@2x.png"; sourceTree = "<group>"; };
 		8F16A6A61C77F7FA00168FB0 /* RateTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTracker.swift; sourceTree = "<group>"; };
 		8F2FC3811C7922DB005687AF /* SingularityLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SingularityLib.framework; path = ../SingularityLib/build/Debug/SingularityLib.framework; sourceTree = "<group>"; };
 		8F91A6001C79275C003AA041 /* Scoresmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Scoresmith.framework; path = ../Scoresmith/build/Debug/Scoresmith.framework; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 		88BBC3C21C5D4FF20037578B /* Singularity-Desktop */ = {
 			isa = PBXGroup;
 			children = (
+				88E8CB431C7994D700306FF8 /* Metromf.mp3 */,
 				88BBC3C31C5D4FF20037578B /* AppDelegate.swift */,
 				88BBC3C51C5D4FF20037578B /* MainViewController.swift */,
 				887CC16E1C76CBB300894F09 /* Palette.swift */,
@@ -176,6 +181,7 @@
 				88BBC3C91C5D4FF20037578B /* Main.storyboard */,
 				88BBC3CC1C5D4FF20037578B /* Info.plist */,
 				887CC1701C7772E500894F09 /* record_icon@2x.png */,
+				88E8CB451C7996FC00306FF8 /* pause_icon@2x.png */,
 				888F61751C6ADAE5001CD64B /* VisualizeView */,
 				8FD5229B1C76B60C00F3EAB4 /* PitchEngine.swift */,
 				8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */,
@@ -324,6 +330,8 @@
 				885EB24E1C699E120025DA28 /* particleTexture.png in Resources */,
 				88BBC3C81C5D4FF20037578B /* Assets.xcassets in Resources */,
 				88BBC3CB1C5D4FF20037578B /* Main.storyboard in Resources */,
+				88E8CB441C7994D700306FF8 /* Metromf.mp3 in Resources */,
+				88E8CB461C7996FC00306FF8 /* pause_icon@2x.png in Resources */,
 				887CC1711C7772E500894F09 /* record_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

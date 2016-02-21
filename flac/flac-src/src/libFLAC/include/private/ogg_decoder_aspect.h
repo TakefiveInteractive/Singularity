@@ -32,7 +32,7 @@
 #ifndef FLAC__PRIVATE__OGG_DECODER_ASPECT_H
 #define FLAC__PRIVATE__OGG_DECODER_ASPECT_H
 
-#include <ogg/ogg.h>
+#include "ogg/ogg.h"
 
 #include "FLAC/ordinals.h"
 #include "FLAC/stream_decoder.h" /* for FLAC__StreamDecoderReadStatus */

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -706,6 +707,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="recordButtonDidClicked:" target="bU3-d1-655" id="4WA-BJ-0Eg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -720,8 +724,41 @@
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-IJ-yhA">
                                 <rect key="frame" x="0.0" y="408" width="1024" height="168"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-SJ-s52">
+                                        <rect key="frame" x="912" y="73" width="72" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="S7T-fI-MbH"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" title="Update" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" inset="2" id="IKp-3r-Jvr">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="Update_BPM:" target="bU3-d1-655" id="CcB-kK-bKW"/>
+                                        </connections>
+                                    </button>
+                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wpY-kB-Cxb">
+                                        <rect key="frame" x="800" y="73" width="96" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="B9b-BS-px1"/>
+                                            <constraint firstAttribute="width" constant="96" id="JTP-Rp-eXl"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="syf-p4-lGJ">
+                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="eSW-vw-tgS"/>
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
                                 <constraints>
+                                    <constraint firstItem="wpY-kB-Cxb" firstAttribute="centerY" secondItem="Uoe-IJ-yhA" secondAttribute="centerY" id="2AV-ux-UXY"/>
+                                    <constraint firstItem="EKI-SJ-s52" firstAttribute="leading" secondItem="wpY-kB-Cxb" secondAttribute="trailing" constant="16" id="IMS-3q-zNK"/>
+                                    <constraint firstItem="EKI-SJ-s52" firstAttribute="centerY" secondItem="Uoe-IJ-yhA" secondAttribute="centerY" id="JhU-uS-q9i"/>
+                                    <constraint firstItem="EKI-SJ-s52" firstAttribute="height" secondItem="wpY-kB-Cxb" secondAttribute="height" id="OnZ-mP-bz8"/>
                                     <constraint firstAttribute="height" constant="168" id="XQl-yz-7se"/>
+                                    <constraint firstAttribute="trailing" secondItem="EKI-SJ-s52" secondAttribute="trailing" constant="40" id="hvE-mP-tHE"/>
                                 </constraints>
                             </customView>
                         </subviews>
@@ -739,12 +776,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BPM_Textfield" destination="wpY-kB-Cxb" id="Duk-Xk-DHU"/>
+                        <outlet property="BPM_Update_Button" destination="EKI-SJ-s52" id="a5N-Ru-yMh"/>
                         <outlet property="backView" destination="abk-Jm-9W8" id="XLn-hv-O4t"/>
                         <outlet property="footerView" destination="F3f-4f-M6g" id="pdp-wU-Tf1"/>
                         <outlet property="headerView" destination="Uoe-IJ-yhA" id="AQg-DS-Kkh"/>
                         <outlet property="recordButtonClickArea" destination="PWs-ja-By8" id="X67-ad-hYX"/>
                         <outlet property="recordButtonFrame" destination="DZq-HH-550" id="u6z-4t-bZD"/>
                         <outlet property="recordButtonFrameView" destination="DZq-HH-550" id="xJX-TO-gVn"/>
+                        <outlet property="recordImageButton" destination="tGF-qr-FrE" id="a7p-iI-1j5"/>
                     </connections>
                 </viewController>
                 <customObject id="Mlx-b6-EVg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
