@@ -25,6 +25,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var BPM_Update_Button: NSButton!
     var visualTimer: NSTimer!
     
+    @IBOutlet weak var imageView: NSImageView!
     @IBOutlet weak var containerView: NSView!
     
     var BPM: Int32 { return (BPM_Textfield.intValue) }
@@ -91,29 +92,31 @@ class MainViewController: NSViewController {
         }
         BPM_Textfield.stringValue = "96"
 
+        engine = PitchEngine()
+        self.backView.addSubview(containerView)
+        engine.onNewNote = { image in
+            let size = image.size
+            let imageWidth = self.containerView.bounds.height / size.height * size.width
+            self.imageView.snp_updateConstraints {
+                $0.width.equalTo(imageWidth)
+            }
+            self.imageView.image = image
+//            self.imageView.image = NSImage(named: "record_icon")
+            // imageView.layer?.backgroundColor = NSColor.blackColor().CGColor
+        }
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        let imageView = NSImageView()
-        self.containerView.addSubview(imageView)
-        imageView.snp_makeConstraints {
-            $0.left.equalTo(self.containerView.snp_left)
-            $0.top.equalTo(self.containerView.snp_left)
-            $0.bottom.equalTo(self.containerView.snp_bottom)
-        }
+//        let imageView = NSImageView()
+//        self.containerView.addSubview(imageView)
+//        imageView.snp_makeConstraints {
+//            $0.left.equalTo(self.containerView.snp_left)
+//            $0.top.equalTo(self.containerView.snp_left)
+//            $0.bottom.equalTo(self.containerView.snp_bottom)
+//        }
         
-        engine = PitchEngine()
-        engine.onNewNote = { image in
-            let size = image.size
-            let imageWidth = self.containerView.bounds.height / size.height * size.width
-            
-            imageView.snp_updateConstraints {
-                $0.width.equalTo(imageWidth)
-            }
-            imageView.image = image
-            // imageView.layer?.backgroundColor = NSColor.blackColor().CGColor
-        }
+ 
     }
 
     func updateVisualizationView() {

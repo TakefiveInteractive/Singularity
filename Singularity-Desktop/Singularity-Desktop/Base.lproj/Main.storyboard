@@ -678,13 +678,34 @@
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="abk-Jm-9W8">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
                                 <subviews>
+                                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-Tm-Af7">
+                                        <rect key="frame" x="-0.5" y="0.0" width="1024" height="576"/>
+                                    </customView>
                                     <customView translatesAutoresizingMaskIntoConstraints="NO" id="xbA-Lr-K7h">
-                                        <rect key="frame" x="0.0" y="120" width="1024" height="256"/>
+                                        <rect key="frame" x="0.0" y="168" width="1024" height="160"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSv-Pn-jlr">
+                                                <rect key="frame" x="0.0" y="0.0" width="500" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="500" placeholder="YES" id="mlA-iG-8yr"/>
+                                                </constraints>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="left" imageScaling="proportionallyDown" id="DEJ-bC-I6E"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="aSv-Pn-jlr" secondAttribute="bottom" id="k5y-yQ-Ia2"/>
+                                            <constraint firstItem="aSv-Pn-jlr" firstAttribute="top" secondItem="xbA-Lr-K7h" secondAttribute="top" id="oKS-jt-ob5"/>
+                                            <constraint firstItem="aSv-Pn-jlr" firstAttribute="leading" secondItem="xbA-Lr-K7h" secondAttribute="leading" id="q3L-ZS-M7T"/>
+                                        </constraints>
                                     </customView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="xbA-Lr-K7h" secondAttribute="trailing" id="E3x-PS-VEA"/>
+                                    <constraint firstAttribute="bottom" secondItem="U1z-Tm-Af7" secondAttribute="bottom" id="Eme-kx-xFj"/>
                                     <constraint firstItem="xbA-Lr-K7h" firstAttribute="leading" secondItem="abk-Jm-9W8" secondAttribute="leading" id="axl-JB-xVZ"/>
+                                    <constraint firstItem="U1z-Tm-Af7" firstAttribute="leading" secondItem="abk-Jm-9W8" secondAttribute="leading" id="ckh-HV-PpE"/>
+                                    <constraint firstItem="U1z-Tm-Af7" firstAttribute="top" secondItem="abk-Jm-9W8" secondAttribute="top" id="iCR-0d-d6x"/>
+                                    <constraint firstAttribute="trailing" secondItem="U1z-Tm-Af7" secondAttribute="trailing" id="pEX-n7-rdo"/>
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="F3f-4f-M6g">
@@ -774,13 +795,13 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="F3f-4f-M6g" secondAttribute="trailing" id="9TH-uH-Zxi"/>
                             <constraint firstAttribute="bottom" secondItem="abk-Jm-9W8" secondAttribute="bottom" id="9Ua-BH-Mma"/>
-                            <constraint firstItem="F3f-4f-M6g" firstAttribute="top" secondItem="xbA-Lr-K7h" secondAttribute="bottom" constant="32" id="9bu-vq-icm"/>
+                            <constraint firstItem="F3f-4f-M6g" firstAttribute="top" secondItem="xbA-Lr-K7h" secondAttribute="bottom" constant="80" id="9bu-vq-icm"/>
                             <constraint firstItem="Uoe-IJ-yhA" firstAttribute="leading" secondItem="d7L-Mu-u3S" secondAttribute="leading" id="Cff-9I-fiv"/>
                             <constraint firstItem="Uoe-IJ-yhA" firstAttribute="top" secondItem="d7L-Mu-u3S" secondAttribute="top" id="NxC-2j-6g7"/>
                             <constraint firstItem="abk-Jm-9W8" firstAttribute="leading" secondItem="d7L-Mu-u3S" secondAttribute="leading" id="WLE-0X-ua8"/>
                             <constraint firstItem="F3f-4f-M6g" firstAttribute="leading" secondItem="d7L-Mu-u3S" secondAttribute="leading" id="Xhe-ah-bam"/>
                             <constraint firstAttribute="bottom" secondItem="F3f-4f-M6g" secondAttribute="bottom" id="aZU-1o-C7g"/>
-                            <constraint firstItem="xbA-Lr-K7h" firstAttribute="top" secondItem="Uoe-IJ-yhA" secondAttribute="bottom" constant="32" id="bel-Do-3fC"/>
+                            <constraint firstItem="xbA-Lr-K7h" firstAttribute="top" secondItem="Uoe-IJ-yhA" secondAttribute="bottom" constant="80" id="bel-Do-3fC"/>
                             <constraint firstItem="abk-Jm-9W8" firstAttribute="top" secondItem="d7L-Mu-u3S" secondAttribute="top" id="l3s-4Q-ahY"/>
                             <constraint firstAttribute="trailing" secondItem="abk-Jm-9W8" secondAttribute="trailing" id="nYy-sK-jma"/>
                             <constraint firstAttribute="trailing" secondItem="Uoe-IJ-yhA" secondAttribute="trailing" id="oyU-S6-x5f"/>
@@ -789,10 +810,11 @@
                     <connections>
                         <outlet property="BPM_Textfield" destination="wpY-kB-Cxb" id="Duk-Xk-DHU"/>
                         <outlet property="BPM_Update_Button" destination="EKI-SJ-s52" id="a5N-Ru-yMh"/>
-                        <outlet property="backView" destination="abk-Jm-9W8" id="XLn-hv-O4t"/>
+                        <outlet property="backView" destination="U1z-Tm-Af7" id="Kqg-8M-EnB"/>
                         <outlet property="containerView" destination="xbA-Lr-K7h" id="fec-fl-4xY"/>
                         <outlet property="footerView" destination="F3f-4f-M6g" id="pdp-wU-Tf1"/>
                         <outlet property="headerView" destination="Uoe-IJ-yhA" id="AQg-DS-Kkh"/>
+                        <outlet property="imageView" destination="aSv-Pn-jlr" id="Pt7-yY-zUa"/>
                         <outlet property="recordButtonClickArea" destination="PWs-ja-By8" id="X67-ad-hYX"/>
                         <outlet property="recordButtonFrame" destination="DZq-HH-550" id="u6z-4t-bZD"/>
                         <outlet property="recordButtonFrameView" destination="DZq-HH-550" id="xJX-TO-gVn"/>
