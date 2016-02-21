@@ -29,8 +29,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var estimator = HPSEstimator()
     var noteEngine = NoteEngine()
     var scoreEngine = ScoreEngine()
-    var movingModeL1 = MovingMode<Float>(window: 13)
-    var movingModeL2 = MovingMode<Float>(window: 25)
+    var movingModeL1 = MovingMode<Float>(window: 27)
+    var movingModeL2 = MovingMode<Float>(window: 51)
     
     let SampleRate: Double = 44100
     let FFTWindowSize: UInt = 8192
@@ -105,6 +105,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                 >>= { self.movingModeL2.update($0) }
         
         if magnitude > MinimumMagnitude {
+            print(maxFrequency)
             histFrequencies?.append(.Freq(maxFrequency))
         } else {
             histFrequencies?.append(.VolumeLow)
@@ -134,7 +135,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     func microphone(microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>>, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
         // perform FFT calculation.
-        fft?.computeFFTWithBuffer(buffer[0], withBufferSize: bufferSize * 4)
+        fft?.computeFFTWithBuffer(buffer[0], withBufferSize: bufferSize)
 
         // Resample 32-bit float to 16-bit int
         var intSlice = [Int16](count: Int(bufferSize), repeatedValue: 0)

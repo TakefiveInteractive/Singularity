@@ -91,26 +91,29 @@ class MainViewController: NSViewController {
         }
         BPM_Textfield.stringValue = "96"
 
-        engine = PitchEngine()
-        engine.onNewNote = { image in
-            let size = image.size
-            print(image.size)
-            let imageWidth = self.containerView.bounds.height / size.height * size.width
-            let imageView = NSImageView()
-            self.containerView.addSubview(imageView)
-            imageView.snp_makeConstraints {
-                $0.left.equalTo(self.containerView.snp_left)
-                $0.top.equalTo(self.containerView.snp_left)
-                $0.bottom.equalTo(self.containerView.snp_bottom)
-                $0.width.equalTo(imageWidth)
-            }
-            imageView.image = image
-        }
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-
+        let imageView = NSImageView()
+        self.containerView.addSubview(imageView)
+        imageView.snp_makeConstraints {
+            $0.left.equalTo(self.containerView.snp_left)
+            $0.top.equalTo(self.containerView.snp_left)
+            $0.bottom.equalTo(self.containerView.snp_bottom)
+        }
+        
+        engine = PitchEngine()
+        engine.onNewNote = { image in
+            let size = image.size
+            let imageWidth = self.containerView.bounds.height / size.height * size.width
+            
+            imageView.snp_updateConstraints {
+                $0.width.equalTo(imageWidth)
+            }
+            imageView.image = image
+            // imageView.layer?.backgroundColor = NSColor.blackColor().CGColor
+        }
     }
 
     func updateVisualizationView() {
