@@ -26,6 +26,7 @@
 		8F2724B11C5DBDE400787B02 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */; };
 		8F2FC3821C7922DB005687AF /* SingularityLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2FC3811C7922DB005687AF /* SingularityLib.framework */; };
 		8F91A6011C79275C003AA041 /* Scoresmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F91A6001C79275C003AA041 /* Scoresmith.framework */; };
+		8F91A6031C793CD3003AA041 /* GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F91A6021C793CD3003AA041 /* GoogleVoiceRecognition.framework */; };
 		8FD5229C1C76B60C00F3EAB4 /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229B1C76B60C00F3EAB4 /* PitchEngine.swift */; };
 		8FD5229E1C76CA2100F3EAB4 /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */; };
 		C4BE6BBDC9C3D26134969492 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD7CC20E72E114B8D376D1F /* Pods.framework */; };
@@ -77,6 +78,7 @@
 		8F16A6A61C77F7FA00168FB0 /* RateTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateTracker.swift; sourceTree = "<group>"; };
 		8F2FC3811C7922DB005687AF /* SingularityLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SingularityLib.framework; path = ../SingularityLib/build/Debug/SingularityLib.framework; sourceTree = "<group>"; };
 		8F91A6001C79275C003AA041 /* Scoresmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Scoresmith.framework; path = ../Scoresmith/build/Debug/Scoresmith.framework; sourceTree = "<group>"; };
+		8F91A6021C793CD3003AA041 /* GoogleVoiceRecognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleVoiceRecognition.framework; path = ../GoogleVoiceRecognition/build/Debug/GoogleVoiceRecognition.framework; sourceTree = "<group>"; };
 		8FB9AEF61C5DBCEE0084483B /* Pitcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD5229B1C76B60C00F3EAB4 /* PitchEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchEngine.swift; sourceTree = "<group>"; };
 		8FD5229D1C76CA2100F3EAB4 /* HPSEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPSEstimator.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F91A6031C793CD3003AA041 /* GoogleVoiceRecognition.framework in Frameworks */,
 				8F91A6011C79275C003AA041 /* Scoresmith.framework in Frameworks */,
 				8F2FC3821C7922DB005687AF /* SingularityLib.framework in Frameworks */,
 				885EB25C1C699F250025DA28 /* CoreGraphics.framework in Frameworks */,
@@ -203,6 +206,7 @@
 		A8E8787F0EBB49A42CDB35DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F91A6021C793CD3003AA041 /* GoogleVoiceRecognition.framework */,
 				8F91A6001C79275C003AA041 /* Scoresmith.framework */,
 				8F2FC3811C7922DB005687AF /* SingularityLib.framework */,
 				2DD7CC20E72E114B8D376D1F /* Pods.framework */,

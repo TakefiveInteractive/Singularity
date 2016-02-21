@@ -112,9 +112,9 @@ public class NoteEngine {
             })
         
         // Identify duration
-        var movingMode = MovingMode<MusicElement>(window: 5)
+        var movingMode = MovingMode<MusicElement>(window: 10)
         let smoothNotes = notes.map { movingMode.update($0) }
-        print(smoothNotes)
+        // print(smoothNotes)
         
         return []
     }
