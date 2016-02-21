@@ -126,7 +126,7 @@ public class NoteEngine {
         let wholeBeatCount = Int(Double(pitchPerSecond) / (Double(bpm) / 60.0) * 4.0)      // assume 4/4 time
         print("Minimum elem count: \(minimumElementCount)")
         
-        print(smoothNotes)
+        //print(smoothNotes)
         
         let noteChunks = smoothNotes.reduce([(smoothNotes[0], 1)]) { (var noteChunks: [(MusicElement, Int)], curr: MusicElement) -> [(MusicElement, Int)] in
             let (lastElement, lastCount) = noteChunks.last!
@@ -138,7 +138,7 @@ public class NoteEngine {
             return noteChunks
         }
         
-        print(noteChunks)
+        //print(noteChunks)
         
         // filter out transient notes
         return noteChunks
@@ -151,6 +151,6 @@ public class NoteEngine {
                 return [(elem, count)]
             }
         }
-            .map { (elem: MusicElement, count: Int) in (elem, toDuration(Double(count) / Double(pitchPerSecond) * (Double(bpm) / 60.0))) }
+        .map { (elem: MusicElement, count: Int) in (elem, toDuration(Double(count) / Double(pitchPerSecond) * (Double(bpm) / 60.0))) }
     }
 }

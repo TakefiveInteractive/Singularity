@@ -105,7 +105,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                 >>= { self.movingModeL2.update($0) }
         
         if magnitude > MinimumMagnitude {
-            print(maxFrequency)
+            //print(maxFrequency)
             histFrequencies?.append(.Freq(maxFrequency))
         } else {
             histFrequencies?.append(.VolumeLow)
