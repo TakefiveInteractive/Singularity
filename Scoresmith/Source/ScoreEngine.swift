@@ -178,7 +178,7 @@ public class ScoreEngine {
             print(lilyName)
             
             // write lilytex
-            let processedLyrics = Hyphenator().hyphenate_word(lyrics).joinWithSeparator(" -- ")
+            let processedLyrics = lyrics.componentsSeparatedByString(" ") .map { Hyphenator().hyphenate_word($0).joinWithSeparator(" -- ") }.joinWithSeparator(" ")
             try! self.addLatexHeader(self.notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
             
             self.executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
