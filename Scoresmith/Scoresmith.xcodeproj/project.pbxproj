@@ -12,6 +12,7 @@
 		8F0F3CB31C5D57DC00747FE4 /* Scoresmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CA81C5D57DC00747FE4 /* Scoresmith.framework */; };
 		8F0F3CB81C5D57DC00747FE4 /* ScoresmithTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CB71C5D57DC00747FE4 /* ScoresmithTests.swift */; };
 		8F16409B1C77E71F00250C16 /* ScoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F16409A1C77E71F00250C16 /* ScoreEngine.swift */; };
+		8F69326E1C798D38004FB59E /* Hyphenator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F69326D1C798D38004FB59E /* Hyphenator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		8F0F3CB71C5D57DC00747FE4 /* ScoresmithTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresmithTests.swift; sourceTree = "<group>"; };
 		8F0F3CB91C5D57DC00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F16409A1C77E71F00250C16 /* ScoreEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreEngine.swift; path = Source/ScoreEngine.swift; sourceTree = "<group>"; };
+		8F69326D1C798D38004FB59E /* Hyphenator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hyphenator.framework; path = ../Hyphenator/build/Debug/Hyphenator.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F69326E1C798D38004FB59E /* Hyphenator.framework in Frameworks */,
 				259FE0220806AAD4C18D7A5B /* Pods_Scoresmith.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +119,7 @@
 		D74C68C47D76ED735CD61635 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F69326D1C798D38004FB59E /* Hyphenator.framework */,
 				59E794BBC2FB5D1F6EECED4C /* Pods_Scoresmith.framework */,
 			);
 			name = Frameworks;

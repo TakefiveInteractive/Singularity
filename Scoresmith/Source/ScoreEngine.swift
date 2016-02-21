@@ -10,6 +10,7 @@ import Foundation
 import MusicKit
 import Pitcher
 import PromiseKit
+import Hyphenator
 
 public class ScoreEngine {
     
@@ -132,8 +133,56 @@ public class ScoreEngine {
         ].joinWithSeparator("\n")
     }
     
-    public func makeScore(notes: [Note]) -> Promise<NSImage> {
+    func randomStringWithLength (len : Int) -> String {
+        
+        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        
+        let randomString : NSMutableString = NSMutableString(capacity: len)
+        
+        for (var i=0; i < len; i++){
+            let length = UInt32 (letters.length)
+            let rand = arc4random_uniform(length)
+            randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
+        }
+        
+        return randomString as String!
+    }
+    
+    func executeCommand(command: String, args: [String]) -> String {
+        let task = NSTask()
+        
+        task.launchPath = command
+        task.arguments = args
+        
+        let pipe = NSPipe()
+        task.standardOutput = pipe
+        task.launch()
+        
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output: String = NSString(data: data, encoding: NSUTF8StringEncoding) as! String
+        
+        return output        
+    }
+    
+    public func makeScore(notes: [Note], lyrics: String) -> Promise<NSImage> {
         return Promise { resolve, reject in
+            let randFilename = randomStringWithLength(20)
+            
+            let fileManager = NSFileManager.defaultManager()
+            // Get current directory path
+            let path = fileManager.currentDirectoryPath
+            let lilyName = path + "/" + randFilename + ".ly"
+            let pngName = path + "/" + randFilename + ".png"
+            
+            // write lilytex
+            let processedLyrics = Hyphenator().hyphenate_word(lyrics).joinWithSeparator(" -- ")
+            try! addLatexHeader(notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
+            
+            executeCommand("lilypond", args: ["-dresolution=300", "--out=\(randFilename)", "--png", lilyName])
+            
+            // read png
+            let img = NSImage(byReferencingFile: pngName)
+            resolve(img!)
         }
     }
     

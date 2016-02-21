@@ -41,11 +41,11 @@ public class TrieNode {
 }
 
 
-class Hyphenator:NSObject {
+public class Hyphenator:NSObject {
     
     var tree = TrieNode()
     var self_exceptions = [String:[String]]()
-    override init () {
+    public override init () {
         
         super.init()
         for pattern in patterns {
@@ -95,7 +95,7 @@ class Hyphenator:NSObject {
         self.tree.insert(chars, point: points)
         
     }
-    func hyphenate_word(word:String) -> [String] {
+    public func hyphenate_word(word:String) -> [String] {
         //Given a word, returns a list of pieces, broken at the possible
         //hyphenation points.
         
