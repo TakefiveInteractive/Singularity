@@ -28,8 +28,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var estimator = HPSEstimator()
     var noteEngine = NoteEngine()
     var scoreEngine = ScoreEngine()
-    var movingModeL1 = MovingMode<Float>(window: 7)
-    var movingModeL2 = MovingMode<Float>(window: 21)
+    var movingModeL1 = MovingMode<Float>(window: 13)
+    var movingModeL2 = MovingMode<Float>(window: 25)
     
     let FFTWindowSize: UInt = 8192
     let MinimumMagnitude: Float = 0.001
@@ -98,7 +98,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                         histFrequencies,
                         bpm: bpm,
                         pitchPerSecond: Float(pitchPerSecond))
-                }.then({ self.scoreEngine.makeScore($0) })
+                }.then { self.scoreEngine.makeScore($0) }
             }
         }
     }

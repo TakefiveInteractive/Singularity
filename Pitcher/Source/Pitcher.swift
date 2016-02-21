@@ -104,7 +104,7 @@ public class NoteEngine {
                 switch pitch {
                 case let .Freq(freq):
                     return sequence
-                        .minElement({ (a: Pitch, b: Pitch) -> Bool in (a.frequency - freq) ** 2 - (b.frequency - freq) ** 2 < 0})!
+                        .minElement { (a: Pitch, b: Pitch) -> Bool in (a.frequency - freq) ** 2 < (b.frequency - freq) ** 2}!
                         >>= { MusicElement.Play($0) }
                 case .VolumeLow:
                     return .Rest
