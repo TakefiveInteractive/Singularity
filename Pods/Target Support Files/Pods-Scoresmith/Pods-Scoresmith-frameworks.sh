@@ -84,18 +84,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods/EZAudio.framework"
-  install_framework "Pods/MusicKit.framework"
-  install_framework "Pods/OMGHTTPURLRQ.framework"
-  install_framework "Pods/PromiseKit.framework"
-  install_framework "Pods/SnapKit.framework"
-  install_framework "Pods/TPCircularBuffer.framework"
+  install_framework "Pods-Scoresmith/EZAudio.framework"
+  install_framework "Pods-Scoresmith/MusicKit.framework"
+  install_framework "Pods-Scoresmith/OMGHTTPURLRQ.framework"
+  install_framework "Pods-Scoresmith/PromiseKit.framework"
+  install_framework "Pods-Scoresmith/SnapKit.framework"
+  install_framework "Pods-Scoresmith/TPCircularBuffer.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods/EZAudio.framework"
-  install_framework "Pods/MusicKit.framework"
-  install_framework "Pods/OMGHTTPURLRQ.framework"
-  install_framework "Pods/PromiseKit.framework"
-  install_framework "Pods/SnapKit.framework"
-  install_framework "Pods/TPCircularBuffer.framework"
+  install_framework "Pods-Scoresmith/EZAudio.framework"
+  install_framework "Pods-Scoresmith/MusicKit.framework"
+  install_framework "Pods-Scoresmith/OMGHTTPURLRQ.framework"
+  install_framework "Pods-Scoresmith/PromiseKit.framework"
+  install_framework "Pods-Scoresmith/SnapKit.framework"
+  install_framework "Pods-Scoresmith/TPCircularBuffer.framework"
 fi

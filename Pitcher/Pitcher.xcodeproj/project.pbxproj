@@ -10,7 +10,6 @@
 		8F0F3CD01C5D583000747FE4 /* Pitcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CCF1C5D583000747FE4 /* Pitcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CD71C5D583000747FE4 /* Pitcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CCC1C5D583000747FE4 /* Pitcher.framework */; };
 		8F0F3CDC1C5D583000747FE4 /* PitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CDB1C5D583000747FE4 /* PitcherTests.swift */; };
-		8F2FC3861C792478005687AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2FC3851C792478005687AF /* Pods.framework */; };
 		8F2FC3881C79247E005687AF /* SingularityLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2FC3871C79247E005687AF /* SingularityLib.framework */; };
 		8FD5229A1C76B4DB00F3EAB4 /* Pitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD522991C76B4DB00F3EAB4 /* Pitcher.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +42,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F2FC3881C79247E005687AF /* SingularityLib.framework in Frameworks */,
-				8F2FC3861C792478005687AF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

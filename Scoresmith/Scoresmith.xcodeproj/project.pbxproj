@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259FE0220806AAD4C18D7A5B /* Pods_Scoresmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E794BBC2FB5D1F6EECED4C /* Pods_Scoresmith.framework */; };
 		8F0F3CAC1C5D57DC00747FE4 /* Scoresmith.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3CAB1C5D57DC00747FE4 /* Scoresmith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3CB31C5D57DC00747FE4 /* Scoresmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3CA81C5D57DC00747FE4 /* Scoresmith.framework */; };
 		8F0F3CB81C5D57DC00747FE4 /* ScoresmithTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3CB71C5D57DC00747FE4 /* ScoresmithTests.swift */; };
@@ -24,6 +25,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36218A8211B0B4B22B662005 /* Pods-Scoresmith.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoresmith.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Scoresmith/Pods-Scoresmith.release.xcconfig"; sourceTree = "<group>"; };
+		59E794BBC2FB5D1F6EECED4C /* Pods_Scoresmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scoresmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7A1964EDFBB020D7170170 /* Pods-Scoresmith.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scoresmith.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Scoresmith/Pods-Scoresmith.debug.xcconfig"; sourceTree = "<group>"; };
 		8F0F3CA81C5D57DC00747FE4 /* Scoresmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scoresmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F3CAB1C5D57DC00747FE4 /* Scoresmith.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scoresmith.h; sourceTree = "<group>"; };
 		8F0F3CAD1C5D57DC00747FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259FE0220806AAD4C18D7A5B /* Pods_Scoresmith.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071DCA642E8DA8FB8717FCAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A7A1964EDFBB020D7170170 /* Pods-Scoresmith.debug.xcconfig */,
+				36218A8211B0B4B22B662005 /* Pods-Scoresmith.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F0F3C9E1C5D57DC00747FE4 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +73,8 @@
 				8F0F3CAA1C5D57DC00747FE4 /* Scoresmith */,
 				8F0F3CB61C5D57DC00747FE4 /* ScoresmithTests */,
 				8F0F3CA91C5D57DC00747FE4 /* Products */,
+				071DCA642E8DA8FB8717FCAE /* Pods */,
+				D74C68C47D76ED735CD61635 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +113,14 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		D74C68C47D76ED735CD61635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59E794BBC2FB5D1F6EECED4C /* Pods_Scoresmith.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -115,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F0F3CBC1C5D57DC00747FE4 /* Build configuration list for PBXNativeTarget "Scoresmith" */;
 			buildPhases = (
+				AAA2C952881D049C28268265 /* Check Pods Manifest.lock */,
 				8F0F3CA31C5D57DC00747FE4 /* Sources */,
 				8F0F3CA41C5D57DC00747FE4 /* Frameworks */,
 				8F0F3CA51C5D57DC00747FE4 /* Headers */,
 				8F0F3CA61C5D57DC00747FE4 /* Resources */,
+				6C203E05420F71FE4EB6292E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +225,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C203E05420F71FE4EB6292E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Scoresmith/Pods-Scoresmith-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAA2C952881D049C28268265 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F0F3CA31C5D57DC00747FE4 /* Sources */ = {
@@ -316,6 +375,7 @@
 		};
 		8F0F3CBD1C5D57DC00747FE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7A1964EDFBB020D7170170 /* Pods-Scoresmith.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -336,6 +396,7 @@
 		};
 		8F0F3CBE1C5D57DC00747FE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36218A8211B0B4B22B662005 /* Pods-Scoresmith.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;

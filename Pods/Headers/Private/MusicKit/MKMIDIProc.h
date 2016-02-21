@@ -1,1 +1,0 @@
-../../../MusicKit/MusicKit/MKMIDIProc.h
