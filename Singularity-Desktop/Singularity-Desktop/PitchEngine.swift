@@ -23,7 +23,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var fft: EZAudioFFTRolling?
     
     var histFrequencies: [Frequency]?
-    var onNewNote: (([Pitch]) -> ())?
+    public var onNewNote: ((NSImage) -> ())?
     var rateTracker: RateTracker?
     
     var estimator = HPSEstimator()
@@ -91,6 +91,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         return PCMBuffer
     }
     
+    var ourLyrics = ""
+    
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
         let maxLocation = estimator.estimateLocation(
             { fft.frequencyMagnitudeAtIndex(UInt($0)) },
@@ -112,18 +114,20 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
             fftCounter += 1
             let everyNSeconds = { n in self.fftCounter % (Int(pitchPerSecond) * n) == 0 }
             
-            if everyNSeconds(1) {
+            if everyNSeconds(5) {
                 dispatch_promise(on: pitchProcessingQueue) {
                     return self.noteEngine.pitchToNote(
                         histFrequencies,
                         bpm: bpm,
                         pitchPerSecond: Float(pitchPerSecond))
-                }//.then { self.scoreEngine.makeScore($0) }
+                }
+                .then { self.scoreEngine.makeScore($0, lyrics: self.ourLyrics) }
+                .then { self.onNewNote?($0) }
             }
             
-            if everyNSeconds(5) {
+            if everyNSeconds(4) {
                 VoiceRecognition.recognize(toPCMBuffer(rawMicData), sampleRate: Int(SampleRate))
-                .then { print($0) }
+                .then { self.ourLyrics = $0 }
             }
         }
     }
