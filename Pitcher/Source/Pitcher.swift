@@ -121,8 +121,9 @@ public class NoteEngine {
         // Identify duration
         let movingMode = MovingMode<MusicElement>(window: 7)
         let smoothNotes = notes.map { movingMode.update($0) }
-        let minimumBeat = 1.0 / 16.0
+        let minimumBeat = (1.0 / 16.0 + 1.0 / 8.0) / 2.0
         let minimumElementCount = Int(minimumBeat / (Double(bpm) / 60.0) * Double(pitchPerSecond))
+        let wholeBeatCount = Int(Double(pitchPerSecond) / (Double(bpm) / 60.0) * 4.0)      // assume 4/4 time
         print("Minimum elem count: \(minimumElementCount)")
         
         print(smoothNotes)
@@ -142,6 +143,14 @@ public class NoteEngine {
         // filter out transient notes
         return noteChunks
         .filter { (elem, count) in count > minimumElementCount }
-        .map { (elem, count) in (elem, toDuration(Double(count) / Double(pitchPerSecond) * (Double(bpm) / 60.0))) }
+        .flatMap { (elem, count) -> [(MusicElement, Int)] in
+            if count > wholeBeatCount {
+                let partsNum = count / wholeBeatCount
+                return [(MusicElement, Int)](count: partsNum, repeatedValue: (elem, wholeBeatCount))
+            } else {
+                return [(elem, count)]
+            }
+        }
+            .map { (elem: MusicElement, count: Int) in (elem, toDuration(Double(count) / Double(pitchPerSecond) * (Double(bpm) / 60.0))) }
     }
 }
