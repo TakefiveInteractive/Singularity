@@ -65,7 +65,6 @@ class Hyphenator:
                         t = t[c]
                         if None in t:
                             p = t[None]
-                            print(p)
                             for j in range(len(p)):
                                 points[i+j] = max(points[i+j], p[j])
                     else:
