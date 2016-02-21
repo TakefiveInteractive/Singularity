@@ -672,17 +672,17 @@
             <objects>
                 <viewController title="Main" id="bU3-d1-655" customClass="MainViewController" customModule="Singularity_Desktop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="d7L-Mu-u3S">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1300" height="576"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="abk-Jm-9W8">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="576"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1300" height="576"/>
                                 <subviews>
                                     <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-Tm-Af7">
-                                        <rect key="frame" x="-1" y="0.0" width="1025" height="576"/>
+                                        <rect key="frame" x="-1" y="0.0" width="1300" height="576"/>
                                     </customView>
                                     <customView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbA-Lr-K7h">
-                                        <rect key="frame" x="0.0" y="108" width="1024" height="280"/>
+                                        <rect key="frame" x="0.0" y="108" width="1300" height="280"/>
                                         <subviews>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSv-Pn-jlr">
                                                 <rect key="frame" x="0.0" y="0.0" width="500" height="280"/>
@@ -708,10 +708,10 @@
                                     <constraint firstAttribute="trailing" secondItem="U1z-Tm-Af7" secondAttribute="trailing" id="pEX-n7-rdo"/>
                                 </constraints>
                             </customView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="F3f-4f-M6g">
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3f-4f-M6g">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="88"/>
                                 <subviews>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="DZq-HH-550">
+                                    <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZq-HH-550">
                                         <rect key="frame" x="484" y="16" width="56" height="56"/>
                                         <subviews>
                                             <button translatesAutoresizingMaskIntoConstraints="NO" id="tGF-qr-FrE">
@@ -731,7 +731,7 @@
                                             <constraint firstItem="tGF-qr-FrE" firstAttribute="top" secondItem="DZq-HH-550" secondAttribute="top" constant="12" id="vfs-IV-5Wa"/>
                                         </constraints>
                                     </customView>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="PWs-ja-By8">
+                                    <button misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWs-ja-By8">
                                         <rect key="frame" x="477" y="9" width="70" height="70"/>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="ACd-zi-bvK">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -752,10 +752,10 @@
                                     <constraint firstItem="DZq-HH-550" firstAttribute="centerY" secondItem="F3f-4f-M6g" secondAttribute="centerY" id="iQj-lj-Eqv"/>
                                 </constraints>
                             </customView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-IJ-yhA">
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-IJ-yhA">
                                 <rect key="frame" x="0.0" y="408" width="1024" height="168"/>
                                 <subviews>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-SJ-s52">
+                                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-SJ-s52">
                                         <rect key="frame" x="912" y="73" width="72" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="72" id="S7T-fI-MbH"/>
@@ -768,7 +768,7 @@
                                             <action selector="Update_BPM:" target="bU3-d1-655" id="CcB-kK-bKW"/>
                                         </connections>
                                     </button>
-                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wpY-kB-Cxb">
+                                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpY-kB-Cxb">
                                         <rect key="frame" x="800" y="73" width="96" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="B9b-BS-px1"/>

@@ -99,7 +99,7 @@ public class ScoreEngine {
     public func addLatexHeader(noteText: String, lyrics: String) -> String {
         return [
             "#(set-global-staff-size 35)",
-            "#(set! paper-alist (cons '(\"my size\" . (cons (* 30 in) (* 2 in))) paper-alist))",
+            "#(set! paper-alist (cons '(\"my size\" . (cons (* 50 in) (* 2 in))) paper-alist))",
             "#(set-default-paper-size \"my size\")",
             "\\paper {",
             "    left-margin = 0",
@@ -182,7 +182,7 @@ public class ScoreEngine {
             let processedLyrics = lyrics.componentsSeparatedByString(" ") .map { Hyphenator().hyphenate_word($0).joinWithSeparator(" -- ") }.joinWithSeparator(" ")
             try! self.addLatexHeader(self.notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
             
-            self.executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
+            self.executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=150", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
             
             // read png
             let img = NSImage(contentsOfFile: pngName)

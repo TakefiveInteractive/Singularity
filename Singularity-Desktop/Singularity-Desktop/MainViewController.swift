@@ -50,7 +50,7 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.snp_makeConstraints {
-            $0.width.equalTo(1024)
+            $0.width.equalTo(1300)
             $0.height.equalTo(576)
         }
         preferredContentSize = view.fittingSize
@@ -98,7 +98,7 @@ class MainViewController: NSViewController {
             let size = image.size
             let imageWidth = self.containerView.bounds.height / size.height * size.width
             self.imageView.snp_updateConstraints {
-                $0.left.equalTo(self.containerView.snp_left).offset(-100)
+                $0.left.equalTo(self.containerView.snp_left).offset(-150)
                 $0.bottom.equalTo(self.containerView.snp_bottom)
                 $0.top.equalTo(self.containerView.snp_top)
                 $0.width.equalTo(imageWidth)
@@ -117,6 +117,7 @@ class MainViewController: NSViewController {
     
     @IBAction func recordButtonDidClicked(sender: NSButton) {
         playOn = !playOn
+        if playOn { imageView.image = nil }
     }
 
     override var representedObject: AnyObject? {
