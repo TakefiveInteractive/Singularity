@@ -15,6 +15,7 @@ import PySwiftyRegex
 public class TrieNode {
     var hash = [Character : TrieNode]()
     var None: [String?]!
+    
     init() {
         for char in ".abcdefghijklmnopqrstuvwxyz".characters {
             hash[char] = nil
@@ -23,20 +24,18 @@ public class TrieNode {
     }
     // str not ""
     func insert(str: String, point: [String?]) {
-        
-        if hash[str.characters.first!] == nil{
+        if hash[str.characters.first!] == nil {
             hash[str.characters.first!] = TrieNode()
         }
-        if str.characters.count > 1{
+        if str.characters.count > 1 {
             var str_substring = str as NSString
             
-            str_substring = str_substring.substringWithRange(NSRange(location: 1, length: str.characters.count-1))
+            str_substring = str_substring.substringFromIndex(1)
             hash[str.characters.first!]?.insert(str_substring as String, point: point)
         }
-        if str.characters.count == 1{
-            None = point
+        if str.characters.count == 1 {
+            hash[str.characters.first!]!.None = point
         }
-        
     }
     
 }
@@ -93,7 +92,7 @@ class Hyphenator:NSObject {
         //another level down in the tree, and leaf nodes have the list of
         //points.
         
-        self.tree.insert(chars,point: points)
+        self.tree.insert(chars, point: points)
         
     }
     func hyphenate_word(word:String) -> [String] {
@@ -110,8 +109,8 @@ class Hyphenator:NSObject {
         var points = [String]()
         
         //If the word is an exception, get the stored points.
-        if exceptions.contains(word.lowercaseString) {
-            points = self_exceptions[word]!
+        if let pp = self_exceptions[word.lowercaseString] {
+            points = pp
         }
         else {
             var work = "." + word.lowercaseString + "."
@@ -122,11 +121,12 @@ class Hyphenator:NSObject {
                 
                 var str = work as NSString
                 
-                var str_substring = str.substringWithRange(NSRange(location: i, length: work.characters.count-i))
+                var str_substring = str.substringFromIndex(i)
                 
                 for c in str_substring.characters {
-                    if t.hash.keys.contains(c) {
-                        t = t.hash[c]!
+                    if let tt = t.hash[c] {
+                        t = tt
+                        // MARK: BROKEN
                         if t.None != nil {
                             var p = t.None
                             for j in 0..<p.count {

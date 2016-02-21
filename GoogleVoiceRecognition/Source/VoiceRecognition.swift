@@ -24,15 +24,15 @@ enum VoiceRecognitionError: ErrorType {
 
 private let voiceEncodingQueue = dispatch_queue_create("voice-worker", DISPATCH_QUEUE_CONCURRENT)
 
-class VoiceRecognition {
+public class VoiceRecognition {
     
     /// Converts a piece of 16-bit single channel PCM audio to string
-    class func recognize(audio: AVAudioPCMBuffer, atTime: AVAudioTime, lang: VoiceLanguages = .English) -> Promise<String> {
+    public class func recognize(audio: AVAudioPCMBuffer, atTime: AVAudioTime, lang: VoiceLanguages = .English) -> Promise<String> {
         return recognize(audio, sampleRate: Int(atTime.sampleRate), lang: lang)
     }
     
     /// Converts a piece of 16-bit single channel PCM audio to string
-    class func recognize(audio: AVAudioPCMBuffer, sampleRate: Int, lang: VoiceLanguages = .English) -> Promise<String> {
+    public class func recognize(audio: AVAudioPCMBuffer, sampleRate: Int, lang: VoiceLanguages = .English) -> Promise<String> {
         return dispatch_promise(on: voiceEncodingQueue, body: { () -> NSData in
             guard  sampleRate == 44100
                 || sampleRate == 48000 else {
@@ -53,7 +53,7 @@ class VoiceRecognition {
                 
                 Alamofire.upload(.POST, url, headers: ["Content-Type": "audio/x-flac; rate=\(sampleRate);"], data: data)
                 .responseString { response in
-                    guard response.result.isSuccess else { reject(VoiceRecognitionError.ApiFailure); return }
+                    guard response.result.value != nil else { reject(VoiceRecognitionError.ApiFailure); return }
                     
                     let choufengResult = response.result.value!
                     var goodResult = ""

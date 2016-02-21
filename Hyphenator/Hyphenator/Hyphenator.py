@@ -31,7 +31,7 @@ class Hyphenator:
                 
     def _insert_pattern(self, pattern):
         # Convert the a pattern like 'a1bc3d4' into a string of chars 'abcd'
-        # and a list of points [ 1, 0, 3, 4 ].
+        # and a list of points [ 0, 1, 0, 3, 4 ].
         chars = re.sub('[0-9]', '', pattern)
         points = [ int(d or 0) for d in re.split("[.a-z]", pattern) ]
 
@@ -71,6 +71,8 @@ class Hyphenator:
                         break
             # No hyphens in the first two chars or the last two.
             points[1] = points[2] = points[-2] = points[-3] = 0
+
+        print(points)
 
         # Examine the points to build the pieces list.
         pieces = ['']
