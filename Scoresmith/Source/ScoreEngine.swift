@@ -98,7 +98,7 @@ public class ScoreEngine {
     
     public func addLatexHeader(noteText: String, lyrics: String) -> String {
         return [
-            "#(set! paper-alist (cons '(\"my size\" . (cons (* 10 in) (* 1 in))) paper-alist))",
+            "#(set! paper-alist (cons '(\"my size\" . (cons (* 30 in) (* 1 in))) paper-alist))",
             "#(set-default-paper-size \"my size\")",
             "\\paper {",
             "    left-margin = 0",
@@ -184,7 +184,7 @@ public class ScoreEngine {
             self.executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
             
             // read png
-            let img = NSImage(byReferencingFile: pngName)
+            let img = NSImage(contentsOfFile: pngName)
             return img!
         }
     }
