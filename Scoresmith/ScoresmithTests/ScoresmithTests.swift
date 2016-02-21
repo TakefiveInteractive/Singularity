@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Pitcher
+import MusicKit
 @testable import Scoresmith
 
 class ScoresmithTests: XCTestCase {
@@ -21,16 +23,14 @@ class ScoresmithTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testSimpleTranscribe() {
+        print(ScoreEngine().notesToLiliTex([
+            (MusicElement.Play(Chroma.G * 2), Duration.Quarter),
+            (MusicElement.Play(Chroma.A * 2), Duration.Quarter),
+            (MusicElement.Play(Chroma.B * 2), Duration.Quarter),
+            (MusicElement.Play(Chroma.C * 3), Duration.Quarter),
+            (MusicElement.Play(Chroma.D * 3), Duration.Whole)
+        ]))
     }
     
 }
