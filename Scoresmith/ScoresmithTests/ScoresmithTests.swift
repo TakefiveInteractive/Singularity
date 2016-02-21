@@ -24,14 +24,14 @@ class ScoresmithTests: XCTestCase {
     }
     
     func testSimpleTranscribe() {
-        print(ScoreEngine().notesToLiliTex([
+        XCTAssert(ScoreEngine().notesToLiliTex([
             (MusicElement.Play(Chroma.G * 2), Duration.Quarter),
             (MusicElement.Play(Chroma.A * 2), Duration.Quarter),
             (MusicElement.Play(Chroma.B * 2), Duration.Quarter),
             (MusicElement.Play(Chroma.C * 3), Duration.Quarter),
             (MusicElement.Play(Chroma.D * 3), Duration.Whole),
             (MusicElement.Rest, Duration.Whole),
-        ]))
+        ]).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet()) == "g'4 a'4 b'4 c''4 d''1 r1")
     }
     
 }

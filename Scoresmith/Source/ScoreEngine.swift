@@ -96,29 +96,40 @@ public class ScoreEngine {
     }
     
     public func addLatexHeader(noteText: String, lyrics: String) -> String {
-        return "\\header {\n" +
-            "        tagline = \"\"  % removed" +
-            "    }" +
-            "    " +
-            "    musicOne = \\absolute {" +
-            "    \\clef treble" +
-            "    \(noteText)" +
-            "    }" +
-            "    verseOne = \\lyricmode {" +
-            "    \(lyrics)" +
-            "    }" +
-            "    \\score {" +
-            "    <<" +
-            "    \\new Voice = \"one\" {" +
-            "    \\time 4/4" +
-            "    \\musicOne" +
-            "    }" +
-            "    \\new Lyrics \\lyricsto \"one\" {" +
-            "    \\verseOne" +
-            "    }" +
-            "    >>" +
-            "    }\"" +
-            "    }"
+        return [
+            "#(set! paper-alist (cons '(\"my size\" . (cons (* 10 in) (* 1 in))) paper-alist))",
+            "#(set-default-paper-size \"my size\")",
+            "\\paper {",
+            "    left-margin = 0",
+            "    top-margin = 0",
+            "    right-margin = 0",
+            "    bottom-margin = 0",
+            "}",
+            "\\header {\n",
+            "        tagline = \"\"  % removed",
+            "    }",
+            "    ",
+            "    musicOne = \\absolute {",
+            "    \\clef treble",
+            "    \(noteText)",
+            "    }",
+            "    verseOne = \\lyricmode {",
+            "    \(lyrics)",
+            "    }",
+            "    \\score {",
+            "    <<",
+            "    \\new Voice = \"one\" {",
+            "    \\time 4/4",
+            "    \\musicOne",
+            "    }",
+            "    \\new Lyrics \\lyricsto \"one\" {",
+            "    \\verseOne",
+            "    }",
+            "    >>",
+            "    }\"",
+            "}",
+            "\\version \"2.18.2\""
+        ].joinWithSeparator("\n")
     }
     
     public func makeScore(notes: [Note]) -> Promise<NSImage> {
