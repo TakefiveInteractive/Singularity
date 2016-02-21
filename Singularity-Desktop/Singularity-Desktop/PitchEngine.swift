@@ -92,7 +92,10 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     }
     
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
-        let maxLocation = estimator.estimateLocation({ fft.frequencyMagnitudeAtIndex(UInt($0)) }, frequencyAt: { fft.frequencyAtIndex(UInt($0)) }, numBins: Int(bufferSize))
+        let maxLocation = estimator.estimateLocation(
+            { fft.frequencyMagnitudeAtIndex(UInt($0)) },
+            frequencyAt: { fft.frequencyAtIndex(UInt($0)) },
+            numBins: Int(bufferSize))
         let magnitude = fft.frequencyMagnitudeAtIndex(maxLocation)
         let maxFrequency = maxLocation
                 >>= { fft.frequencyAtIndex($0) }

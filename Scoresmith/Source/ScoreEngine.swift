@@ -34,9 +34,9 @@ public class ScoreEngine {
             let note_midi = pitch.midi
             //midi to note(lower letters conversion)
             let pitch_letter_raw = Int(note_midi % 12)
-            let pitch_number = (Int(note_midi/12) - Int(pitch_letter_raw/12))
+            let pitch_number = Int(note_midi/12 - Float(pitch_letter_raw)/12)
             var pitch_letter_final = ""
-            switch pitch_letter_raw{
+            switch pitch_letter_raw {
             case 0:
                 pitch_letter_final = "c"
             case 1:
