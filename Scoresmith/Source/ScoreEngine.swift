@@ -98,7 +98,8 @@ public class ScoreEngine {
     
     public func addLatexHeader(noteText: String, lyrics: String) -> String {
         return [
-            "#(set! paper-alist (cons '(\"my size\" . (cons (* 30 in) (* 1 in))) paper-alist))",
+            "#(set-global-staff-size 35)",
+            "#(set! paper-alist (cons '(\"my size\" . (cons (* 30 in) (* 2 in))) paper-alist))",
             "#(set-default-paper-size \"my size\")",
             "\\paper {",
             "    left-margin = 0",

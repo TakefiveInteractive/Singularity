@@ -98,25 +98,17 @@ class MainViewController: NSViewController {
             let size = image.size
             let imageWidth = self.containerView.bounds.height / size.height * size.width
             self.imageView.snp_updateConstraints {
+                $0.left.equalTo(self.containerView.snp_left).offset(-100)
+                $0.bottom.equalTo(self.containerView.snp_bottom)
+                $0.top.equalTo(self.containerView.snp_top)
                 $0.width.equalTo(imageWidth)
             }
             self.imageView.image = image
-//            self.imageView.image = NSImage(named: "record_icon")
-            // imageView.layer?.backgroundColor = NSColor.blackColor().CGColor
         }
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-//        let imageView = NSImageView()
-//        self.containerView.addSubview(imageView)
-//        imageView.snp_makeConstraints {
-//            $0.left.equalTo(self.containerView.snp_left)
-//            $0.top.equalTo(self.containerView.snp_left)
-//            $0.bottom.equalTo(self.containerView.snp_bottom)
-//        }
-        
- 
     }
 
     func updateVisualizationView() {
