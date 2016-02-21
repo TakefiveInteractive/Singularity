@@ -122,13 +122,15 @@ class Hyphenator:NSObject {
                 
                 var str = work as NSString
                 
-                var str_substring = str.substringWithRange(NSRange(location: i, length: work.characters.count-i))
+                var str_substring = str.substringFromIndex(i)
                 
                 for c in str_substring.characters {
-                    if t.hash.keys.contains(c) {
-                        t = t.hash[c]!
+                    if let tt = t.hash[c] {
+                        t = tt
+                        // MARK: BROKEN
                         if t.None != nil {
                             var p = t.None
+                            print(p)
                             for j in 0..<p.count {
                                 points[i+j] = max(points[i+j], p[j]!)
                             }
@@ -150,6 +152,7 @@ class Hyphenator:NSObject {
         //Examine the points to build the pieces list.
         var pieces = [""]
         
+        print(points)
         var new_points = (points[2..<points.count])
         
         for (c, p) in zip(word.characters, Array(new_points) ) {
