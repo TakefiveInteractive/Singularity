@@ -10,7 +10,6 @@ import Foundation
 import MusicKit
 import Pitcher
 import PromiseKit
-import Hyphenator
 
 public class ScoreEngine {
     
@@ -179,8 +178,7 @@ public class ScoreEngine {
             print(lilyName)
             
             // write lilytex
-            let processedLyrics = lyrics.componentsSeparatedByString(" ") .map { Hyphenator().hyphenate_word($0).joinWithSeparator(" -- ") }.joinWithSeparator(" ")
-            try! self.addLatexHeader(self.notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
+            try! self.addLatexHeader(self.notesToLiliTex(notes), lyrics: lyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
             
             self.executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=150", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
             

@@ -781,6 +781,20 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
+                                    <popUpButton verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7A-Tb-MAl">
+                                        <rect key="frame" x="584" y="71" width="97" height="26"/>
+                                        <popUpButtonCell key="cell" type="push" title="English" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="kLQ-ru-9CF" id="h6Q-84-XCg">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="menu"/>
+                                            <menu key="menu" id="d5v-cM-7aQ">
+                                                <items>
+                                                    <menuItem title="English" state="on" id="kLQ-ru-9CF"/>
+                                                    <menuItem title="Chinese" id="aGV-7j-qbA"/>
+                                                    <menuItem title="Japanese" id="unQ-AX-u5n"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                    </popUpButton>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wpY-kB-Cxb" firstAttribute="centerY" secondItem="Uoe-IJ-yhA" secondAttribute="centerY" id="2AV-ux-UXY"/>
@@ -788,6 +802,8 @@
                                     <constraint firstItem="EKI-SJ-s52" firstAttribute="centerY" secondItem="Uoe-IJ-yhA" secondAttribute="centerY" id="JhU-uS-q9i"/>
                                     <constraint firstItem="EKI-SJ-s52" firstAttribute="height" secondItem="wpY-kB-Cxb" secondAttribute="height" id="OnZ-mP-bz8"/>
                                     <constraint firstAttribute="height" constant="168" id="XQl-yz-7se"/>
+                                    <constraint firstItem="wpY-kB-Cxb" firstAttribute="leading" secondItem="L7A-Tb-MAl" secondAttribute="trailing" constant="122" id="a1C-N3-RKz"/>
+                                    <constraint firstItem="L7A-Tb-MAl" firstAttribute="centerY" secondItem="wpY-kB-Cxb" secondAttribute="centerY" id="dTh-YK-TE7"/>
                                     <constraint firstAttribute="trailing" secondItem="EKI-SJ-s52" secondAttribute="trailing" constant="40" id="hvE-mP-tHE"/>
                                 </constraints>
                             </customView>
@@ -815,6 +831,7 @@
                         <outlet property="footerView" destination="F3f-4f-M6g" id="pdp-wU-Tf1"/>
                         <outlet property="headerView" destination="Uoe-IJ-yhA" id="AQg-DS-Kkh"/>
                         <outlet property="imageView" destination="aSv-Pn-jlr" id="Pt7-yY-zUa"/>
+                        <outlet property="languageSelection" destination="L7A-Tb-MAl" id="9VW-HC-1q8"/>
                         <outlet property="recordButtonClickArea" destination="PWs-ja-By8" id="X67-ad-hYX"/>
                         <outlet property="recordButtonFrame" destination="DZq-HH-550" id="u6z-4t-bZD"/>
                         <outlet property="recordButtonFrameView" destination="DZq-HH-550" id="xJX-TO-gVn"/>

@@ -14,6 +14,7 @@ import PromiseKit
 import Scoresmith
 import SingularityLib
 import GoogleVoiceRecognition
+import Hyphenator
 
 infix operator >>= { associativity left precedence 140 }
 
@@ -24,6 +25,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     var histFrequencies: [Frequency]?
     public var onNewNote: ((NSImage) -> ())?
+    public var language: VoiceLanguages = .English
     var rateTracker: RateTracker?
     
     var estimator = HPSEstimator()
@@ -122,14 +124,22 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
                         bpm: bpm,
                         pitchPerSecond: Float(pitchPerSecond))
                 }
-                .then { self.scoreEngine.makeScore($0, lyrics: self.ourLyrics) }
+                .then { self.scoreEngine.makeScore($0, lyrics: self.processLyrics(self.ourLyrics)) }
                 .then { self.onNewNote?($0) }
             }
             
             if everyNSeconds(4) {
-                VoiceRecognition.recognize(toPCMBuffer(rawMicData), sampleRate: Int(SampleRate))
+                VoiceRecognition.recognize(toPCMBuffer(rawMicData), sampleRate: Int(SampleRate), lang: language)
                 .then { self.ourLyrics = $0 }
             }
+        }
+    }
+    
+    func processLyrics(lyrics: String) -> String {
+        if language == .English {
+            return lyrics.componentsSeparatedByString(" ") .map { Hyphenator().hyphenate_word($0).joinWithSeparator(" -- ") }.joinWithSeparator(" ")
+        } else {
+            return lyrics.characters.map { x in String(x) }.joinWithSeparator(" ")
         }
     }
     

@@ -27,6 +27,7 @@ class MainViewController: NSViewController {
     
     @IBOutlet weak var imageView: NSImageView!
     @IBOutlet weak var containerView: NSView!
+    @IBOutlet weak var languageSelection: NSPopUpButton!
     
     var BPM: Int32 { return (BPM_Textfield.intValue) }
     var playOn: Bool = false {
@@ -117,7 +118,19 @@ class MainViewController: NSViewController {
     
     @IBAction func recordButtonDidClicked(sender: NSButton) {
         playOn = !playOn
-        if playOn { imageView.image = nil }
+        if playOn {
+            imageView.image = nil
+            switch languageSelection.indexOfSelectedItem {
+            case 0:
+                engine.language = .English
+            case 1:
+                engine.language = .Mandarin
+            case 2:
+                engine.language = .Japanese
+            default:
+                print("Unhandled language")
+            }
+        }
     }
 
     override var representedObject: AnyObject? {

@@ -7,7 +7,7 @@ import Flac
 public enum VoiceLanguages : String {
     case English = "en_US"
     case Mandarin = "zh_CN"
-    case Japanese = "jp_JP"
+    case Japanese = "ja_JP"
 }
 
 private let VoiceApiKeys = [
