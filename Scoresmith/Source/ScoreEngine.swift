@@ -174,11 +174,13 @@ public class ScoreEngine {
             let lilyName = path + "/" + randFilename + ".ly"
             let pngName = path + "/" + randFilename + ".png"
             
+            print(lilyName)
+            
             // write lilytex
             let processedLyrics = Hyphenator().hyphenate_word(lyrics).joinWithSeparator(" -- ")
             try! addLatexHeader(notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
             
-            executeCommand("lilypond", args: ["-dresolution=300", "--out=\(randFilename)", "--png", lilyName])
+            executeCommand("lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
             
             // read png
             let img = NSImage(byReferencingFile: pngName)

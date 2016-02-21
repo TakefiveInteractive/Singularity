@@ -17,6 +17,13 @@ public enum Duration {
     case Eigth
 }
 
+func toDuration(beat: Double) -> Duration {
+    if beat >= 0.75 { return .Whole }
+    if beat >= 0.375 { return .Half }
+    if beat >= 0.1875 { return .Quarter }
+    return .Eigth
+}
+
 public enum MusicElement {
     case Play(Pitch)
     case Rest
@@ -112,10 +119,25 @@ public class NoteEngine {
             })
         
         // Identify duration
-        var movingMode = MovingMode<MusicElement>(window: 10)
+        let movingMode = MovingMode<MusicElement>(window: 10)
         let smoothNotes = notes.map { movingMode.update($0) }
-        // print(smoothNotes)
+        let minimumBeat = 1.0 / 16.0
+        let minimumElementCount = Int(minimumBeat / (Double(bpm) / 60.0) * Double(pitchPerSecond))
+        print("Minimum elem count: \(minimumElementCount)")
         
-        return []
+        let noteChunks = smoothNotes.reduce([(smoothNotes[0], 1)]) { (var noteChunks: [(MusicElement, Int)], curr: MusicElement) -> [(MusicElement, Int)] in
+            let (lastElement, lastCount) = noteChunks.last!
+            if curr == lastElement {
+                noteChunks[noteChunks.count - 1] = (lastElement, lastCount + 1)
+            } else {
+                noteChunks.append((curr, 1))
+            }
+            return noteChunks
+        }
+        
+        // filter out transient notes
+        return noteChunks
+        .filter { (elem, count) in count > minimumElementCount }
+        .map { (elem, count) in (elem, toDuration(Double(count) / Double(pitchPerSecond) * (Double(bpm) / 60.0))) }
     }
 }
