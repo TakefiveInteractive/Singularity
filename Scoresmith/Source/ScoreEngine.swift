@@ -107,27 +107,26 @@ public class ScoreEngine {
             "    bottom-margin = 0",
             "}",
             "\\header {\n",
-            "        tagline = \"\"  % removed",
-            "    }",
-            "    ",
-            "    musicOne = \\absolute {",
+            "    tagline = \"\"  % removed",
+            "}",
+            "",
+            "musicOne = \\absolute {",
             "    \\clef treble",
             "    \(noteText)",
-            "    }",
-            "    verseOne = \\lyricmode {",
+            "}",
+            "verseOne = \\lyricmode {",
             "    \(lyrics)",
-            "    }",
-            "    \\score {",
-            "    <<",
+            "}",
+            "\\score {",
+            "  <<",
             "    \\new Voice = \"one\" {",
-            "    \\time 4/4",
-            "    \\musicOne",
+            "      \\time 4/4",
+            "      \\musicOne",
             "    }",
             "    \\new Lyrics \\lyricsto \"one\" {",
-            "    \\verseOne",
+            "      \\verseOne",
             "    }",
-            "    >>",
-            "    }\"",
+            "  >>",
             "}",
             "\\version \"2.18.2\""
         ].joinWithSeparator("\n")
@@ -151,11 +150,11 @@ public class ScoreEngine {
     func executeCommand(command: String, args: [String]) -> String {
         let task = NSTask()
         
-        task.launchPath = command
         task.arguments = args
         
         let pipe = NSPipe()
         task.standardOutput = pipe
+        task.launchPath = command
         task.launch()
         
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
@@ -180,7 +179,7 @@ public class ScoreEngine {
             let processedLyrics = Hyphenator().hyphenate_word(lyrics).joinWithSeparator(" -- ")
             try! addLatexHeader(notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
             
-            executeCommand("lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
+            executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
             
             // read png
             let img = NSImage(byReferencingFile: pngName)
