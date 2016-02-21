@@ -32,7 +32,7 @@ public class ScoreEngine {
                 let note_midi = pitch.midi
                 //midi to note(lower letters conversion)
                 let pitch_letter_raw = Int(note_midi % 12)
-                let pitch_number = Int(note_midi/12 - Float(pitch_letter_raw)/12)
+                let pitch_number = Int((note_midi - Float(pitch_letter_raw))/12)
                 var pitch_letter_final = ""
                 
                 switch pitch_letter_raw {
@@ -88,11 +88,37 @@ public class ScoreEngine {
                 //  duration_final = 128
                 //error detection
             }
+
             return_string += (" " + pitch_final + "\(duration_final)")
-            
         }
         return return_string
 
+    }
+    
+    public func addLatexHeader(noteText: String, lyrics: String) -> String {
+        return "\\header {\n" +
+            "        tagline = \"\"  % removed" +
+            "    }" +
+            "    " +
+            "    musicOne = \\absolute {" +
+            "    \\clef treble" +
+            "    \(noteText)" +
+            "    }" +
+            "    verseOne = \\lyricmode {" +
+            "    \(lyrics)" +
+            "    }" +
+            "    \\score {" +
+            "    <<" +
+            "    \\new Voice = \"one\" {" +
+            "    \\time 4/4" +
+            "    \\musicOne" +
+            "    }" +
+            "    \\new Lyrics \\lyricsto \"one\" {" +
+            "    \\verseOne" +
+            "    }" +
+            "    >>" +
+            "    }\"" +
+            "    }"
     }
     
     public func makeScore(notes: [Note]) -> Promise<NSImage> {

@@ -29,7 +29,8 @@ class ScoresmithTests: XCTestCase {
             (MusicElement.Play(Chroma.A * 2), Duration.Quarter),
             (MusicElement.Play(Chroma.B * 2), Duration.Quarter),
             (MusicElement.Play(Chroma.C * 3), Duration.Quarter),
-            (MusicElement.Play(Chroma.D * 3), Duration.Whole)
+            (MusicElement.Play(Chroma.D * 3), Duration.Whole),
+            (MusicElement.Rest, Duration.Whole),
         ]))
     }
     
