@@ -94,6 +94,7 @@ class MainViewController: NSViewController {
         engine = PitchEngine()
         engine.onNewNote = { image in
             let size = image.size
+            print(image.size)
             let imageWidth = self.containerView.bounds.height / size.height * size.width
             let imageView = NSImageView()
             self.containerView.addSubview(imageView)
@@ -103,6 +104,7 @@ class MainViewController: NSViewController {
                 $0.bottom.equalTo(self.containerView.snp_bottom)
                 $0.width.equalTo(imageWidth)
             }
+            imageView.image = image
         }
     }
     

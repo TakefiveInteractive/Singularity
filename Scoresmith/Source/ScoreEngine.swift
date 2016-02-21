@@ -163,9 +163,11 @@ public class ScoreEngine {
         return output        
     }
     
+    let lily_queue = dispatch_queue_create("lily-worker", DISPATCH_QUEUE_SERIAL)
+    
     public func makeScore(notes: [Note], lyrics: String) -> Promise<NSImage> {
-        return Promise { resolve, reject in
-            let randFilename = randomStringWithLength(20)
+        return dispatch_promise(on: lily_queue) {
+            let randFilename = self.randomStringWithLength(20)
             
             let fileManager = NSFileManager.defaultManager()
             // Get current directory path
@@ -177,13 +179,13 @@ public class ScoreEngine {
             
             // write lilytex
             let processedLyrics = Hyphenator().hyphenate_word(lyrics).joinWithSeparator(" -- ")
-            try! addLatexHeader(notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
+            try! self.addLatexHeader(self.notesToLiliTex(notes), lyrics: processedLyrics).writeToFile(lilyName, atomically: true, encoding: NSUTF8StringEncoding)
             
-            executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
+            self.executeCommand("/usr/local/bin/lilypond", args: ["-dresolution=300", "-dpixmap-format=pngalpha", "--out=\(path + "/" + randFilename)", "--png", lilyName])
             
             // read png
             let img = NSImage(byReferencingFile: pngName)
-            resolve(img!)
+            return img!
         }
     }
     

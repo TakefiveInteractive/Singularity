@@ -114,7 +114,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
             fftCounter += 1
             let everyNSeconds = { n in self.fftCounter % (Int(pitchPerSecond) * n) == 0 }
             
-            if everyNSeconds(5) {
+            if everyNSeconds(6) {
                 dispatch_promise(on: pitchProcessingQueue) {
                     return self.noteEngine.pitchToNote(
                         histFrequencies,

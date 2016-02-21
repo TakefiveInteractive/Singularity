@@ -136,6 +136,7 @@ public class NoteEngine {
         }
         
         // filter out transient notes
+        print("Number of notes: \(noteChunks.count)")
         return noteChunks
         .filter { (elem, count) in count > minimumElementCount }
         .map { (elem, count) in (elem, toDuration(Double(count) / Double(pitchPerSecond) * (Double(bpm) / 60.0))) }
