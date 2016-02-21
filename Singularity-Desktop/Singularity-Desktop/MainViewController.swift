@@ -25,6 +25,7 @@ class MainViewController: NSViewController {
     @IBOutlet weak var BPM_Update_Button: NSButton!
     var visualTimer: NSTimer!
     
+    @IBOutlet weak var containerView: NSView!
     
     var BPM: Int32 { return (BPM_Textfield.intValue) }
     var playOn: Bool = false {
@@ -34,11 +35,13 @@ class MainViewController: NSViewController {
                 let BPM_Interval = 60.0/Float(BPM)
                 ticktimer = NSTimer.scheduledTimerWithTimeInterval(Double(BPM_Interval), target: self, selector: "tick", userInfo: nil, repeats: true)
                 visualTimer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateVisualizationView", userInfo: nil, repeats: true)
+                engine.start(Float(BPM))
 
             } else {
                 recordImageButton.image = NSImage(named: "record_icon@2x.png")
                 ticktimer.invalidate()
                 visualTimer.invalidate()
+                engine.stop()
             }
         }
     }
@@ -88,14 +91,24 @@ class MainViewController: NSViewController {
         }
         BPM_Textfield.stringValue = "96"
 
-        
+        engine = PitchEngine()
+        engine.onNewNote = { image in
+            let size = image.size
+            let imageWidth = self.containerView.bounds.height / size.height * size.width
+            let imageView = NSImageView()
+            self.containerView.addSubview(imageView)
+            imageView.snp_makeConstraints {
+                $0.left.equalTo(self.containerView.snp_left)
+                $0.top.equalTo(self.containerView.snp_left)
+                $0.bottom.equalTo(self.containerView.snp_bottom)
+                $0.width.equalTo(imageWidth)
+            }
+        }
     }
     
     override func viewDidAppear() {
         super.viewDidAppear()
-        
-        engine = PitchEngine()
-        engine.start(100)
+
     }
 
     func updateVisualizationView() {
