@@ -11,6 +11,7 @@
 		8F0F3C641C5D523E00747FE4 /* GoogleVoiceRecognition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0F3C631C5D523E00747FE4 /* GoogleVoiceRecognition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F0F3C6B1C5D523E00747FE4 /* GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0F3C601C5D523E00747FE4 /* GoogleVoiceRecognition.framework */; };
 		8F0F3C701C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F3C6F1C5D523E00747FE4 /* GoogleVoiceRecognitionTests.swift */; };
+		8F143ACD1C7A54D000D2E1D4 /* Pods_GoogleVoiceRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C037F77D6F4A6583621894 /* Pods_GoogleVoiceRecognition.framework */; };
 		8F186BF61C62B4EC00BFAE72 /* moha.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F186BF51C62B4EC00BFAE72 /* moha.wav */; };
 		8F5E5B691C601F8D00EEA851 /* good-morning.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F5E5B681C601F8D00EEA851 /* good-morning.wav */; };
 		8F8DCD9E1C5EE398002A79A6 /* VoiceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCD9D1C5EE398002A79A6 /* VoiceRecognition.swift */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F143ACD1C7A54D000D2E1D4 /* Pods_GoogleVoiceRecognition.framework in Frameworks */,
 				8F0F3C6B1C5D523E00747FE4 /* GoogleVoiceRecognition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

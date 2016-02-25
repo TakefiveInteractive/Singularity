@@ -78,12 +78,12 @@ public class NoteEngine {
         // Select best tuning standard frequency that fits the frequency sequence
         // Start from D2
         
-        // Make a semitone sequence from D2
+        // Make a semitone sequence from C2
         var sequence: Array<Pitch> = []
-        let semitone = Scale.Chromatic
+        let scale = Scale.Major
         for octave: UInt in 2...4 {
-            let D = Pitch(chroma: .D, octave: octave)
-            sequence += Array(semitone(D))
+            let C = Pitch(chroma: .C, octave: octave)
+            sequence += Array(scale(C))
         }
         
         var bestError: Float = 100000.0

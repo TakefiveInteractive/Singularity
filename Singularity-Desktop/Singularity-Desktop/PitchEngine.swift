@@ -24,8 +24,8 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     var fft: EZAudioFFTRolling?
     
     var histFrequencies: [Frequency]?
-    public var onNewNote: ((NSImage) -> ())?
-    public var language: VoiceLanguages = .English
+    var onNewNote: ((NSImage) -> ())?
+    var language: VoiceLanguages = .English
     var rateTracker: RateTracker?
     
     var estimator = HPSEstimator()
@@ -36,7 +36,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     let SampleRate: Double = 44100
     let FFTWindowSize: UInt = 8192
-    let MinimumMagnitude: Float = 0.001
+    let MinimumMagnitude: Float = 0.008
     var audioCounter = 0
     
     var bpm: Float?
@@ -60,12 +60,6 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         var asbd = audioFormat.streamDescription.memory
         asbd.mSampleRate = SampleRate
         microphone!.setAudioStreamBasicDescription(asbd)
-
-        fft = EZAudioFFTRolling(
-            windowSize: FFTWindowSize,
-            historyBufferSize: FFTWindowSize * 8,
-            sampleRate: Float(microphone!.audioStreamBasicDescription().mSampleRate),
-            delegate: self)
     }
     
     func start(bpm: Float) {
@@ -73,6 +67,14 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         rateTracker = RateTracker()
         self.bpm = bpm
         rawMicData = NSMutableData()
+        audioCounter = 0
+        estimator = HPSEstimator()
+        
+        fft = EZAudioFFTRolling(
+            windowSize: FFTWindowSize,
+            historyBufferSize: FFTWindowSize * 8,
+            sampleRate: Float(microphone!.audioStreamBasicDescription().mSampleRate),
+            delegate: self)
         
         microphone?.startFetchingAudio()
     }
