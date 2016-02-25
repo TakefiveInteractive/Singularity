@@ -43,7 +43,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     
     var rawMicData = NSMutableData()
     
-    private let pitchProcessingQueue = dispatch_queue_create("pitch-worker", DISPATCH_QUEUE_SERIAL)
+    private let pitchProcessingQueue = dispatch_queue_create("pitch-worker", DISPATCH_QUEUE_CONCURRENT)
     
     override init() {
         super.init()
@@ -54,7 +54,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
         
         microphone = EZMicrophone(microphoneDelegate: self)
         microphone?.device = bestMicrophone! as! EZAudioDevice
-
+        
         // Record 32-bit float PCM by default
         let audioFormat = AVAudioFormat(commonFormat: .PCMFormatFloat32, sampleRate: SampleRate, channels: 1, interleaved: false)
         var asbd = audioFormat.streamDescription.memory
@@ -96,6 +96,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     }
     
     var ourLyrics = ""
+    let hyphenator = Hyphenator()
     
     func fft(fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>, bufferSize: vDSP_Length) {
         let maxLocation = estimator.estimateLocation(
@@ -104,9 +105,9 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
             numBins: Int(bufferSize))
         let magnitude = fft.frequencyMagnitudeAtIndex(maxLocation)
         let maxFrequency = maxLocation
-                >>= { fft.frequencyAtIndex($0) }
-                >>= { self.movingModeL1.update($0) }
-                >>= { self.movingModeL2.update($0) }
+            >>= { fft.frequencyAtIndex($0) }
+            >>= { self.movingModeL1.update($0) }
+            >>= { self.movingModeL2.update($0) }
         
         if magnitude > MinimumMagnitude {
             //print(maxFrequency)
@@ -120,26 +121,26 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
             let everyNSeconds = { n in self.fftCounter % (Int(pitchPerSecond) * n) == 0 }
             
             if everyNSeconds(6) {
-                dispatch_promise(on: pitchProcessingQueue) {
+                dispatch_promise(on: dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0)) {
                     return self.noteEngine.pitchToNote(
                         histFrequencies,
                         bpm: bpm,
                         pitchPerSecond: Float(pitchPerSecond))
-                }
-                .then { self.scoreEngine.makeScore($0, lyrics: self.processLyrics(self.ourLyrics)) }
-                .then { self.onNewNote?($0) }
+                    }
+                    .then { self.scoreEngine.makeScore($0, lyrics: self.processLyrics(self.ourLyrics)) }
+                    .then { self.onNewNote?($0) }
             }
             
             if everyNSeconds(4) {
                 VoiceRecognition.recognize(toPCMBuffer(rawMicData), sampleRate: Int(SampleRate), lang: language)
-                .then { self.ourLyrics = $0 }
+                    .then { self.ourLyrics = $0 }
             }
         }
     }
     
     func processLyrics(lyrics: String) -> String {
         if language == .English {
-            return lyrics.componentsSeparatedByString(" ") .map { Hyphenator().hyphenate_word($0).joinWithSeparator(" -- ") }.joinWithSeparator(" ")
+            return lyrics.componentsSeparatedByString(" ") .map { self.hyphenator.hyphenate_word($0).joinWithSeparator(" -- ") }.joinWithSeparator(" ")
         } else {
             return lyrics.characters.map { x in String(x) }.joinWithSeparator(" ")
         }
@@ -148,7 +149,7 @@ class PitchEngine: NSObject, EZMicrophoneDelegate, EZAudioFFTDelegate {
     func microphone(microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>>, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
         // perform FFT calculation.
         fft?.computeFFTWithBuffer(buffer[0], withBufferSize: bufferSize)
-
+        
         // Resample 32-bit float to 16-bit int
         var intSlice = [Int16](count: Int(bufferSize), repeatedValue: 0)
         for i in 0..<Int(bufferSize) {
